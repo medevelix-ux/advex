@@ -1,0 +1,93 @@
+{
+  "brand": "advex",
+  "catalog": {
+    "label": "Каталог стендов",
+    "allLabel": "Весь каталог",
+    "href": "catalog.html",
+    "items": [
+      {
+        "label": "Ролл-ап",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Поп-ап",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Баннерные стенды",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Фолд-ап",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Пресс-волл",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Тканевые стенды",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Выставочные застройки",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Ресепшен",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Полиграфия",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Промостойки",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Рекламные вывески",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Буклетницы",
+        "href": "catalog.html"
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "label": "Изготовление стендов",
+      "href": "stands.html"
+    },
+    {
+      "label": "Модели",
+      "href": "staff.html"
+    },
+    {
+      "label": "Аренда",
+      "href": "rental.html"
+    },
+    {
+      "label": "Проекты",
+      "href": "projects.html"
+    },
+    {
+      "label": "О компании",
+      "href": "about.html"
+    },
+    {
+      "label": "Контакты",
+      "href": "contacts.html"
+    }
+  ],
+  "cta": {
+    "label": "Обсудить проект",
+    "href": "index.html#contact"
+  },
+  "languages": {
+    "az": "Azərbaycanca",
+    "ru": "Русский",
+    "en": "English"
+  }
+}

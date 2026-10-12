@@ -1,0 +1,78 @@
+{
+  "brand": "advex",
+  "description": "Turnkey exhibition stands — from the first idea to meeting your clients.",
+  "tagline": "Design. Production. Impression.",
+  "directions": {
+    "title": "Services",
+    "items": [
+      {
+        "label": "Stand catalog",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Stand production",
+        "href": "stands.html"
+      },
+      {
+        "label": "Models and staff",
+        "href": "staff.html"
+      },
+      {
+        "label": "Equipment rental",
+        "href": "rental.html"
+      },
+      {
+        "label": "Our projects",
+        "href": "projects.html"
+      }
+    ]
+  },
+  "structures": {
+    "title": "Structures",
+    "items": [
+      {
+        "label": "Roll-up",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Pop-up",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Banner stands",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Fold-up",
+        "href": "catalog.html"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "ADVEX",
+    "address": "29 Najafgulu Rafiyev St., Khatai district, Baku, Azerbaijan",
+    "phone": "+994 50 316 16 61",
+    "phoneLink": "tel:+994503161661",
+    "email": "info@advex.az"
+  },
+  "companyLinks": [
+    {
+      "label": "About us",
+      "href": "about.html"
+    },
+    {
+      "label": "Contacts",
+      "href": "contacts.html"
+    },
+    {
+      "label": "Delivery and payment",
+      "href": "delivery.html"
+    },
+    {
+      "label": "Privacy policy",
+      "href": "#"
+    }
+  ],
+  "copyright": "© 2026 ADVEX · Website concept",
+  "region": "Exhibition solutions in Azerbaijan"
+}

@@ -1,0 +1,93 @@
+{
+  "brand": "advex",
+  "catalog": {
+    "label": "Stand catalog",
+    "allLabel": "Full catalog",
+    "href": "catalog.html",
+    "items": [
+      {
+        "label": "Roll-up",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Pop-up",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Banner stands",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Fold-up",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Press wall",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Fabric stands",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Custom booths",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Reception desks",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Printing",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Promo counters",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Signage",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Brochure stands",
+        "href": "catalog.html"
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "label": "Stand production",
+      "href": "stands.html"
+    },
+    {
+      "label": "Models",
+      "href": "staff.html"
+    },
+    {
+      "label": "Rental",
+      "href": "rental.html"
+    },
+    {
+      "label": "Projects",
+      "href": "projects.html"
+    },
+    {
+      "label": "About us",
+      "href": "about.html"
+    },
+    {
+      "label": "Contacts",
+      "href": "contacts.html"
+    }
+  ],
+  "cta": {
+    "label": "Discuss a project",
+    "href": "index.html#contact"
+  },
+  "languages": {
+    "az": "Azərbaycanca",
+    "ru": "Русский",
+    "en": "English"
+  }
+}

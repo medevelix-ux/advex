@@ -1,0 +1,34 @@
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-card">
+      <div class="foot-grid">
+        <div class="fcol fbrand">
+          <a href="index.html" class="logo" aria-label="ADVEX — home">{{footer.brand}}<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+          <p>{{footer.description}}</p>
+          <span class="mono muted">{{footer.tagline}}</span>
+        </div>
+        <nav class="fcol" aria-label="Services">
+          <span class="mono">{{footer.directions.title}}</span>
+          <ul>{{footer_directions}}</ul>
+        </nav>
+        <nav class="fcol" aria-label="Structures">
+          <span class="mono">{{footer.structures.title}}</span>
+          <ul>{{footer_structures}}</ul>
+        </nav>
+        <div class="fcol">
+          <span class="mono">{{footer.contacts.title}}</span>
+          <address>{{footer.contacts.address}}</address>
+          <a href="{{footer.contacts.phoneLink}}">{{footer.contacts.phone}}</a>
+          <a href="mailto:{{footer.contacts.email}}">{{footer.contacts.email}}</a>
+          <span class="spacer"></span>
+{{footer_company_links}}
+        </div>
+      </div>
+      <div class="foot-bar">
+        <span>{{footer.copyright}}</span>
+        <nav aria-label="Site language"><a href="{{routes.az}}" hreflang="az" lang="az">{{header.languages.az}}</a> / <a href="{{routes.ru}}" hreflang="ru" lang="ru">{{header.languages.ru}}</a> / <a href="{{routes.en}}" hreflang="en" lang="en" aria-current="page">{{header.languages.en}}</a></nav>
+        <span>{{footer.region}}</span>
+      </div>
+    </div>
+  </div>
+</footer>

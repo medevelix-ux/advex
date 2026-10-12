@@ -1,0 +1,78 @@
+{
+  "brand": "advex",
+  "description": "Açar təhvil sərgi stendləri — ilk ideyadan müştərilərinizlə görüşə qədər.",
+  "tagline": "Dizayn. İstehsal. Təəssürat.",
+  "directions": {
+    "title": "İstiqamətlər",
+    "items": [
+      {
+        "label": "Stend kataloqu",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Stendlərin hazırlanması",
+        "href": "stands.html"
+      },
+      {
+        "label": "Modellər və heyət",
+        "href": "staff.html"
+      },
+      {
+        "label": "Avadanlıq icarəsi",
+        "href": "rental.html"
+      },
+      {
+        "label": "Layihələrimiz",
+        "href": "projects.html"
+      }
+    ]
+  },
+  "structures": {
+    "title": "Konstruksiyalar",
+    "items": [
+      {
+        "label": "Roll-up",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Pop-up",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Banner stendləri",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Fold-up",
+        "href": "catalog.html"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "ADVEX",
+    "address": "Azərbaycan, Bakı, Xətai rayonu, Nəcəfqulu Rəfiyev küç., 29",
+    "phone": "+994 50 316 16 61",
+    "phoneLink": "tel:+994503161661",
+    "email": "info@advex.az"
+  },
+  "companyLinks": [
+    {
+      "label": "Şirkət haqqında",
+      "href": "about.html"
+    },
+    {
+      "label": "Əlaqə",
+      "href": "contacts.html"
+    },
+    {
+      "label": "Çatdırılma və ödəniş",
+      "href": "delivery.html"
+    },
+    {
+      "label": "Məxfilik siyasəti",
+      "href": "#"
+    }
+  ],
+  "copyright": "© 2026 ADVEX · Sayt konsepsiyası",
+  "region": "Azərbaycanda sərgi həlləri"
+}

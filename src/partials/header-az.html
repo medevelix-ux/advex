@@ -1,0 +1,51 @@
+<header class="wrap hdr">
+  <a href="index.html" class="logo" aria-label="ADVEX — ana səhifə">{{header.brand}}<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+
+  <nav class="nav" aria-label="Əsas naviqasiya">
+    <div class="nav-dd" data-nav-dd>
+      <button type="button" class="nav-dd-btn" aria-expanded="false" aria-controls="cat-menu">{{header.catalog.label}}<svg class="nav-chev" width="14" height="14" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <div class="cat-menu" id="cat-menu">
+        <ul>{{header_catalog_desktop}}</ul>
+        <a href="{{header.catalog.href}}" class="cat-all">{{header.catalog.allLabel}}<span class="ic"><svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+{{header_navigation}}
+  </nav>
+
+  <div class="hdr-r">
+    <div class="lang-dd" data-lang-dd>
+      <button type="button" class="lang" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Saytın dili: Azərbaycanca">AZ<svg class="lang-chev" width="14" height="14" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <ul class="lang-menu" id="lang-menu">
+        <li><a href="{{routes.az}}" hreflang="az" lang="az" aria-current="page"><span class="code">AZ</span><span class="name">{{header.languages.az}}</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+        <li><a href="{{routes.ru}}" hreflang="ru" lang="ru"><span class="code">RU</span><span class="name">{{header.languages.ru}}</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+        <li><a href="{{routes.en}}" hreflang="en" lang="en"><span class="code">EN</span><span class="name">{{header.languages.en}}</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+      </ul>
+    </div>
+    <button type="button" class="icon-btn" data-cart-button data-label="Avadanlıq seçimi" aria-label="Avadanlıq seçimi: 0">
+      <svg width="20" height="20" aria-hidden="true"><use href="#i-bag"/></svg>
+      <span class="badge" data-cart-count>0</span>
+    </button>
+    <a href="{{header.cta.href}}" class="btn btn-dark btn-sm hdr-cta">{{header.cta.label}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    <button type="button" class="icon-btn burger" data-menu-toggle aria-controls="mobile-nav" aria-expanded="false" aria-label="Menyu">
+      <svg width="20" height="20" aria-hidden="true"><use href="#i-burger"/></svg>
+    </button>
+  </div>
+
+  <nav class="mnav" id="mobile-nav" aria-label="Mobil naviqasiya">
+    <div class="mnav-top">
+      <a href="index.html" class="logo" aria-label="ADVEX — ana səhifə">{{header.brand}}<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+      <button type="button" class="icon-btn mnav-close" data-menu-close aria-label="Menyunu bağla"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <details class="mnav-cat">
+      <summary>{{header.catalog.label}}<svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="mnav-cat-list">{{header_catalog_mobile}}</div>
+    </details>
+{{header_navigation}}
+    <div class="mnav-lang" aria-label="Saytın dili" role="group">
+      <a href="{{routes.az}}" hreflang="az" lang="az" aria-current="page">AZ</a>
+      <a href="{{routes.ru}}" hreflang="ru" lang="ru">RU</a>
+      <a href="{{routes.en}}" hreflang="en" lang="en">EN</a>
+    </div>
+    <a href="{{header.cta.href}}" class="btn btn-dark">{{header.cta.label}}<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+  </nav>
+</header>

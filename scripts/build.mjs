@@ -3,28 +3,15 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
+import {escape, render, safeLink} from './render.mjs';
+import {loadShared, renderShared, faqItems, updateInnerPage, innerPages, languages} from './shared.mjs';
+export {render} from './render.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const require = createRequire(import.meta.url);
 const sharp = require(process.env.ADVEX_SHARP_MODULE || 'sharp');
 const out = path.resolve(root, 'dist');
-const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const get = (obj, key) => key.split('.').reduce((v, k) => v?.[k], obj);
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex').slice(0, 12);
-
-export function render(template, data, special = {}) {
-  return template.replace(/\{\{([\w.]+)\}\}/g, (_, key) => {
-    if (Object.hasOwn(special, key)) return special[key];
-    const value = get(data, key);
-    if (typeof value !== 'string') throw new Error(`Missing text field: ${key}`);
-    return escape(value);
-  });
-}
-
-function safeLink(value) {
-  if (typeof value !== 'string' || !value || /[\u0000-\u0020\\]/.test(value) || /^(?:\/\/|javascript:|data:)/i.test(value) || /^(?!https?:)[a-z][a-z\d+.-]*:/i.test(value)) throw new Error('Invalid project link');
-  return escape(value);
-}
 function projectCards(items) {
   if (!Array.isArray(items) || items.length > 24) throw new Error('Projects must be a list of up to 24 cards');
   return items.map((p, i) => `<li class="p-${'abcd'[i % 4]}"><a href="${safeLink(p.link)}" class="proj"><img src="${escape(p.image)}" width="479" height="271" alt="${escape(p.alt || '')}" loading="lazy"><span class="chip pos-tl"><span class="dot"></span>${escape(p.badge || '')}</span><div class="proj-info"><div class="row"><h3>${escape(p.title)}</h3><span class="mono">${String(i + 1).padStart(2, '0')}</span></div><span class="muted">${escape(p.subtitle || '')}</span></div><span class="proj-go"><svg width="22" height="22" aria-hidden="true"><use href="#i-arrow-ur"/></svg></span></a></li>`).join('\n');
@@ -98,10 +85,19 @@ async function main() {
     return html;
   }
   const fieldHTML = (type, lang) => `<input type="hidden" name="form-name" value="home-${lang}-${type}"><input type="hidden" name="subject" value="ADVEX — ${type==='lead'?'заявка':'расчёт стоимости'} (${lang.toUpperCase()})"><input type="hidden" name="lang" value="${lang}"><input type="hidden" name="request_id"><input type="hidden" name="equipment"><div class="form-trap" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div><p class="form-feedback" role="status" tabindex="-1" hidden></p>`;
-  for (const lang of ['az', 'ru', 'en']) {
+  for (const lang of languages) {
+    const shared=await loadShared(root,lang);
+    for (const page of innerPages) {
+      const file=(lang==='az'?'':lang+'/')+page+'.html';
+      const source=await fs.readFile(path.join(root,file),'utf8');
+      const data=JSON.parse(await fs.readFile(path.join(root,`content/pages/${page}/${lang}.json`),'utf8'));
+      await fs.writeFile(path.join(out,file),updateInnerPage(source,renderShared(shared,lang,page),data.seo));
+    }
     const template=await fs.readFile(path.join(root,'src/home',lang+'.html'),'utf8');
     const data=JSON.parse(await fs.readFile(path.join(root,'content/home',lang+'.json'),'utf8'));
-    let html=render(template,data,{projects_cards:projectCards(data.projects.items),form_fields_lead:fieldHTML('lead',lang),form_fields_quote:fieldHTML('quote',lang)});
+    const blocks=renderShared(shared,lang);
+    if (!data.clients.enabled) blocks.shared_clients='';
+    let html=render(template,data,{...blocks,faq_items:faqItems(data.faq.items),projects_cards:projectCards(data.projects.items),form_fields_lead:fieldHTML('lead',lang),form_fields_quote:fieldHTML('quote',lang)});
     for(const type of ['lead','quote']) html=html.replace(`data-${type}-form>`,`data-${type}-form name="home-${lang}-${type}" data-netlify="true" netlify-honeypot="website">`);
     html=html.replaceAll('action="/api/lead"','action="/form-success.html"');
     for (const [name,url] of Object.entries(assets)) html=html.replaceAll('/assets/'+name,url);

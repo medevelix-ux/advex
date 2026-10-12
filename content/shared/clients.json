@@ -1,0 +1,57 @@
+{
+  "titles": {
+    "ru": "Клиенты и партнёры",
+    "az": "Müştərilər və tərəfdaşlar",
+    "en": "Clients and partners"
+  },
+  "items": [
+    {
+      "image": "/img/partners/logo1.png",
+      "alt": {
+        "ru": "AIC",
+        "az": "AIC",
+        "en": "AIC"
+      }
+    },
+    {
+      "image": "/img/partners/logo2.png",
+      "alt": {
+        "ru": "One Touch",
+        "az": "One Touch",
+        "en": "One Touch"
+      }
+    },
+    {
+      "image": "/img/partners/logo3.png",
+      "alt": {
+        "ru": "Мой бизнес",
+        "az": "Мой бизнес",
+        "en": "Мой бизнес"
+      }
+    },
+    {
+      "image": "/img/partners/logo4.png",
+      "alt": {
+        "ru": "Sensemi · MetCom",
+        "az": "Sensemi · MetCom",
+        "en": "Sensemi · MetCom"
+      }
+    },
+    {
+      "image": "/img/partners/logo5.png",
+      "alt": {
+        "ru": "Ассоциация выставочных организаторов Азербайджана",
+        "az": "Azərbaycan Sərgi Təşkilatçıları Assosiasiyası",
+        "en": "Azerbaijan Exhibition Organizers Association"
+      }
+    },
+    {
+      "image": "/img/partners/logo6.png",
+      "alt": {
+        "ru": "Samson",
+        "az": "Samson",
+        "en": "Samson"
+      }
+    }
+  ]
+}

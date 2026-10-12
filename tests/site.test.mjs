@@ -3,17 +3,35 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {createRequire} from 'node:module';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {render} from '../scripts/build.mjs';
+import {loadShared,renderShared,faqItems,languages,innerPages,pageRoute} from '../scripts/shared.mjs';
 
 const root=new URL('../',import.meta.url);
 const read=async p=>fs.readFile(new URL(p,root),'utf8');
 
 test('all CMS fields exist in their matching language content',async()=>{
   const config=JSON.parse(await read('.pages.yml'));
-  assert.equal(config.content.length,3);
-  for(const page of config.content){
-    const data=JSON.parse(await read(page.path));
-    for(const section of page.fields) for(const field of section.fields) assert.notEqual(data[section.name][field.name],undefined,`${page.name}.${section.name}.${field.name}`);
+  assert.equal(config.content.length,6);
+  const pages=[],names=new Set();
+  const walk=entries=>entries.forEach(p=>{assert.ok(!names.has(p.name),`duplicate CMS entry: ${p.name}`);names.add(p.name);if(p.type==='group')walk(p.items);else pages.push(p);});
+  walk(config.content);
+  assert.equal(pages.length,34);
+  const check=(fields,data,prefix)=>{
+    assert.deepEqual(Object.keys(data).sort(),fields.map(f=>f.name).sort(),`unmapped data at ${prefix}`);
+    for(const f of fields){
+      const value=data[f.name],key=prefix+'.'+f.name;
+      assert.notEqual(value,undefined,key);
+      if(f.list){assert.ok(Array.isArray(value),key);if(f.fields)value.forEach((v,i)=>check(f.fields,v,key+'.'+i));}
+      else if(f.fields)check(f.fields,value,key);
+      else assert.equal(typeof value,f.type==='boolean'?'boolean':'string',key);
+    }
+  };
+  for(const page of pages) check(page.fields,JSON.parse(await read(page.path)),page.name);
+  for(const lang of languages){
+    const home=pages.find(p=>p.name==='home_'+lang);
+    assert.ok(!home.fields.some(f=>f.name==='header'||f.name==='footer'));
+    assert.deepEqual(home.fields.slice(1,9).map(f=>f.name),['hero','services','projects','production','rental','about','clients','faq']);
   }
 });
 
@@ -23,7 +41,7 @@ test('editing homepage text and SEO produces escaped, server-visible HTML',async
   data.seo.description='CMS description "quoted"';
   const hero=Object.keys(data.hero).find(key=>data.hero[key].startsWith('Выставочные стенды.'));
   data.hero[hero]='Заголовок из CMS';
-  const html=render(await read('src/home/ru.html'),data,{projects_cards:'',form_fields_lead:'',form_fields_quote:''});
+  const html=render(await read('src/home/ru.html'),data,{...renderShared(await loadShared(fileURLToPath(root),'ru'),'ru'),faq_items:faqItems(data.faq.items),projects_cards:'',form_fields_lead:'',form_fields_quote:''});
   assert.match(html,/<title>CMS title &lt;test&gt;<\/title>/);
   assert.match(html,/content="CMS description &quot;quoted&quot;"/);
   assert.match(html,/<h1[^>]*>Заголовок из CMS/);
@@ -43,10 +61,34 @@ test('generated homepages have external assets, native Netlify forms and optimiz
   }
 });
 
-test('all 24 inner pages remain byte-for-byte unchanged',async()=>{
-  for(const dir of ['','ru/','en/']) for(const name of ['about','catalog','contacts','delivery','projects','rental','staff','stands']) {
-    assert.equal(await read('dist/'+dir+name+'.html'),await read(dir+name+'.html'));
+test('all 24 inner pages preserve their content and receive global header/footer and SEO',async()=>{
+  for(const lang of languages) for(const name of innerPages) {
+    const route=pageRoute(lang,name).slice(1);
+    const source=await read(route),built=await read('dist/'+route);
+    const omitRegions=html=>html.replace(/<header\b[\s\S]*?<\/header>|<footer\b[\s\S]*?<\/footer>|<title>[\s\S]*?<\/title>|<meta name="description" content="[^"]*">/g,'');
+    assert.equal(omitRegions(built),omitRegions(source),route);
+    const shared=renderShared(await loadShared(fileURLToPath(root),lang),lang,name);
+    assert.ok(built.includes(shared.shared_header),route);
+    assert.ok(built.includes(shared.shared_footer),route);
+    for(const l of languages) assert.ok(built.includes(`href="${pageRoute(l,name)}" hreflang="${l}"`),route);
+    assert.doesNotMatch(built,/\{\{[\w.]+\}\}/);
   }
+});
+
+test('shared settings apply to desktop/mobile menus, contacts and partner lists safely',async()=>{
+  const data=await loadShared(fileURLToPath(root),'ru');
+  data.header.navigation[0].label='Изменённое меню <test>';
+  data.footer.contacts.phone='+994 50 123 45 67';
+  data.footer.contacts.phoneLink='tel:+994501234567';
+  data.clients.items.push({image:'/img/partners/aic.png',alt:{ru:'Новый клиент',az:'New AZ',en:'New EN'}});
+  const result=renderShared(data,'ru','stands');
+  assert.equal((result.shared_header.match(/Изменённое меню &lt;test&gt;/g)||[]).length,2);
+  assert.match(result.shared_header,/href="stands.html" class="is-current" aria-current="page"/);
+  assert.ok(result.shared_footer.includes('href="tel:+994501234567">+994 50 123 45 67</a>'));
+  assert.ok(result.shared_clients.includes('alt="Новый клиент"'));
+  assert.doesNotMatch(result.shared_footer,/href="#" class="is-current"/);
+  data.header.navigation[0].href='javascript:alert(1)';
+  assert.throws(()=>renderShared(data,'ru'),/Invalid content link/);
 });
 
 test('homepage image bytes reduced by at least 75 percent',async()=>{
@@ -92,6 +134,38 @@ test('browser: responsive pages, dialogs, selection, failed and successful form 
       assert.deepEqual(badResponses.filter(u=>!u.endsWith('/form-success.html')),[]);
       if(width===390 && lang==='ru'){await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join('.cache','home-mobile.png')});}
       await context.close();
+    }
+  } finally {await browser.close();}
+});
+
+test('browser: shared navigation on inner pages at desktop and mobile widths',async t=>{
+  const require=createRequire(import.meta.url);
+  let chromium;
+  try {({chromium}=require(process.env.ADVEX_PLAYWRIGHT_MODULE||'playwright'));}
+  catch {t.skip('Install Playwright to run browser checks');return;}
+  const browser=await chromium.launch({headless:true});
+  try {
+    for(const width of [1440,390]) for(const lang of languages){
+      const page=await browser.newPage({viewport:{width,height:1000}});
+      const errors=[];page.on('pageerror',e=>errors.push(e.message));
+      await page.goto('http://127.0.0.1:4173'+pageRoute(lang,'catalog'),{waitUntil:'networkidle'});
+      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+      assert.equal(await page.locator('.nav-dd-btn').evaluate(el=>el.classList.contains('is-current')),true);
+      const other=lang==='en'?'ru':'en';
+      if(width===390){
+        await page.locator('[data-menu-toggle]').click();
+        assert.equal(await page.locator('#mobile-nav').evaluate(el=>el.classList.contains('is-open')),true);
+        await page.locator(`.mnav-lang a[hreflang="${other}"]`).click();
+      } else {
+        await page.locator('.lang-dd > button').click();
+        await page.locator(`#lang-menu a[hreflang="${other}"]`).click();
+      }
+      await page.waitForURL('**/'+other+'/catalog.html');
+      assert.equal(await page.locator('html').getAttribute('lang'),other);
+      assert.equal(await page.locator('.hdr-cta').getAttribute('href'),'index.html#contact');
+      assert.deepEqual(errors,[]);
+      if(width===390 && lang==='ru')await page.screenshot({path:path.join('.cache','shared-inner-mobile.png')});
+      await page.close();
     }
   } finally {await browser.close();}
 });

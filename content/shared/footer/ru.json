@@ -1,0 +1,78 @@
+{
+  "brand": "advex",
+  "description": "Выставочные стенды под ключ — от первой идеи до встречи с вашими клиентами.",
+  "tagline": "Дизайн. Производство. Впечатление.",
+  "directions": {
+    "title": "Направления",
+    "items": [
+      {
+        "label": "Каталог стендов",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Изготовление стендов",
+        "href": "stands.html"
+      },
+      {
+        "label": "Модели и персонал",
+        "href": "staff.html"
+      },
+      {
+        "label": "Аренда оборудования",
+        "href": "rental.html"
+      },
+      {
+        "label": "Наши проекты",
+        "href": "projects.html"
+      }
+    ]
+  },
+  "structures": {
+    "title": "Конструкции",
+    "items": [
+      {
+        "label": "Ролл-ап",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Поп-ап",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Баннерные стенды",
+        "href": "catalog.html"
+      },
+      {
+        "label": "Фолд-ап",
+        "href": "catalog.html"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "ADVEX",
+    "address": "Азербайджан, Баку, Хатаинский район, ул. Наджафгулу Рафиева, 29",
+    "phone": "+994 50 316 16 61",
+    "phoneLink": "tel:+994503161661",
+    "email": "info@advex.az"
+  },
+  "companyLinks": [
+    {
+      "label": "О компании",
+      "href": "about.html"
+    },
+    {
+      "label": "Контакты",
+      "href": "contacts.html"
+    },
+    {
+      "label": "Доставка и оплата",
+      "href": "delivery.html"
+    },
+    {
+      "label": "Политика конфиденциальности",
+      "href": "#"
+    }
+  ],
+  "copyright": "© 2026 ADVEX · Концепция сайта",
+  "region": "Выставочные решения в Азербайджане"
+}
