@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{seo.title}}</title>
+<meta name="description" content="{{seo.description}}">
+<meta name="theme-color" content="#F2F3EE">
+<!-- Замените https://advex.az на ваш домен -->
+<link rel="canonical" href="https://advex.az/ru/">
+<link rel="alternate" hreflang="az" href="https://advex.az/">
+<link rel="alternate" hreflang="ru" href="https://advex.az/ru/">
+<link rel="alternate" hreflang="en" href="https://advex.az/en/">
+<link rel="alternate" hreflang="x-default" href="https://advex.az/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300..700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/home.css">
+</head>
+<body>
+
+<!-- Иконки (используются через <use href="#...">) -->
+<svg width="0" height="0" aria-hidden="true" class="home-style-1">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" fill="currentColor"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="currentColor"/><circle cx="12" cy="10" r="2.6" fill="#141812"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></g></symbol>
+  <symbol id="i-burger" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></g></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="c-area" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="1.5"/><path d="M3.5 11h7v9.5M10.5 3.5V8M14 11h6.5"/></g></symbol>
+  <symbol id="c-cube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l8.2 4.6v9.2L12 21.2l-8.2-4.6V7.4z"/><path d="M3.8 7.4L12 12l8.2-4.6M12 12v9.2"/></g></symbol>
+  <symbol id="c-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 4.8-9 4.8-9-4.8z"/><path d="M3 12.2l9 4.8 9-4.8"/><path d="M3 16.4l9 4.8 9-4.8"/></g></symbol>
+  <symbol id="c-bulb" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 17.5h5M10.5 21h3"/><path d="M12 2.5a6.5 6.5 0 0 0-3.9 11.7c.6.5 1.1 1.3 1.1 2.1v.2h5.6v-.2c0-.8.5-1.6 1.1-2.1A6.5 6.5 0 0 0 12 2.5z"/><path d="M12 6.5a2.5 2.5 0 0 0-2.5 2.5"/></g></symbol>
+  <symbol id="c-chair" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11V5.5A2.5 2.5 0 0 1 9.5 3h5A2.5 2.5 0 0 1 17 5.5V11"/><rect x="4.5" y="11" width="15" height="4" rx="1.5"/><path d="M7 15v6M17 15v6"/></g></symbol>
+  <symbol id="c-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12.5" r="8.5"/><path d="M12 8v4.5l3 2M9.5 2.5h5"/></g></symbol>
+  <symbol id="i-slash" viewBox="0 0 22 30"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">{{seo.text_003}}</a>
+
+<!-- ================= ШАПКА ================= -->
+<header class="wrap hdr">
+  <a href="index.html" class="logo" aria-label="ADVEX — на главную">{{header.text_001}}<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+
+  <nav class="nav" aria-label="Основная навигация">
+    <div class="nav-dd" data-nav-dd>
+      <button type="button" class="nav-dd-btn" aria-expanded="false" aria-controls="cat-menu">{{header.text_002}}<svg class="nav-chev" width="14" height="14" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <div class="cat-menu" id="cat-menu">
+        <ul>
+          <li><a href="catalog.html"><span>{{header.text_003}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_004}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_005}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_006}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_007}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_008}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_009}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_010}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_011}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_012}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_013}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="catalog.html"><span>{{header.text_014}}</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+        <a href="catalog.html" class="cat-all">{{header.text_015}}<span class="ic"><svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+    <a href="stands.html">{{header.text_016}}</a>
+    <a href="staff.html">{{header.text_017}}</a>
+    <a href="rental.html">{{header.text_018}}</a>
+    <a href="projects.html">{{header.text_019}}</a>
+    <a href="about.html">{{header.text_020}}</a>
+    <a href="contacts.html">{{header.text_021}}</a>
+  </nav>
+
+  <div class="hdr-r">
+    <div class="lang-dd" data-lang-dd>
+      <button type="button" class="lang" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Язык сайта: русский">{{header.text_022}}<svg class="lang-chev" width="14" height="14" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <ul class="lang-menu" id="lang-menu">
+        <li><a href="../index.html" hreflang="az" lang="az"><span class="code">{{header.text_023}}</span><span class="name">{{header.text_024}}</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+        <li><a href="../ru/index.html" hreflang="ru" lang="ru" aria-current="page"><span class="code">{{header.text_025}}</span><span class="name">{{header.text_026}}</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+        <li><a href="../en/index.html" hreflang="en" lang="en"><span class="code">{{header.text_027}}</span><span class="name">{{header.text_028}}</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+      </ul>
+    </div>
+    <button type="button" class="icon-btn" data-cart-button data-label="Подборка оборудования" aria-label="Подборка оборудования: 0">
+      <svg width="20" height="20" aria-hidden="true"><use href="#i-bag"/></svg>
+      <span class="badge" data-cart-count>0</span>
+    </button>
+    <a href="#contact" class="btn btn-dark btn-sm hdr-cta">{{header.text_029}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    <button type="button" class="icon-btn burger" data-menu-toggle aria-controls="mobile-nav" aria-expanded="false" aria-label="Меню">
+      <svg width="20" height="20" aria-hidden="true"><use href="#i-burger"/></svg>
+    </button>
+  </div>
+
+  <nav class="mnav" id="mobile-nav" aria-label="Мобильная навигация">
+    <div class="mnav-top">
+      <a href="index.html" class="logo" aria-label="ADVEX — на главную">{{header.text_030}}<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+      <button type="button" class="icon-btn mnav-close" data-menu-close aria-label="Закрыть меню"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <details class="mnav-cat">
+      <summary>{{header.text_031}}<svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="mnav-cat-list">
+        <a href="catalog.html">{{header.text_032}}</a>
+        <a href="catalog.html">{{header.text_033}}</a>
+        <a href="catalog.html">{{header.text_034}}</a>
+        <a href="catalog.html">{{header.text_035}}</a>
+        <a href="catalog.html">{{header.text_036}}</a>
+        <a href="catalog.html">{{header.text_037}}</a>
+        <a href="catalog.html">{{header.text_038}}</a>
+        <a href="catalog.html">{{header.text_039}}</a>
+        <a href="catalog.html">{{header.text_040}}</a>
+        <a href="catalog.html">{{header.text_041}}</a>
+        <a href="catalog.html">{{header.text_042}}</a>
+        <a href="catalog.html">{{header.text_043}}</a>
+        <a href="catalog.html" class="mnav-cat-all">{{header.text_044}}</a>
+      </div>
+    </details>
+    <a href="stands.html">{{header.text_045}}</a>
+    <a href="staff.html">{{header.text_046}}</a>
+    <a href="rental.html">{{header.text_047}}</a>
+    <a href="projects.html">{{header.text_048}}</a>
+    <a href="about.html">{{header.text_049}}</a>
+    <a href="contacts.html">{{header.text_050}}</a>
+    <div class="mnav-lang" aria-label="Язык сайта" role="group">
+      <a href="../index.html" hreflang="az" lang="az">{{header.text_051}}</a>
+      <a href="../ru/index.html" hreflang="ru" lang="ru" aria-current="page">{{header.text_052}}</a>
+      <a href="../en/index.html" hreflang="en" lang="en">{{header.text_053}}</a>
+    </div>
+    <a href="#contact" class="btn btn-dark">{{header.text_054}}<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="wrap" aria-labelledby="hero-title">
+  <div class="hero-media">
+    <picture>
+      <source media="(max-width: 968px)" srcset="{{hero.image_001}}">
+      <img class="hero-bg" src="{{hero.image_002}}" width="774" height="467" alt="{{hero.text_003}}" fetchpriority="high">
+    </picture>
+    <div class="hero-top">
+      <div>
+        <p class="eyebrow mono">{{hero.text_004}}</p>
+        <h1 class="h1" id="hero-title">{{hero.text_005}}<br>{{hero.text_006}}<br><span class="mark">{{hero.text_007}}</span></h1>
+      </div>
+      <div class="hero-side">
+        <p class="lead">{{hero.text_008}}</p>
+        <div class="btns">
+          <a href="#quote-modal" class="btn btn-white" data-quote-open aria-haspopup="dialog" aria-controls="quote-modal">{{hero.text_009}}<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          <a href="projects.html" class="btn btn-ghost-light">{{hero.text_010}}</a>
+        </div>
+      </div>
+    </div>
+    <ul class="hero-tabs">
+      <li><a href="stands.html" class="htab is-first"><span class="t"><span class="mono">01</span><b>{{hero.text_011}}</b></span><span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a href="staff.html" class="htab"><span class="t"><span class="mono">02</span><b>{{hero.text_012}}</b></span><span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a href="rental.html" class="htab"><span class="t"><span class="mono">03</span><b>{{hero.text_013}}</b></span><span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= КАТАЛОГ ================= -->
+<section class="wrap sec" id="catalog" aria-labelledby="catalog-title">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow mono">{{catalog.text_001}}</p>
+      <h2 class="h2" id="catalog-title">{{catalog.text_002}}<br>{{catalog.text_003}}</h2>
+    </div>
+    <div class="sec-head-r">
+      <p class="muted text-lg">{{catalog.text_004}}</p>
+      <a href="catalog.html" class="btn btn-solid btn-sm">{{catalog.text_005}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+  </div>
+
+  <ul class="cat-grid">
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_006}}" width="247" height="225" alt="" loading="lazy"><span class="tile-more">{{catalog.text_007}}</span></div><div class="tile-cap"><span>{{catalog.text_008}}</span></div></a></li>
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_009}}" width="246" height="225" alt="" loading="lazy"><span class="tile-more">{{catalog.text_010}}</span></div><div class="tile-cap"><span>{{catalog.text_011}}</span></div></a></li>
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_012}}" width="246" height="225" alt="" loading="lazy"><span class="tile-more">{{catalog.text_013}}</span></div><div class="tile-cap"><span>{{catalog.text_014}}</span></div></a></li>
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_015}}" width="246" height="225" alt="" loading="lazy"><span class="tile-more">{{catalog.text_016}}</span></div><div class="tile-cap"><span>{{catalog.text_017}}</span></div></a></li>
+
+    <li><a href="catalog.html" class="tile"><span class="chip chip-lime">{{catalog.text_018}}</span><div class="tile-img"><img src="{{catalog.image_019}}" width="246" height="226" alt="" loading="lazy"><span class="tile-more">{{catalog.text_020}}</span></div><div class="tile-cap"><span>{{catalog.text_021}}</span></div></a></li>
+
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_022}}" width="247" height="226" alt="" loading="lazy"><span class="tile-more">{{catalog.text_023}}</span></div><div class="tile-cap"><span>{{catalog.text_024}}</span></div></a></li>
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_025}}" width="246" height="226" alt="" loading="lazy"><span class="tile-more">{{catalog.text_026}}</span></div><div class="tile-cap"><span>{{catalog.text_027}}</span></div></a></li>
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_028}}" width="246" height="226" alt="" loading="lazy"><span class="tile-more">{{catalog.text_029}}</span></div><div class="tile-cap"><span>{{catalog.text_030}}</span></div></a></li>
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_031}}" width="246" height="227" alt="" loading="lazy"><span class="tile-more">{{catalog.text_032}}</span></div><div class="tile-cap"><span>{{catalog.text_033}}</span></div></a></li>
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_034}}" width="246" height="227" alt="" loading="lazy"><span class="tile-more">{{catalog.text_035}}</span></div><div class="tile-cap"><span>{{catalog.text_036}}</span></div></a></li>
+    <li><a href="catalog.html" class="tile"><div class="tile-img"><img src="{{catalog.image_037}}" width="246" height="227" alt="" loading="lazy"><span class="tile-more">{{catalog.text_038}}</span></div><div class="tile-cap"><span>{{catalog.text_039}}</span></div></a></li>
+
+    <li class="is-cta"><a href="#contact" class="cta-tile"><span class="mono">{{catalog.text_040}}</span><p>{{catalog.text_041}}</p><span class="ic"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+  </ul>
+</section>
+
+<!-- ================= НАПРАВЛЕНИЯ ================= -->
+<section class="band-sage" aria-labelledby="dirs-title">
+  <div class="wrap sec">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow mono">{{services.text_001}}</p>
+        <h2 class="h2" id="dirs-title">{{services.text_002}}<br>{{services.text_003}}</h2>
+      </div>
+      <div class="sec-head-r">
+        <p class="muted text-lg">{{services.text_004}}</p>
+      </div>
+    </div>
+
+    <ul class="acc" data-acc>
+      <!-- 01 -->
+      <li class="acc-p t-photo is-on">
+        <img class="acc-bg" src="{{services.image_005}}" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="acc-body" id="dir-1">
+          <span class="mono">{{services.text_006}}</span>
+          <div class="acc-open">
+            <h3>{{services.text_007}}</h3>
+            <p>{{services.text_008}}</p>
+            <a href="stands.html" class="btn btn-light btn-sm">{{services.text_009}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          </div>
+        </div>
+        <button type="button" class="acc-toggle" aria-controls="dir-1" aria-expanded="true"><span class="mono">01</span><span class="vt">{{services.text_010}}</span><span class="plus"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></span></button>
+      </li>
+      <!-- 02 -->
+      <li class="acc-p t-lime">
+        <img class="acc-bg" src="{{services.image_011}}" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="acc-body" id="dir-2">
+          <span class="mono">{{services.text_012}}</span>
+          <div class="acc-open">
+            <h3>{{services.text_013}}</h3>
+            <p>{{services.text_014}}</p>
+            <a href="staff.html" class="btn btn-dark btn-sm">{{services.text_015}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          </div>
+        </div>
+        <button type="button" class="acc-toggle" aria-controls="dir-2" aria-expanded="false"><span class="mono">02</span><span class="vt">{{services.text_016}}</span><span class="plus"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></span></button>
+      </li>
+      <!-- 03 -->
+      <li class="acc-p t-render">
+        <img class="acc-bg" src="{{services.image_017}}" alt="" loading="lazy">
+        <div class="shade"></div>
+        <div class="acc-body" id="dir-3">
+          <span class="mono">{{services.text_018}}</span>
+          <div class="acc-open">
+            <h3>{{services.text_019}}</h3>
+            <p>{{services.text_020}}</p>
+            <a href="rental.html" class="btn btn-dark btn-sm">{{services.text_021}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          </div>
+        </div>
+        <button type="button" class="acc-toggle" aria-controls="dir-3" aria-expanded="false"><span class="mono">03</span><span class="vt">{{services.text_022}}</span><span class="plus"><svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg></span></button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= ПРОЕКТЫ ================= -->
+<section class="wrap sec" id="projects" aria-labelledby="projects-title">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow mono">{{projects.text_001}}</p>
+      <h2 class="h2" id="projects-title">{{projects.text_002}}<br>{{projects.text_003}}</h2>
+    </div>
+    <div class="sec-head-r end">
+      <span class="count mono">{{projects.text_004}}</span>
+      <a href="projects.html" class="btn btn-solid btn-sm">{{projects.text_005}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+  </div>
+
+  <ul class="proj-grid">
+    {{projects_cards}}
+  </ul>
+</section>
+
+<!-- ================= ДИЗАЙН И ПРОИЗВОДСТВО ================= -->
+<section class="wrap sec" aria-labelledby="design-title">
+  <div class="paper split">
+    <div class="split-txt">
+      <p class="eyebrow mono">{{production.text_001}}</p>
+      <h2 class="h2" id="design-title">{{production.text_002}}<br>{{production.text_003}}</h2>
+      <p class="muted text-lg">{{production.text_004}}</p>
+      <ol class="stages">
+        <li><span class="n">01</span>{{production.text_005}}</li>
+        <li><span class="n">02</span>{{production.text_006}}</li>
+        <li><span class="n">03</span>{{production.text_007}}</li>
+        <li><span class="n">04</span>{{production.text_008}}</li>
+        <li><span class="n">05</span>{{production.text_009}}</li>
+        <li><span class="n">06</span>{{production.text_010}}</li>
+      </ol>
+      <a href="stands.html" class="btn btn-dark">{{production.text_011}}<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+
+    <div class="ba-wrap">
+      <div class="ba" data-ba>
+        <img src="{{production.image_012}}" width="511" height="302" alt="{{production.text_013}}" loading="lazy">
+        <div class="ba-sketch" aria-hidden="true">
+          <img src="{{production.image_014}}" alt="">
+        </div>
+        <div class="ba-line"><span class="ba-knob"><svg width="22" height="22" aria-hidden="true"><use href="#i-swap"/></svg></span></div>
+        <span class="chip pos-tl">{{production.text_015}}</span>
+        <span class="chip pos-tr"><span class="dot"></span>{{production.text_016}}</span>
+        <input type="range" class="ba-range" min="0" max="100" value="52" aria-label="Сравнить эскиз и готовый стенд">
+      </div>
+      <p class="hint mono"><svg width="16" height="16" aria-hidden="true"><use href="#i-swap"/></svg>{{production.text_017}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПОРЯДОК РАБОТЫ ================= -->
+<section class="wrap sec" aria-labelledby="steps-title">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow mono">{{steps.text_001}}</p>
+      <h2 class="h2" id="steps-title">{{steps.text_002}}<br>{{steps.text_003}}</h2>
+    </div>
+    <div class="sec-head-r">
+      <p class="muted text-lg">{{steps.text_004}}</p>
+    </div>
+  </div>
+
+  <ol class="steps">
+    <li class="step s1"><div class="top"><span class="num">01</span></div><h3>{{steps.text_005}}</h3><p>{{steps.text_006}}</p></li>
+    <li class="step s2"><div class="top"><span class="num">02</span></div><h3>{{steps.text_007}}</h3><p>{{steps.text_008}}</p></li>
+    <li class="step s3"><div class="top"><span class="num">03</span></div><h3>{{steps.text_009}}</h3><p>{{steps.text_010}}</p></li>
+    <li class="step s4"><div class="top"><span class="num">04</span></div><h3>{{steps.text_011}}</h3><p>{{steps.text_012}}</p></li>
+    <li class="step s5"><div class="top"><span class="num">05</span></div><h3>{{steps.text_013}}</h3><p>{{steps.text_014}}</p></li>
+    <li class="step s6"><div class="top"><span class="num">06</span></div><h3>{{steps.text_015}}</h3><p>{{steps.text_016}}</p></li>
+  </ol>
+</section>
+
+<!-- ================= АРЕНДА ================= -->
+<section class="wrap sec" id="rent" aria-labelledby="rent-title">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow mono">{{rental.text_001}}</p>
+      <h2 class="h2" id="rent-title">{{rental.text_002}}<br>{{rental.text_003}}</h2>
+    </div>
+    <div class="sec-head-r end">
+      <a href="rental.html" class="btn btn-solid btn-sm">{{rental.text_004}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+  </div>
+
+  <div class="rent-grid">
+    <div class="rent-intro">
+      <div class="top">
+        <span class="mono muted">{{rental.text_005}}</span>
+        <p class="big">{{rental.text_006}}</p>
+      </div>
+      <p class="counter" aria-live="polite"><b data-cart-count>0</b><span class="muted"><span data-cart-word data-forms="позиция|позиции|позиций">{{rental.text_007}}</span> {{rental.text_008}}</span></p>
+      <a href="#contact" class="btn btn-white btn-sm">{{rental.text_009}}<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+
+    <article class="prod">
+      <div class="prod-img"><img src="{{rental.image_010}}" width="338" height="335" alt="{{rental.text_011}}" loading="lazy"><span class="chip">{{rental.text_012}}</span></div>
+      <div class="prod-b">
+        <h3>{{rental.text_013}}</h3>
+        <span class="mono">{{rental.text_014}}</span>
+        <div class="prod-f"><span>{{rental.text_015}}</span><button type="button" class="add" data-add="table" data-name="Круглый стол" aria-pressed="false" aria-label="Добавить в подборку: Круглый стол"><svg class="i-plus" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg><svg class="i-check" width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg></button></div>
+      </div>
+    </article>
+
+    <article class="prod">
+      <div class="prod-img"><img src="{{rental.image_016}}" width="337" height="335" alt="{{rental.text_017}}" loading="lazy"><span class="chip">{{rental.text_018}}</span></div>
+      <div class="prod-b">
+        <h3>{{rental.text_019}}</h3>
+        <span class="mono">{{rental.text_020}}</span>
+        <div class="prod-f"><span>{{rental.text_021}}</span><button type="button" class="add" data-add="stool" data-name="Барный стул" aria-pressed="false" aria-label="Добавить в подборку: Барный стул"><svg class="i-plus" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg><svg class="i-check" width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg></button></div>
+      </div>
+    </article>
+
+    <article class="prod">
+      <div class="prod-img"><img src="{{rental.image_022}}" width="336" height="335" alt="{{rental.text_023}}" loading="lazy"><span class="chip">{{rental.text_024}}</span></div>
+      <div class="prod-b">
+        <h3>{{rental.text_025}}</h3>
+        <span class="mono">{{rental.text_026}}</span>
+        <div class="prod-f"><span>{{rental.text_027}}</span><button type="button" class="add" data-add="sofa" data-name="Двухместный диван" aria-pressed="false" aria-label="Добавить в подборку: Двухместный диван"><svg class="i-plus" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg><svg class="i-check" width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg></button></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= О КОМПАНИИ ================= -->
+<section class="wrap about" aria-labelledby="about-title">
+  <div class="about-grid">
+    <div>
+      <p class="eyebrow mono">{{about.text_001}}</p>
+      <h2 class="statement" id="about-title">{{about.text_002}}<br>{{about.text_003}}<br><span class="mark">{{about.text_004}}</span></h2>
+    </div>
+    <div class="about-r">
+      <p>{{about.text_005}}</p>
+      <a href="about.html" class="btn btn-dark">{{about.text_006}}<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      <div class="about-meta"><span class="mono">{{about.text_007}}</span><span class="mono">{{about.text_008}}</span></div>
+    </div>
+  </div>
+  <div class="about-pill"><img src="{{about.image_009}}" alt="{{about.text_010}}" loading="lazy"><span class="about-word" aria-hidden="true">{{about.text_011}}</span></div>
+</section>
+
+<!-- ================= КЛИЕНТЫ ================= -->
+<section class="wrap" aria-labelledby="clients-title">
+  <div class="clients">
+    <h2 class="h3" id="clients-title">{{clients.text_001}}</h2>
+    <!-- Замените .slot на <li><img src="../img/logo-....svg" alt="Название"></li> после согласования -->
+    <ul class="logos">
+      <li class="slot"><img src="{{clients.image_002}}" alt="{{clients.text_003}}" loading="lazy"></li>
+      <li class="slot"><img src="{{clients.image_004}}" alt="{{clients.text_005}}" loading="lazy"></li>
+      <li class="slot"><img src="{{clients.image_006}}" alt="{{clients.text_007}}" loading="lazy"></li>
+      <li class="slot"><img src="{{clients.image_008}}" alt="{{clients.text_009}}" loading="lazy"></li>
+      <li class="slot"><img src="{{clients.image_010}}" alt="{{clients.text_011}}" loading="lazy"></li>
+      <li class="slot"><img src="{{clients.image_012}}" alt="{{clients.text_013}}" loading="lazy"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= ОТЗЫВЫ КЛИЕНТОВ ================= -->
+<!-- ВНИМАНИЕ: отзывы, имена и рейтинги ниже — демо-наполнение для макета. Перед публикацией замените на реальные. -->
+<section class="band-sage" aria-labelledby="reviews-title">
+  <div class="wrap sec">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow mono">{{reviews.text_001}}</p>
+        <h2 class="h2" id="reviews-title">{{reviews.text_002}}</h2>
+      </div>
+      <div class="rev-nav">
+        <button type="button" class="rev-arrow prev" data-rev-prev aria-label="Предыдущие отзывы"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <button type="button" class="rev-arrow next" data-rev-next aria-label="Следующие отзывы"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+
+    <div class="rev-grid">
+      <div class="rev-sum">
+        <span class="rev-score">4,9</span>
+        <span class="stars" aria-label="Оценка 5 из 5"><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg></span>
+        <p>{{reviews.text_003}}</p>
+        <ul class="rev-src">
+          <li><svg class="home-style-2 pin" width="22" height="22" aria-hidden="true"><use href="#i-pin"/></svg>{{reviews.text_004}}<b>4,9</b></li>
+          <li><svg class="home-style-3 pin" width="22" height="22" aria-hidden="true"><use href="#i-pin"/></svg>{{reviews.text_005}}<b>4,9</b></li>
+          <li><svg class="home-style-4 pin" width="22" height="22" aria-hidden="true"><use href="#i-pin"/></svg>{{reviews.text_006}}<b>4,8</b></li>
+        </ul>
+      </div>
+
+      <div class="rev-main">
+        <ul class="rev-track" data-rev-track tabindex="0" aria-label="Отзывы клиентов">
+        <li class="rev-card">
+          <div class="rev-head"><span class="avatar av-ink" aria-hidden="true">{{reviews.text_007}}</span><div class="rev-who"><b>{{reviews.text_008}}</b><span>{{reviews.text_009}}</span><span>{{reviews.text_010}}</span></div></div>
+          <span class="stars" aria-label="Оценка 5 из 5"><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="rev-text">{{reviews.text_011}}</p>
+          <div class="rev-foot"><svg width="16" height="16" aria-hidden="true"><use href="#i-flag"/></svg>{{reviews.text_012}}</div>
+        </li>
+        <li class="rev-card">
+          <div class="rev-head"><span class="avatar av-lime" aria-hidden="true">{{reviews.text_013}}</span><div class="rev-who"><b>{{reviews.text_014}}</b><span>{{reviews.text_015}}</span><span>{{reviews.text_016}}</span></div></div>
+          <span class="stars" aria-label="Оценка 5 из 5"><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="rev-text">{{reviews.text_017}}</p>
+          <div class="rev-foot"><svg width="16" height="16" aria-hidden="true"><use href="#i-flag"/></svg>{{reviews.text_018}}</div>
+        </li>
+        <li class="rev-card">
+          <div class="rev-head"><span class="avatar av-sage" aria-hidden="true">{{reviews.text_019}}</span><div class="rev-who"><b>{{reviews.text_020}}</b><span>{{reviews.text_021}}</span><span>{{reviews.text_022}}</span></div></div>
+          <span class="stars" aria-label="Оценка 5 из 5"><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="rev-text">{{reviews.text_023}}</p>
+          <div class="rev-foot"><svg width="16" height="16" aria-hidden="true"><use href="#i-flag"/></svg>{{reviews.text_024}}</div>
+        </li>
+        <li class="rev-card">
+          <div class="rev-head"><span class="avatar av-ink" aria-hidden="true">{{reviews.text_025}}</span><div class="rev-who"><b>{{reviews.text_026}}</b><span>{{reviews.text_027}}</span><span>{{reviews.text_028}}</span></div></div>
+          <span class="stars" aria-label="Оценка 5 из 5"><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="rev-text">{{reviews.text_029}}</p>
+          <div class="rev-foot"><svg width="16" height="16" aria-hidden="true"><use href="#i-flag"/></svg>{{reviews.text_030}}</div>
+        </li>
+        <li class="rev-card">
+          <div class="rev-head"><span class="avatar av-lime" aria-hidden="true">{{reviews.text_031}}</span><div class="rev-who"><b>{{reviews.text_032}}</b><span>{{reviews.text_033}}</span><span>{{reviews.text_034}}</span></div></div>
+          <span class="stars" aria-label="Оценка 5 из 5"><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="rev-text">{{reviews.text_035}}</p>
+          <div class="rev-foot"><svg width="16" height="16" aria-hidden="true"><use href="#i-flag"/></svg>{{reviews.text_036}}</div>
+        </li>
+        <li class="rev-card">
+          <div class="rev-head"><span class="avatar av-sage" aria-hidden="true">{{reviews.text_037}}</span><div class="rev-who"><b>{{reviews.text_038}}</b><span>{{reviews.text_039}}</span><span>{{reviews.text_040}}</span></div></div>
+          <span class="stars" aria-label="Оценка 5 из 5"><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg><svg width="18" height="18" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <p class="rev-text">{{reviews.text_041}}</p>
+          <div class="rev-foot"><svg width="16" height="16" aria-hidden="true"><use href="#i-flag"/></svg>{{reviews.text_042}}</div>
+        </li>
+        </ul>
+        <div class="rev-bottom">
+          <button type="button" class="rev-arrow prev rev-arrow-m" data-rev-prev aria-label="Предыдущие отзывы"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <div class="rev-bar" aria-hidden="true"><span data-rev-bar></span></div>
+          <button type="button" class="rev-arrow next rev-arrow-m" data-rev-next aria-label="Следующие отзывы"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="wrap sec" id="faq" aria-labelledby="faq-title">
+  <div class="faq">
+    <div class="faq-l">
+      <div>
+        <p class="eyebrow mono">{{faq.text_001}}</p>
+        <h2 class="h2" id="faq-title">{{faq.text_002}}<br>{{faq.text_003}}</h2>
+      </div>
+      <div>
+        <a href="#contact" class="btn btn-dark">{{faq.text_004}}<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+
+    <div class="faq-r">
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">01</span><span class="qt">{{faq.text_005}}</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">{{faq.text_006}}</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">02</span><span class="qt">{{faq.text_007}}</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">{{faq.text_008}}</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">03</span><span class="qt">{{faq.text_009}}</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">{{faq.text_010}}</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">04</span><span class="qt">{{faq.text_011}}</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">{{faq.text_012}}</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">05</span><span class="qt">{{faq.text_013}}</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">{{faq.text_014}}</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">06</span><span class="qt">{{faq.text_015}}</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">{{faq.text_016}}</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ФОРМА ЗАЯВКИ ================= -->
+<section class="wrap sec" id="contact" aria-labelledby="contact-title">
+  <div class="cta">
+    <div class="cta-l">
+      <svg class="cta-sketch" viewBox="0 0 700 600" fill="none" stroke="#141812" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M363.9 245.9 L210.5 334.5 M403.7 268.9 L250.3 357.5 M443.5 291.9 L290.2 380.5 M483.4 314.9 L330.0 403.5 M523.2 337.9 L369.8 426.5 M296.1 245.9 L529.2 380.5 M256.3 268.9 L489.3 403.5 M216.5 291.9 L449.5 426.5" stroke-width=".7" stroke-dasharray="3 5"/>
+        <path d="M156.7 308.9 L423.6 463.0 M583.0 354.9 L395.7 463.0 M316.1 78.9 L583.0 233.0 M330.0 241.1 L330.0 70.9 M569.0 379.1 L569.0 208.9 M170.7 317.0 L132.8 338.8 M409.7 455.0 L371.8 476.8 M569.0 363.0 L606.9 384.9 M409.7 455.0 L447.5 476.8 M330.0 225.0 L292.2 203.2 M330.0 87.0 L292.2 65.2" stroke-width=".7"/>
+        <path d="M138.8 335.4 L377.8 473.4 M600.9 381.4 L441.5 473.4 M298.1 206.6 L298.1 68.6" stroke-width="1"/>
+        <path d="M132.8 341.4 L144.8 329.4 M371.8 479.4 L383.8 467.4 M594.9 387.4 L606.9 375.4 M435.5 479.4 L447.5 467.4 M292.1 212.6 L304.1 200.6 M292.1 74.6 L304.1 62.6" stroke-width="1.6"/>
+        <path d="M308.1 189.4 L244.4 226.1 M308.1 189.4 L320.0 196.2 M308.1 168.7 L244.4 205.4 M308.1 168.7 L320.0 175.6 M308.1 147.9 L244.4 184.7 M308.1 147.9 L320.0 154.8 M529.2 259.5 L528.9 255.4 L528.1 251.1 L526.8 246.6 L525.0 242.2 L522.8 237.9 L520.2 233.8 L517.2 230.1 L514.0 226.7 L510.7 223.8 L507.3 221.6 L503.8 219.9 L500.5 218.9 L497.3 218.6 L494.4 218.9 L491.8 220.0 L489.5 221.7 L487.8 224.1 L486.4 227.0 L485.6 230.4 L485.4 234.2 L485.6 238.3 L486.4 242.6 L487.8 247.1 L489.5 251.5 L491.8 255.8 L494.4 259.9 L497.3 263.6 L500.5 267.0 L503.8 269.9 L507.3 272.1 L510.7 273.8 L514.0 274.8 L517.2 275.1 L520.2 274.8 L522.8 273.7 L525.0 272.0 L526.8 269.6 L528.1 266.7 L528.9 263.3 L529.2 259.5 M520.0 254.2 L519.9 251.8 L519.4 249.3 L518.6 246.7 L517.6 244.2 L516.3 241.6 L514.8 239.3 L513.1 237.1 L511.2 235.1 L509.3 233.5 L507.3 232.1 L505.3 231.2 L503.3 230.6 L501.5 230.4 L499.8 230.6 L498.3 231.2 L497.0 232.2 L495.9 233.6 L495.2 235.3 L494.7 237.3 L494.5 239.5 L494.7 241.9 L495.2 244.4 L495.9 247.0 L497.0 249.5 L498.3 252.1 L499.8 254.4 L501.5 256.6 L503.3 258.6 L505.3 260.2 L507.3 261.6 L509.3 262.5 L511.2 263.1 L513.1 263.3 L514.8 263.1 L516.3 262.5 L517.6 261.5 L518.6 260.1 L519.4 258.4 L519.9 256.4 L520.0 254.2 M293.7 350.4 L293.7 305.3 M301.3 354.7 L301.3 309.6 M308.9 359.1 L308.9 314.0 M316.5 363.5 L316.5 318.4 M324.0 367.8 L324.0 322.8 M331.6 372.2 L331.6 327.1 M339.2 376.6 L339.2 331.5 M346.7 380.9 L346.7 335.9" stroke-width=".9"/>
+        <path d="M330.0 225.0 L569.0 363.0 M569.0 363.0 L409.7 455.0 M409.7 455.0 L170.7 317.0 M170.7 317.0 L330.0 225.0 M330.0 219.5 L569.0 357.5 M569.0 357.5 L409.7 449.5 M409.7 449.5 L170.7 311.5 M170.7 311.5 L330.0 219.5 M330.0 225.0 L330.0 219.5 M569.0 363.0 L569.0 357.5 M409.7 455.0 L409.7 449.5 M170.7 317.0 L170.7 311.5 M330.0 219.5 L569.0 357.5 M569.0 357.5 L563.0 360.9 M563.0 360.9 L324.0 222.9 M324.0 222.9 L330.0 219.5 M330.0 87.0 L569.0 225.0 M569.0 225.0 L563.0 228.4 M563.0 228.4 L324.0 90.4 M324.0 90.4 L330.0 87.0 M330.0 219.5 L330.0 87.0 M569.0 357.5 L569.0 225.0 M563.0 360.9 L563.0 228.4 M324.0 222.9 L324.0 90.4 M330.0 219.5 L336.0 222.9 M336.0 222.9 L216.5 291.9 M216.5 291.9 L210.5 288.5 M210.5 288.5 L330.0 219.5 M330.0 87.0 L336.0 90.4 M336.0 90.4 L216.5 159.4 M216.5 159.4 L210.5 156.0 M210.5 156.0 L330.0 87.0 M330.0 219.5 L330.0 87.0 M336.0 222.9 L336.0 90.4 M216.5 291.9 L216.5 159.4 M210.5 288.5 L210.5 156.0 M387.8 129.5 L499.3 193.9 M499.3 193.9 L491.3 198.5 M491.3 198.5 L379.8 134.2 M379.8 134.2 L387.8 129.5 M387.8 102.0 L499.3 166.3 M499.3 166.3 L491.3 171.0 M491.3 171.0 L379.8 106.6 M379.8 106.6 L387.8 102.0 M387.8 129.5 L387.8 102.0 M499.3 193.9 L499.3 166.3 M491.3 198.5 L491.3 171.0 M379.8 134.2 L379.8 106.6 M194.6 313.8 L196.5 314.9 M196.5 314.9 L192.6 317.2 M192.6 317.2 L190.6 316.1 M190.6 316.1 L194.6 313.8 M194.6 181.3 L196.5 182.4 M196.5 182.4 L192.6 184.8 M192.6 184.8 L190.6 183.6 M190.6 183.6 L194.6 181.3 M194.6 313.8 L194.6 181.3 M196.5 314.9 L196.5 182.4 M192.6 317.2 L192.6 184.8 M190.6 316.1 L190.6 183.6 M198.5 316.1 L200.5 317.2 M200.5 317.2 L196.5 319.5 M196.5 319.5 L194.6 318.4 M194.6 318.4 L198.5 316.1 M198.5 183.6 L200.5 184.8 M200.5 184.8 L196.5 187.0 M196.5 187.0 L194.6 185.9 M194.6 185.9 L198.5 183.6 M198.5 316.1 L198.5 183.6 M200.5 317.2 L200.5 184.8 M196.5 319.5 L196.5 187.0 M194.6 318.4 L194.6 185.9 M202.5 318.4 L204.5 319.5 M204.5 319.5 L200.5 321.8 M200.5 321.8 L198.5 320.7 M198.5 320.7 L202.5 318.4 M202.5 185.9 L204.5 187.0 M204.5 187.0 L200.5 189.3 M200.5 189.3 L198.5 188.2 M198.5 188.2 L202.5 185.9 M202.5 318.4 L202.5 185.9 M204.5 319.5 L204.5 187.0 M200.5 321.8 L200.5 189.3 M198.5 320.7 L198.5 188.2 M206.5 320.7 L208.5 321.8 M208.5 321.8 L204.5 324.1 M204.5 324.1 L202.5 323.0 M202.5 323.0 L206.5 320.7 M206.5 188.2 L208.5 189.3 M208.5 189.3 L204.5 191.6 M204.5 191.6 L202.5 190.5 M202.5 190.5 L206.5 188.2 M206.5 320.7 L206.5 188.2 M208.5 321.8 L208.5 189.3 M204.5 324.1 L204.5 191.6 M202.5 323.0 L202.5 190.5 M210.5 323.0 L212.5 324.1 M212.5 324.1 L208.5 326.4 M208.5 326.4 L206.5 325.3 M206.5 325.3 L210.5 323.0 M210.5 190.5 L212.5 191.6 M212.5 191.6 L208.5 193.9 M208.5 193.9 L206.5 192.8 M206.5 192.8 L210.5 190.5 M210.5 323.0 L210.5 190.5 M212.5 324.1 L212.5 191.6 M208.5 326.4 L208.5 193.9 M206.5 325.3 L206.5 192.8 M387.8 425.3 L389.8 426.5 M389.8 426.5 L385.8 428.8 M385.8 428.8 L383.8 427.6 M383.8 427.6 L387.8 425.3 M387.8 292.8 L389.8 294.0 M389.8 294.0 L385.8 296.3 M385.8 296.3 L383.8 295.1 M383.8 295.1 L387.8 292.8 M387.8 425.3 L387.8 292.8 M389.8 426.5 L389.8 294.0 M385.8 428.8 L385.8 296.3 M383.8 427.6 L383.8 295.1 M391.7 427.6 L393.7 428.8 M393.7 428.8 L389.8 431.1 M389.8 431.1 L387.8 429.9 M387.8 429.9 L391.7 427.6 M391.7 295.1 L393.7 296.3 M393.7 296.3 L389.8 298.6 M389.8 298.6 L387.8 297.4 M387.8 297.4 L391.7 295.1 M391.7 427.6 L391.7 295.1 M393.7 428.8 L393.7 296.3 M389.8 431.1 L389.8 298.6 M387.8 429.9 L387.8 297.4 M395.7 429.9 L397.7 431.1 M397.7 431.1 L393.7 433.4 M393.7 433.4 L391.7 432.2 M391.7 432.2 L395.7 429.9 M395.7 297.4 L397.7 298.6 M397.7 298.6 L393.7 300.9 M393.7 300.9 L391.7 299.8 M391.7 299.8 L395.7 297.4 M395.7 429.9 L395.7 297.4 M397.7 431.1 L397.7 298.6 M393.7 433.4 L393.7 300.9 M391.7 432.2 L391.7 299.8 M399.7 432.2 L401.7 433.4 M401.7 433.4 L397.7 435.7 M397.7 435.7 L395.7 434.5 M395.7 434.5 L399.7 432.2 M399.7 299.8 L401.7 300.9 M401.7 300.9 L397.7 303.2 M397.7 303.2 L395.7 302.0 M395.7 302.0 L399.7 299.8 M399.7 432.2 L399.7 299.8 M401.7 433.4 L401.7 300.9 M397.7 435.7 L397.7 303.2 M395.7 434.5 L395.7 302.0 M403.7 434.5 L405.7 435.7 M405.7 435.7 L401.7 438.0 M401.7 438.0 L399.7 436.8 M399.7 436.8 L403.7 434.5 M403.7 302.0 L405.7 303.2 M405.7 303.2 L401.7 305.5 M401.7 305.5 L399.7 304.4 M399.7 304.4 L403.7 302.0 M403.7 434.5 L403.7 302.0 M405.7 435.7 L405.7 303.2 M401.7 438.0 L401.7 305.5 M399.7 436.8 L399.7 304.4 M194.6 179.0 L411.7 304.3 M411.7 304.3 L403.7 308.9 M403.7 308.9 L186.6 183.6 M186.6 183.6 L194.6 179.0 M194.6 168.9 L411.7 294.2 M411.7 294.2 L403.7 298.8 M403.7 298.8 L186.6 173.5 M186.6 173.5 L194.6 168.9 M194.6 179.0 L194.6 168.9 M411.7 304.3 L411.7 294.2 M403.7 308.9 L403.7 298.8 M186.6 183.6 L186.6 173.5 M310.1 332.2 L377.8 371.3 M377.8 371.3 L353.9 385.1 M353.9 385.1 L286.2 346.0 M286.2 346.0 L310.1 332.2 M310.1 287.1 L377.8 326.2 M377.8 326.2 L353.9 340.0 M353.9 340.0 L286.2 300.9 M286.2 300.9 L310.1 287.1 M310.1 332.2 L310.1 287.1 M377.8 371.3 L377.8 326.2 M353.9 385.1 L353.9 340.0 M286.2 346.0 L286.2 300.9 M308.1 283.6 L383.8 327.3 M383.8 327.3 L355.9 343.4 M355.9 343.4 L280.2 299.7 M280.2 299.7 L308.1 283.6 M308.1 280.9 L383.8 324.6 M383.8 324.6 L355.9 340.7 M355.9 340.7 L280.2 297.0 M280.2 297.0 L308.1 280.9 M308.1 283.6 L308.1 280.9 M383.8 327.3 L383.8 324.6 M355.9 343.4 L355.9 340.7 M280.2 299.7 L280.2 297.0" stroke-width="1.4"/>
+        <path d="M242.4 340.0 L242.4 282.0 M233.4 290.0 L251.4 290.0 M242.4 282.0 m-6 -9 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0 M242.4 315.0 L235.4 340.0 M242.4 315.0 L249.4 340.0" stroke-width="1.1"/>
+        <path d="M405.6 521.7 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 M397.6 521.7 L445.6 521.7 M421.6 497.7 L421.6 545.7" stroke-width=".9"/>
+      </svg>
+      <h2 class="h2" id="contact-title">{{contact.text_001}}</h2>
+      <p>{{contact.text_002}}</p>
+      <address class="contacts">
+        <div class="row"><span class="mono">{{contact.text_003}}</span><a href="{{contact.text_004}}">+994 50 316 16 61</a></div>
+        <div class="row"><span class="mono">{{contact.text_005}}</span><a href="{{contact.text_006}}">{{contact.text_007}}</a></div>
+        <div class="row"><span class="mono">{{contact.text_008}}</span><span class="v">{{contact.text_009}}<br>{{contact.text_010}}</span></div>
+      </address>
+    </div>
+
+    <form class="cta-f" action="/api/lead" enctype="multipart/form-data" method="post" data-lead-form>
+{{form_fields_lead}}
+      <div class="grid2">
+        <div class="fld"><label class="lbl" for="f-name">{{contact.text_011}}</label><input class="inp" id="f-name" name="name" type="text" autocomplete="name" placeholder="{{contact.text_012}}" required></div>
+        <div class="fld"><label class="lbl" for="f-company">{{contact.text_013}}</label><input class="inp" id="f-company" name="company" type="text" autocomplete="organization" placeholder="{{contact.text_014}}"></div>
+      </div>
+      <div class="grid2">
+        <div class="fld"><label class="lbl" for="f-phone">{{contact.text_015}}</label><input class="inp" id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="{{contact.text_016}}" required></div>
+        <div class="fld"><label class="lbl" for="f-email">{{contact.text_017}}</label><input class="inp" id="f-email" name="email" type="email" autocomplete="email" placeholder="{{contact.text_018}}"></div>
+      </div>
+
+      <fieldset class="fld">
+        <legend class="lbl">{{contact.text_019}}</legend>
+        <div class="topics">
+          <label class="topic"><input type="radio" name="topic" value="stand" checked><span>{{contact.text_020}}</span></label>
+          <label class="topic"><input type="radio" name="topic" value="staff"><span>{{contact.text_021}}</span></label>
+          <label class="topic"><input type="radio" name="topic" value="rent"><span>{{contact.text_022}}</span></label>
+          <label class="topic"><input type="radio" name="topic" value="other"><span>{{contact.text_023}}</span></label>
+        </div>
+      </fieldset>
+
+      <div class="fld"><label class="lbl" for="f-task">{{contact.text_024}}</label><textarea class="inp" id="f-task" name="message" placeholder="{{contact.text_025}}"></textarea></div>
+
+      <label class="chk"><input type="checkbox" name="consent" required><span>{{contact.text_026}} <a href="#">{{contact.text_027}}</a>. *</span></label>
+
+      <button type="submit" class="btn btn-dark btn-block">{{contact.text_028}}<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+      <div class="sent" role="status" tabindex="-1" hidden><span class="ok"><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg></span>{{contact.text_029}}</div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= ФОРМА РАСЧЁТА ================= -->
+<dialog class="quote-modal" id="quote-modal" aria-labelledby="quote-title">
+  <div class="quote-box">
+    <button type="button" class="icon-btn quote-close" data-quote-close aria-label="Закрыть"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <p class="eyebrow mono">{{quote.text_001}}</p>
+    <h2 class="h2" id="quote-title">{{quote.text_002}}</h2>
+    <form class="quote-form" action="/api/lead" enctype="multipart/form-data" method="post" data-quote-form>
+{{form_fields_quote}}
+      <div class="grid2"><div class="fld"><label class="lbl" for="q-name">{{quote.text_003}}</label><input class="inp" id="q-name" name="name" type="text" autocomplete="name" required></div><div class="fld"><label class="lbl" for="q-company">{{quote.text_004}}</label><input class="inp" id="q-company" name="company" type="text" autocomplete="organization"></div></div>
+      <div class="fld"><label class="lbl" for="q-contact">{{quote.text_005}}</label><input class="inp" id="q-contact" name="contact" type="text" required></div>
+      <div class="grid2"><div class="fld"><label class="lbl" for="q-exhibition">{{quote.text_006}}</label><input class="inp" id="q-exhibition" name="exhibition" type="text" ></div><div class="fld"><label class="lbl" for="q-area">{{quote.text_007}}</label><input class="inp" id="q-area" name="area" type="number" min="0" step="any"></div></div>
+      <div class="grid2"><div class="fld"><label class="lbl" for="q-date">{{quote.text_008}}</label><input class="inp" id="q-date" name="event_date" type="date" ></div><div class="fld"><label class="lbl" for="q-structure">{{quote.text_009}}</label><input class="inp" id="q-structure" name="structure" type="text" ></div></div>
+      <div class="fld"><label class="lbl" for="q-task">{{quote.text_010}}</label><textarea class="inp" id="q-task" name="message"></textarea></div>
+      <div class="fld"><label class="lbl" for="q-file">{{quote.text_011}}</label><input class="inp quote-file" id="q-file" name="brief" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.rtf,.odt,.ods,.odp" aria-describedby="q-file-hint"><p class="muted quote-hint" id="q-file-hint">{{quote.text_012}}</p></div>
+      <label class="chk"><input type="checkbox" name="consent" required><span>{{quote.text_013}} <a href="#">{{quote.text_014}}</a>. *</span></label>
+      <button type="submit" class="btn btn-dark btn-block">{{quote.text_015}}<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+      <div class="sent" role="status" tabindex="-1" data-quote-status hidden></div>
+    </form>
+  </div>
+</dialog>
+
+
+<!-- ================= ПОДВАЛ ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-card">
+      <div class="foot-grid">
+        <div class="fcol fbrand">
+          <a href="index.html" class="logo" aria-label="ADVEX — на главную">{{footer.text_001}}<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+          <p>{{footer.text_002}}</p>
+          <span class="mono muted">{{footer.text_003}}</span>
+        </div>
+        <nav class="fcol" aria-label="Направления">
+          <span class="mono">{{footer.text_004}}</span>
+          <ul>
+            <li><a href="catalog.html">{{footer.text_005}}</a></li>
+            <li><a href="stands.html">{{footer.text_006}}</a></li>
+            <li><a href="staff.html">{{footer.text_007}}</a></li>
+            <li><a href="rental.html">{{footer.text_008}}</a></li>
+            <li><a href="projects.html">{{footer.text_009}}</a></li>
+          </ul>
+        </nav>
+        <nav class="fcol" aria-label="Конструкции">
+          <span class="mono">{{footer.text_010}}</span>
+          <ul>
+            <li><a href="catalog.html">{{footer.text_011}}</a></li>
+            <li><a href="catalog.html">{{footer.text_012}}</a></li>
+            <li><a href="catalog.html">{{footer.text_013}}</a></li>
+            <li><a href="catalog.html">{{footer.text_014}}</a></li>
+          </ul>
+        </nav>
+        <div class="fcol">
+          <span class="mono">{{footer.text_015}}</span>
+          <address>{{footer.text_016}}</address>
+          <a href="{{footer.text_017}}">+994 50 316 16 61</a>
+          <a href="{{footer.text_018}}">{{footer.text_019}}</a>
+          <span class="spacer"></span>
+          <a href="about.html">{{footer.text_020}}</a>
+          <a href="contacts.html">{{footer.text_021}}</a>
+          <a href="delivery.html">{{footer.text_022}}</a>
+          <a href="#">{{footer.text_023}}</a>
+        </div>
+      </div>
+      <div class="foot-bar">
+        <span>{{footer.text_024}}</span>
+        <nav aria-label="Язык сайта"><a href="../index.html" hreflang="az" lang="az">{{footer.text_025}}</a> / <a href="../ru/index.html" hreflang="ru" lang="ru" aria-current="page">{{footer.text_026}}</a> / <a href="../en/index.html" hreflang="en" lang="en">{{footer.text_027}}</a></nav>
+        <span>{{footer.text_028}}</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="to-top" data-to-top aria-label="Наверх"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+
+
+<script src="/assets/home.js" defer></script>
+<script src="/assets/forms.js" defer></script>
+</body>
+</html>

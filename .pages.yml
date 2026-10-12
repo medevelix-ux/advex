@@ -1,0 +1,5777 @@
+{
+  "media": {
+    "input": "img/home-uploads",
+    "output": "/img/home-uploads",
+    "extensions": [
+      "png",
+      "jpg",
+      "jpeg",
+      "webp"
+    ],
+    "rename": "safe"
+  },
+  "content": [
+    {
+      "name": "home_ru",
+      "label": "Главная · RU",
+      "type": "file",
+      "path": "content/home/ru.json",
+      "format": "json",
+      "fields": [
+        {
+          "name": "seo",
+          "label": "SEO",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "SEO title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta description",
+              "type": "text"
+            },
+            {
+              "name": "text_003",
+              "label": "К содержимому",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "header",
+          "label": "Шапка и навигация",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Полиграфия",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Весь каталог",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Модели",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Аренда",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "AZ",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Azərbaycanca",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Русский",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "EN",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "English",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Обсудить проект",
+              "type": "string"
+            },
+            {
+              "name": "text_030",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_031",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_032",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_034",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_035",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_036",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "text_037",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_038",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Полиграфия",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "text_042",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "text_043",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_044",
+              "label": "Весь каталог →",
+              "type": "string"
+            },
+            {
+              "name": "text_045",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_046",
+              "label": "Модели",
+              "type": "string"
+            },
+            {
+              "name": "text_047",
+              "label": "Аренда",
+              "type": "string"
+            },
+            {
+              "name": "text_048",
+              "label": "Проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_049",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_050",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_051",
+              "label": "AZ",
+              "type": "string"
+            },
+            {
+              "name": "text_052",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_053",
+              "label": "EN",
+              "type": "string"
+            },
+            {
+              "name": "text_054",
+              "label": "Обсудить проект",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "hero",
+          "label": "Первый экран",
+          "type": "object",
+          "fields": [
+            {
+              "name": "image_001",
+              "label": "Изображение: bg_m.png",
+              "type": "image"
+            },
+            {
+              "name": "image_002",
+              "label": "Изображение: bg.png",
+              "type": "image"
+            },
+            {
+              "name": "text_003",
+              "label": "Описание изображения: Стенд Sensemi Azerbaijan с деревянными рейками — проект ADVE",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Дизайн и изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Заголовок: Выставочные стенды.",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Заголовок: Ваша идея —",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: под ключ.",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Выставочные стенды под ключ — от первой идеи до встречи с вашими клиентами.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Рассчитать стоимость",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Смотреть проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Аренда оборудования",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "catalog",
+          "label": "Каталог",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "От идеи — к конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Найдём форму",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: для вашей идеи.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Мобильные решения и индивидуальные пространства для вашего бренда.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Весь каталог",
+              "type": "string"
+            },
+            {
+              "name": "image_006",
+              "label": "Изображение: 01-Ролл-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_007",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "image_009",
+              "label": "Изображение: 02-Поп-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_010",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: 03-Баннерные-стенды.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "image_015",
+              "label": "Изображение: 04-Фолд-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_016",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Индивидуальный проект",
+              "type": "string"
+            },
+            {
+              "name": "image_019",
+              "label": "Изображение: 07-Выставочные-застройки.png",
+              "type": "image"
+            },
+            {
+              "name": "text_020",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "image_022",
+              "label": "Изображение: 05-Пресс-волл.png",
+              "type": "image"
+            },
+            {
+              "name": "text_023",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "image_025",
+              "label": "Изображение: 06-Тканевые-стенды.png",
+              "type": "image"
+            },
+            {
+              "name": "text_026",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "image_028",
+              "label": "Изображение: 08-Ресепшен.png",
+              "type": "image"
+            },
+            {
+              "name": "text_029",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_030",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "image_031",
+              "label": "Изображение: 10-Промостойки.png",
+              "type": "image"
+            },
+            {
+              "name": "text_032",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "image_034",
+              "label": "Изображение: 11-Рекламные-вывески.png",
+              "type": "image"
+            },
+            {
+              "name": "text_035",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_036",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "image_037",
+              "label": "Изображение: 12-Буклетницы.png",
+              "type": "image"
+            },
+            {
+              "name": "text_038",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Нет нужной формы?",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Сделаем конструкцию по вашему эскизу.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "services",
+          "label": "Направления",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Три направления. Одна команда.",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Всё для вашего",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: участия в выставке.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Выберите направление — или объедините все три в одном проекте.",
+              "type": "string"
+            },
+            {
+              "name": "image_005",
+              "label": "Изображение: Дизайн%20и%20сборка%20выставочного%20стенда-2.png",
+              "type": "image"
+            },
+            {
+              "name": "text_006",
+              "label": "01 / Дизайн и производство",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Пространства, созданные вокруг вашего бренда.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "image_011",
+              "label": "Изображение: Команда%20профессиональных%20хостов%20на%20выставке-1.png",
+              "type": "image"
+            },
+            {
+              "name": "text_012",
+              "label": "02 / Персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Люди, с которых начинается знакомство.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "image_017",
+              "label": "Изображение: Премиальный%20прокат%20оборудования%20для%20мероприятий-3.png",
+              "type": "image"
+            },
+            {
+              "name": "text_018",
+              "label": "03 / Оборудование",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Заголовок: Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Мебель и техника для комфортной работы.",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Аренда оборудования",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "projects",
+          "label": "Проекты на главной",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Проекты ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Пространства,",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: которые запоминают.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "04 проекта в подборке",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Все проекты",
+              "type": "string"
+            },
+            {
+              "name": "items",
+              "label": "Карточки проектов — добавить / удалить / переставить",
+              "type": "object",
+              "list": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Название",
+                  "type": "string"
+                },
+                {
+                  "name": "subtitle",
+                  "label": "Описание",
+                  "type": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Фотография",
+                  "type": "image"
+                },
+                {
+                  "name": "alt",
+                  "label": "Описание фотографии",
+                  "type": "string"
+                },
+                {
+                  "name": "link",
+                  "label": "Ссылка",
+                  "type": "string"
+                },
+                {
+                  "name": "badge",
+                  "label": "Подпись на фотографии",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "production",
+          "label": "Дизайн и производство",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Дизайн и производство",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: От чистого листа",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: до готового стенда.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Объединяем проектирование, визуальную концепцию и организацию производства ",
+              "type": "text"
+            },
+            {
+              "name": "text_005",
+              "label": "Проектирование",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Изготовление",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Доставка",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Монтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Демонтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: final.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Описание изображения: Готовый стенд Sensemi Azerbaijan",
+              "type": "string"
+            },
+            {
+              "name": "image_014",
+              "label": "Изображение: eskiz.png",
+              "type": "image"
+            },
+            {
+              "name": "text_015",
+              "label": "Эскиз",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Реализация",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Потяните, чтобы увидеть путь от эскиза до стенда",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "steps",
+          "label": "Порядок работы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Порядок работы",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: От первого разговора",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: до открытия выставки.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Шесть понятных шагов — каждый поднимает проект на ступень ближе к открытию.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Заголовок: Знакомство",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Обсуждаем цели, площадку и формат участия.",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: Концепция",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Находим идею, которая раскрывает ваш бренд.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Заголовок: Дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Прорабатываем планировку и визуальное решение.",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Заголовок: Согласование",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Фиксируем состав работ, бюджет и сроки.",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Изготовление",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Готовим конструкции и графическое оформление.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Заголовок: Монтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Собираем пространство к началу мероприятия.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "rental",
+          "label": "Аренда",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Детали, которые",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: дополняют пространство.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Перейти в каталог",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Мебель и техника",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Соберите подборку для стенда — мы подготовим предложение.",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "позиций",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "в подборке",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Запросить подборку",
+              "type": "string"
+            },
+            {
+              "name": "image_010",
+              "label": "Изображение: stol.png",
+              "type": "image"
+            },
+            {
+              "name": "text_011",
+              "label": "Описание изображения: Круглый стол",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Столы",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Круглый стол",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Ø 80 × 74 см",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "По запросу",
+              "type": "string"
+            },
+            {
+              "name": "image_016",
+              "label": "Изображение: styl.png",
+              "type": "image"
+            },
+            {
+              "name": "text_017",
+              "label": "Описание изображения: Барный стул",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Стулья",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Заголовок: Барный стул",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "45 × 48 × 105 см",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "По запросу",
+              "type": "string"
+            },
+            {
+              "name": "image_022",
+              "label": "Изображение: divan.png",
+              "type": "image"
+            },
+            {
+              "name": "text_023",
+              "label": "Описание изображения: Двухместный диван",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Диваны",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Заголовок: Двухместный диван",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "160 × 80 × 75 см",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "По запросу",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "about",
+          "label": "О компании",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "О компании ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Создаём место",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: для больших",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Заголовок: идей.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "ADVEX — рекламная компания из Баку. Разрабатываем дизайн выставочных стендо",
+              "type": "text"
+            },
+            {
+              "name": "text_006",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Баку · Азербайджан",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Дизайн. Производство. Впечатление.",
+              "type": "string"
+            },
+            {
+              "name": "image_009",
+              "label": "Изображение: p_about.png",
+              "type": "image"
+            },
+            {
+              "name": "text_010",
+              "label": "Описание изображения: Интерьер выставочного пространства с деревянными рейками и с",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "ADVEX",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "clients",
+          "label": "Клиенты",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Заголовок: Клиенты и партнёры",
+              "type": "string"
+            },
+            {
+              "name": "image_002",
+              "label": "Изображение: logo1.png",
+              "type": "image"
+            },
+            {
+              "name": "text_003",
+              "label": "Описание изображения: AIC",
+              "type": "string"
+            },
+            {
+              "name": "image_004",
+              "label": "Изображение: logo2.png",
+              "type": "image"
+            },
+            {
+              "name": "text_005",
+              "label": "Описание изображения: One Touch",
+              "type": "string"
+            },
+            {
+              "name": "image_006",
+              "label": "Изображение: logo3.png",
+              "type": "image"
+            },
+            {
+              "name": "text_007",
+              "label": "Описание изображения: Мой бизнес",
+              "type": "string"
+            },
+            {
+              "name": "image_008",
+              "label": "Изображение: logo4.png",
+              "type": "image"
+            },
+            {
+              "name": "text_009",
+              "label": "Описание изображения: Sensemi · MetCom",
+              "type": "string"
+            },
+            {
+              "name": "image_010",
+              "label": "Изображение: logo5.png",
+              "type": "image"
+            },
+            {
+              "name": "text_011",
+              "label": "Описание изображения: Ассоциация выставочных организаторов Азербайджана",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: logo6.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Описание изображения: Samson",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "reviews",
+          "label": "Отзывы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Доверие в деталях",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Отзывы наших клиентов",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Средняя оценка по отзывам на картах. Читаем каждый и отвечаем на все.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Google Maps",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Яндекс Карты",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "2ГИС",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Э",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Эльвин Г.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Маркетинг-директор, энергетическая компания",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Google Maps, 2 недели назад",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Делали островной стенд на Baku Energy Week. Дизайн согласовали за неделю, а",
+              "type": "text"
+            },
+            {
+              "name": "text_012",
+              "label": "Стенд под ключ · Baku Energy Week",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Н",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Наталья К.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Бренд-менеджер, производитель продуктов",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Яндекс Карты, месяц назад",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Заказывали стенд и промо-моделей на WorldFood. Девушки заранее выучили ассо",
+              "type": "text"
+            },
+            {
+              "name": "text_018",
+              "label": "Стенд + персонал · WorldFood Azerbaijan",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Р",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Рашад М.",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Директор, строительная компания",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Google Maps, 3 недели назад",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Брали мобильный комплект: поп-ап, ресепшен и пару ролл-апов. Сделали быстро",
+              "type": "text"
+            },
+            {
+              "name": "text_024",
+              "label": "Мобильные стенды · BakuBuild",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "А",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Айгюн С.",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "Event-менеджер, коммуникационное агентство",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "2ГИС, месяц назад",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Арендовали столы, барные стулья и диван на два дня. Привезли вовремя, мебел",
+              "type": "text"
+            },
+            {
+              "name": "text_030",
+              "label": "Аренда мебели",
+              "type": "string"
+            },
+            {
+              "name": "text_031",
+              "label": "Д",
+              "type": "string"
+            },
+            {
+              "name": "text_032",
+              "label": "Дмитрий П.",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Руководитель направления, IT-компания",
+              "type": "string"
+            },
+            {
+              "name": "text_034",
+              "label": "Google Maps, 2 месяца назад",
+              "type": "string"
+            },
+            {
+              "name": "text_035",
+              "label": "Нужен был стенд с нуля под новый бренд. Предложили три концепции, выбранную",
+              "type": "text"
+            },
+            {
+              "name": "text_036",
+              "label": "Индивидуальный дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_037",
+              "label": "Л",
+              "type": "string"
+            },
+            {
+              "name": "text_038",
+              "label": "Лейла А.",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Маркетолог, туристическая компания",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Яндекс Карты, 3 месяца назад",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Оформляли павильон для туристической выставки: сложная графика, подсветка, ",
+              "type": "text"
+            },
+            {
+              "name": "text_042",
+              "label": "Выставочная застройка",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "faq",
+          "label": "Вопросы и ответы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Вопросы и ответы",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Хорошие вопросы.",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: Понятные ответы.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Задать вопрос",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Сколько стоит изготовление стенда?",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Стоимость зависит от площади, типа конструкции, материалов и оборудования. ",
+              "type": "text"
+            },
+            {
+              "name": "text_007",
+              "label": "Какие сроки изготовления?",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Сроки зависят от сложности проекта и даты выставки. Назовите дату — состави",
+              "type": "text"
+            },
+            {
+              "name": "text_009",
+              "label": "Можно ли заказать индивидуальный дизайн?",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Да. Разрабатываем концепцию и дизайн-проект под задачи вашего бренда и конк",
+              "type": "text"
+            },
+            {
+              "name": "text_011",
+              "label": "Включены ли монтаж и демонтаж?",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Да, мы выполняем монтаж стенда к началу мероприятия и демонтаж после его за",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Можно ли добавить оборудование?",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Да, мебель и техника доступны в аренде — их можно включить в проект стенда.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Что нужно для начала работы?",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Название выставки, даты, площадь и расположение стенда, а также ваши пожела",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "name": "contact",
+          "label": "Контакты и форма",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Заголовок: Обсудить проект",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Расскажите о выставке и ваших задачах. Соберём основу для индивидуального п",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Телефон",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Ссылка: tel:+994503161661",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Почта",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Ссылка: mailto:info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Адрес",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Баку, Хатаинский район,",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "ул. Наджафгулу Рафиева, 29",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Ваше имя *",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Подсказка поля: Как к вам обращаться",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Компания",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Подсказка поля: Название компании",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Телефон *",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Подсказка поля: +994 __ ___ __ __",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Почта",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Подсказка поля: name@company.az",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Тема обращения",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Изготовление стенда",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Другое",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Расскажите о задаче",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Подсказка поля: Выставка, даты, площадь стенда, пожелания",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Согласен с условиями обработки данных, описанными в",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "политике конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "Отправить запрос",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Спасибо! Запрос отправлен — мы свяжемся с вами.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "quote",
+          "label": "Форма расчёта",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Воплотим вашу идею",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Рассчитать стоимость",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Ваше имя *",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Компания",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Телефон или почта *",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Название выставки",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Площадь, м²",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Дата мероприятия",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Тип конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Расскажите о задаче",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Техническое задание или план",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Документ или изображение · до 10 МБ · будет приложен к заявке",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Согласен с условиями обработки данных, описанными в",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "политике конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Отправить запрос",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "footer",
+          "label": "Подвал",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Выставочные стенды под ключ — от первой идеи до встречи с вашими клиентами.",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Дизайн. Производство. Впечатление.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Направления",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Наши проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Азербайджан, Баку, Хатаинский район, ул. Наджафгулу Рафиева, 29",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Ссылка: tel:+994503161661",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Ссылка: mailto:info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Доставка и оплата",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Политика конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "© 2026 ADVEX · Концепция сайта",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Azərbaycanca",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Русский",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "English",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "Выставочные решения в Азербайджане",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "home_az",
+      "label": "Главная · AZ",
+      "type": "file",
+      "path": "content/home/az.json",
+      "format": "json",
+      "fields": [
+        {
+          "name": "seo",
+          "label": "SEO",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "SEO title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta description",
+              "type": "text"
+            },
+            {
+              "name": "text_003",
+              "label": "К содержимому",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "header",
+          "label": "Шапка и навигация",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Полиграфия",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Весь каталог",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Модели",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Аренда",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "AZ",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Azərbaycanca",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Русский",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "EN",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "English",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Обсудить проект",
+              "type": "string"
+            },
+            {
+              "name": "text_030",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_031",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_032",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_034",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_035",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_036",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "text_037",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_038",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Полиграфия",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "text_042",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "text_043",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_044",
+              "label": "Весь каталог →",
+              "type": "string"
+            },
+            {
+              "name": "text_045",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_046",
+              "label": "Модели",
+              "type": "string"
+            },
+            {
+              "name": "text_047",
+              "label": "Аренда",
+              "type": "string"
+            },
+            {
+              "name": "text_048",
+              "label": "Проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_049",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_050",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_051",
+              "label": "AZ",
+              "type": "string"
+            },
+            {
+              "name": "text_052",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_053",
+              "label": "EN",
+              "type": "string"
+            },
+            {
+              "name": "text_054",
+              "label": "Обсудить проект",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "hero",
+          "label": "Первый экран",
+          "type": "object",
+          "fields": [
+            {
+              "name": "image_001",
+              "label": "Изображение: bg_m.png",
+              "type": "image"
+            },
+            {
+              "name": "image_002",
+              "label": "Изображение: bg.png",
+              "type": "image"
+            },
+            {
+              "name": "text_003",
+              "label": "Описание изображения: Стенд Sensemi Azerbaijan с деревянными рейками — проект ADVE",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Дизайн и изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Заголовок: Выставочные стенды.",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Заголовок: Ваша идея —",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: под ключ.",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Выставочные стенды под ключ — от первой идеи до встречи с вашими клиентами.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Рассчитать стоимость",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Смотреть проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Аренда оборудования",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "catalog",
+          "label": "Каталог",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "От идеи — к конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Найдём форму",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: для вашей идеи.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Мобильные решения и индивидуальные пространства для вашего бренда.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Весь каталог",
+              "type": "string"
+            },
+            {
+              "name": "image_006",
+              "label": "Изображение: 01-Ролл-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_007",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "image_009",
+              "label": "Изображение: 02-Поп-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_010",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: 03-Баннерные-стенды.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "image_015",
+              "label": "Изображение: 04-Фолд-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_016",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Индивидуальный проект",
+              "type": "string"
+            },
+            {
+              "name": "image_019",
+              "label": "Изображение: 07-Выставочные-застройки.png",
+              "type": "image"
+            },
+            {
+              "name": "text_020",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "image_022",
+              "label": "Изображение: 05-Пресс-волл.png",
+              "type": "image"
+            },
+            {
+              "name": "text_023",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "image_025",
+              "label": "Изображение: 06-Тканевые-стенды.png",
+              "type": "image"
+            },
+            {
+              "name": "text_026",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "image_028",
+              "label": "Изображение: 08-Ресепшен.png",
+              "type": "image"
+            },
+            {
+              "name": "text_029",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_030",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "image_031",
+              "label": "Изображение: 10-Промостойки.png",
+              "type": "image"
+            },
+            {
+              "name": "text_032",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "image_034",
+              "label": "Изображение: 11-Рекламные-вывески.png",
+              "type": "image"
+            },
+            {
+              "name": "text_035",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_036",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "image_037",
+              "label": "Изображение: 12-Буклетницы.png",
+              "type": "image"
+            },
+            {
+              "name": "text_038",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Нет нужной формы?",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Сделаем конструкцию по вашему эскизу.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "services",
+          "label": "Направления",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Три направления. Одна команда.",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Всё для вашего",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: участия в выставке.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Выберите направление — или объедините все три в одном проекте.",
+              "type": "string"
+            },
+            {
+              "name": "image_005",
+              "label": "Изображение: Дизайн%20и%20сборка%20выставочного%20стенда-2.png",
+              "type": "image"
+            },
+            {
+              "name": "text_006",
+              "label": "01 / Дизайн и производство",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Пространства, созданные вокруг вашего бренда.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "image_011",
+              "label": "Изображение: Команда%20профессиональных%20хостов%20на%20выставке-1.png",
+              "type": "image"
+            },
+            {
+              "name": "text_012",
+              "label": "02 / Персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Люди, с которых начинается знакомство.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "image_017",
+              "label": "Изображение: Премиальный%20прокат%20оборудования%20для%20мероприятий-3.png",
+              "type": "image"
+            },
+            {
+              "name": "text_018",
+              "label": "03 / Оборудование",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Заголовок: Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Мебель и техника для комфортной работы.",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Аренда оборудования",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "projects",
+          "label": "Проекты на главной",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Проекты ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Пространства,",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: которые запоминают.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "04 проекта в подборке",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Все проекты",
+              "type": "string"
+            },
+            {
+              "name": "items",
+              "label": "Карточки проектов — добавить / удалить / переставить",
+              "type": "object",
+              "list": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Название",
+                  "type": "string"
+                },
+                {
+                  "name": "subtitle",
+                  "label": "Описание",
+                  "type": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Фотография",
+                  "type": "image"
+                },
+                {
+                  "name": "alt",
+                  "label": "Описание фотографии",
+                  "type": "string"
+                },
+                {
+                  "name": "link",
+                  "label": "Ссылка",
+                  "type": "string"
+                },
+                {
+                  "name": "badge",
+                  "label": "Подпись на фотографии",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "production",
+          "label": "Дизайн и производство",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Дизайн и производство",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: От чистого листа",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: до готового стенда.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Объединяем проектирование, визуальную концепцию и организацию производства ",
+              "type": "text"
+            },
+            {
+              "name": "text_005",
+              "label": "Проектирование",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Изготовление",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Доставка",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Монтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Демонтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: final.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Описание изображения: Готовый стенд Sensemi Azerbaijan",
+              "type": "string"
+            },
+            {
+              "name": "image_014",
+              "label": "Изображение: eskiz.png",
+              "type": "image"
+            },
+            {
+              "name": "text_015",
+              "label": "Эскиз",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Реализация",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Потяните, чтобы увидеть путь от эскиза до стенда",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "steps",
+          "label": "Порядок работы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Порядок работы",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: От первого разговора",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: до открытия выставки.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Шесть понятных шагов — каждый поднимает проект на ступень ближе к открытию.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Заголовок: Знакомство",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Обсуждаем цели, площадку и формат участия.",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: Концепция",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Находим идею, которая раскрывает ваш бренд.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Заголовок: Дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Прорабатываем планировку и визуальное решение.",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Заголовок: Согласование",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Фиксируем состав работ, бюджет и сроки.",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Изготовление",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Готовим конструкции и графическое оформление.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Заголовок: Монтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Собираем пространство к началу мероприятия.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "rental",
+          "label": "Аренда",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Детали, которые",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: дополняют пространство.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Перейти в каталог",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Мебель и техника",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Соберите подборку для стенда — мы подготовим предложение.",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "позиций",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "в подборке",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Запросить подборку",
+              "type": "string"
+            },
+            {
+              "name": "image_010",
+              "label": "Изображение: stol.png",
+              "type": "image"
+            },
+            {
+              "name": "text_011",
+              "label": "Описание изображения: Круглый стол",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Столы",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Круглый стол",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Ø 80 × 74 см",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "По запросу",
+              "type": "string"
+            },
+            {
+              "name": "image_016",
+              "label": "Изображение: styl.png",
+              "type": "image"
+            },
+            {
+              "name": "text_017",
+              "label": "Описание изображения: Барный стул",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Стулья",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Заголовок: Барный стул",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "45 × 48 × 105 см",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "По запросу",
+              "type": "string"
+            },
+            {
+              "name": "image_022",
+              "label": "Изображение: divan.png",
+              "type": "image"
+            },
+            {
+              "name": "text_023",
+              "label": "Описание изображения: Двухместный диван",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Диваны",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Заголовок: Двухместный диван",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "160 × 80 × 75 см",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "По запросу",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "about",
+          "label": "О компании",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "О компании ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Создаём место",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: для больших",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Заголовок: идей.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "ADVEX — рекламная компания из Баку. Разрабатываем дизайн выставочных стендо",
+              "type": "text"
+            },
+            {
+              "name": "text_006",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Баку · Азербайджан",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Дизайн. Производство. Впечатление.",
+              "type": "string"
+            },
+            {
+              "name": "image_009",
+              "label": "Изображение: p_about.png",
+              "type": "image"
+            },
+            {
+              "name": "text_010",
+              "label": "Описание изображения: Интерьер выставочного пространства с деревянными рейками и с",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "ADVEX",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "clients",
+          "label": "Клиенты",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Заголовок: Клиенты и партнёры",
+              "type": "string"
+            },
+            {
+              "name": "image_002",
+              "label": "Изображение: logo1.png",
+              "type": "image"
+            },
+            {
+              "name": "text_003",
+              "label": "Описание изображения: AIC",
+              "type": "string"
+            },
+            {
+              "name": "image_004",
+              "label": "Изображение: logo2.png",
+              "type": "image"
+            },
+            {
+              "name": "text_005",
+              "label": "Описание изображения: One Touch",
+              "type": "string"
+            },
+            {
+              "name": "image_006",
+              "label": "Изображение: logo3.png",
+              "type": "image"
+            },
+            {
+              "name": "text_007",
+              "label": "Описание изображения: Мой бизнес",
+              "type": "string"
+            },
+            {
+              "name": "image_008",
+              "label": "Изображение: logo4.png",
+              "type": "image"
+            },
+            {
+              "name": "text_009",
+              "label": "Описание изображения: Sensemi · MetCom",
+              "type": "string"
+            },
+            {
+              "name": "image_010",
+              "label": "Изображение: logo5.png",
+              "type": "image"
+            },
+            {
+              "name": "text_011",
+              "label": "Описание изображения: Ассоциация выставочных организаторов Азербайджана",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: logo6.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Описание изображения: Samson",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "reviews",
+          "label": "Отзывы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Доверие в деталях",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Отзывы наших клиентов",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Средняя оценка по отзывам на картах. Читаем каждый и отвечаем на все.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Google Maps",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Яндекс Карты",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "2ГИС",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Э",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Эльвин Г.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Маркетинг-директор, энергетическая компания",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Google Maps, 2 недели назад",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Делали островной стенд на Baku Energy Week. Дизайн согласовали за неделю, а",
+              "type": "text"
+            },
+            {
+              "name": "text_012",
+              "label": "Стенд под ключ · Baku Energy Week",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Н",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Наталья К.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Бренд-менеджер, производитель продуктов",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Яндекс Карты, месяц назад",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Заказывали стенд и промо-моделей на WorldFood. Девушки заранее выучили ассо",
+              "type": "text"
+            },
+            {
+              "name": "text_018",
+              "label": "Стенд + персонал · WorldFood Azerbaijan",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Р",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Рашад М.",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Директор, строительная компания",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Google Maps, 3 недели назад",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Брали мобильный комплект: поп-ап, ресепшен и пару ролл-апов. Сделали быстро",
+              "type": "text"
+            },
+            {
+              "name": "text_024",
+              "label": "Мобильные стенды · BakuBuild",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "А",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Айгюн С.",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "Event-менеджер, коммуникационное агентство",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "2ГИС, месяц назад",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Арендовали столы, барные стулья и диван на два дня. Привезли вовремя, мебел",
+              "type": "text"
+            },
+            {
+              "name": "text_030",
+              "label": "Аренда мебели",
+              "type": "string"
+            },
+            {
+              "name": "text_031",
+              "label": "Д",
+              "type": "string"
+            },
+            {
+              "name": "text_032",
+              "label": "Дмитрий П.",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Руководитель направления, IT-компания",
+              "type": "string"
+            },
+            {
+              "name": "text_034",
+              "label": "Google Maps, 2 месяца назад",
+              "type": "string"
+            },
+            {
+              "name": "text_035",
+              "label": "Нужен был стенд с нуля под новый бренд. Предложили три концепции, выбранную",
+              "type": "text"
+            },
+            {
+              "name": "text_036",
+              "label": "Индивидуальный дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_037",
+              "label": "Л",
+              "type": "string"
+            },
+            {
+              "name": "text_038",
+              "label": "Лейла А.",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Маркетолог, туристическая компания",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Яндекс Карты, 3 месяца назад",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Оформляли павильон для туристической выставки: сложная графика, подсветка, ",
+              "type": "text"
+            },
+            {
+              "name": "text_042",
+              "label": "Выставочная застройка",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "faq",
+          "label": "Вопросы и ответы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Вопросы и ответы",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Хорошие вопросы.",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: Понятные ответы.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Задать вопрос",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Сколько стоит изготовление стенда?",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Стоимость зависит от площади, типа конструкции, материалов и оборудования. ",
+              "type": "text"
+            },
+            {
+              "name": "text_007",
+              "label": "Какие сроки изготовления?",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Сроки зависят от сложности проекта и даты выставки. Назовите дату — состави",
+              "type": "text"
+            },
+            {
+              "name": "text_009",
+              "label": "Можно ли заказать индивидуальный дизайн?",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Да. Разрабатываем концепцию и дизайн-проект под задачи вашего бренда и конк",
+              "type": "text"
+            },
+            {
+              "name": "text_011",
+              "label": "Включены ли монтаж и демонтаж?",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Да, мы выполняем монтаж стенда к началу мероприятия и демонтаж после его за",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Можно ли добавить оборудование?",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Да, мебель и техника доступны в аренде — их можно включить в проект стенда.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Что нужно для начала работы?",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Название выставки, даты, площадь и расположение стенда, а также ваши пожела",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "name": "contact",
+          "label": "Контакты и форма",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Заголовок: Обсудить проект",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Расскажите о выставке и ваших задачах. Соберём основу для индивидуального п",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Телефон",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Ссылка: tel:+994503161661",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Почта",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Ссылка: mailto:info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Адрес",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Баку, Хатаинский район,",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "ул. Наджафгулу Рафиева, 29",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Ваше имя *",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Подсказка поля: Как к вам обращаться",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Компания",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Подсказка поля: Название компании",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Телефон *",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Подсказка поля: +994 __ ___ __ __",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Почта",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Подсказка поля: name@company.az",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Тема обращения",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Изготовление стенда",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Другое",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Расскажите о задаче",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Подсказка поля: Выставка, даты, площадь стенда, пожелания",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Согласен с условиями обработки данных, описанными в",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "политике конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "Отправить запрос",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Спасибо! Запрос отправлен — мы свяжемся с вами.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "quote",
+          "label": "Форма расчёта",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Воплотим вашу идею",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Рассчитать стоимость",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Ваше имя *",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Компания",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Телефон или почта *",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Название выставки",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Площадь, м²",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Дата мероприятия",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Тип конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Расскажите о задаче",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Техническое задание или план",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Документ или изображение · до 10 МБ · будет приложен к заявке",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Согласен с условиями обработки данных, описанными в",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "политике конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Отправить запрос",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Sorğu göndər",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "footer",
+          "label": "Подвал",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Выставочные стенды под ключ — от первой идеи до встречи с вашими клиентами.",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Дизайн. Производство. Впечатление.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Направления",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Наши проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Азербайджан, Баку, Хатаинский район, ул. Наджафгулу Рафиева, 29",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Ссылка: tel:+994503161661",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Ссылка: mailto:info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Доставка и оплата",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Политика конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "© 2026 ADVEX · Концепция сайта",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Azərbaycanca",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Русский",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "English",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "Выставочные решения в Азербайджане",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "home_en",
+      "label": "Главная · EN",
+      "type": "file",
+      "path": "content/home/en.json",
+      "format": "json",
+      "fields": [
+        {
+          "name": "seo",
+          "label": "SEO",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "SEO title",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta description",
+              "type": "text"
+            },
+            {
+              "name": "text_003",
+              "label": "К содержимому",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "header",
+          "label": "Шапка и навигация",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Полиграфия",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Весь каталог",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Модели",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Аренда",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "AZ",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Azərbaycanca",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Русский",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "EN",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "English",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Обсудить проект",
+              "type": "string"
+            },
+            {
+              "name": "text_030",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_031",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_032",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_034",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_035",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_036",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "text_037",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_038",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Полиграфия",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "text_042",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "text_043",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_044",
+              "label": "Весь каталог →",
+              "type": "string"
+            },
+            {
+              "name": "text_045",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_046",
+              "label": "Модели",
+              "type": "string"
+            },
+            {
+              "name": "text_047",
+              "label": "Аренда",
+              "type": "string"
+            },
+            {
+              "name": "text_048",
+              "label": "Проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_049",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_050",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_051",
+              "label": "AZ",
+              "type": "string"
+            },
+            {
+              "name": "text_052",
+              "label": "RU",
+              "type": "string"
+            },
+            {
+              "name": "text_053",
+              "label": "EN",
+              "type": "string"
+            },
+            {
+              "name": "text_054",
+              "label": "Обсудить проект",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "hero",
+          "label": "Первый экран",
+          "type": "object",
+          "fields": [
+            {
+              "name": "image_001",
+              "label": "Изображение: bg_m.png",
+              "type": "image"
+            },
+            {
+              "name": "image_002",
+              "label": "Изображение: bg.png",
+              "type": "image"
+            },
+            {
+              "name": "text_003",
+              "label": "Описание изображения: Стенд Sensemi Azerbaijan с деревянными рейками — проект ADVE",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Дизайн и изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Заголовок: Выставочные стенды.",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Заголовок: Ваша идея —",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: под ключ.",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Выставочные стенды под ключ — от первой идеи до встречи с вашими клиентами.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Рассчитать стоимость",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Смотреть проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Аренда оборудования",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "catalog",
+          "label": "Каталог",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "От идеи — к конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Найдём форму",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: для вашей идеи.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Мобильные решения и индивидуальные пространства для вашего бренда.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Весь каталог",
+              "type": "string"
+            },
+            {
+              "name": "image_006",
+              "label": "Изображение: 01-Ролл-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_007",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "image_009",
+              "label": "Изображение: 02-Поп-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_010",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: 03-Баннерные-стенды.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "image_015",
+              "label": "Изображение: 04-Фолд-ап.png",
+              "type": "image"
+            },
+            {
+              "name": "text_016",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Индивидуальный проект",
+              "type": "string"
+            },
+            {
+              "name": "image_019",
+              "label": "Изображение: 07-Выставочные-застройки.png",
+              "type": "image"
+            },
+            {
+              "name": "text_020",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Выставочные застройки",
+              "type": "string"
+            },
+            {
+              "name": "image_022",
+              "label": "Изображение: 05-Пресс-волл.png",
+              "type": "image"
+            },
+            {
+              "name": "text_023",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Пресс-волл",
+              "type": "string"
+            },
+            {
+              "name": "image_025",
+              "label": "Изображение: 06-Тканевые-стенды.png",
+              "type": "image"
+            },
+            {
+              "name": "text_026",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "Тканевые стенды",
+              "type": "string"
+            },
+            {
+              "name": "image_028",
+              "label": "Изображение: 08-Ресепшен.png",
+              "type": "image"
+            },
+            {
+              "name": "text_029",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_030",
+              "label": "Ресепшен",
+              "type": "string"
+            },
+            {
+              "name": "image_031",
+              "label": "Изображение: 10-Промостойки.png",
+              "type": "image"
+            },
+            {
+              "name": "text_032",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Промостойки",
+              "type": "string"
+            },
+            {
+              "name": "image_034",
+              "label": "Изображение: 11-Рекламные-вывески.png",
+              "type": "image"
+            },
+            {
+              "name": "text_035",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_036",
+              "label": "Рекламные вывески",
+              "type": "string"
+            },
+            {
+              "name": "image_037",
+              "label": "Изображение: 12-Буклетницы.png",
+              "type": "image"
+            },
+            {
+              "name": "text_038",
+              "label": "Перейти",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Буклетницы",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Нет нужной формы?",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Сделаем конструкцию по вашему эскизу.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "services",
+          "label": "Направления",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Три направления. Одна команда.",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Всё для вашего",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: участия в выставке.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Выберите направление — или объедините все три в одном проекте.",
+              "type": "string"
+            },
+            {
+              "name": "image_005",
+              "label": "Изображение: Дизайн%20и%20сборка%20выставочного%20стенда-2.png",
+              "type": "image"
+            },
+            {
+              "name": "text_006",
+              "label": "01 / Дизайн и производство",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Пространства, созданные вокруг вашего бренда.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "image_011",
+              "label": "Изображение: Команда%20профессиональных%20хостов%20на%20выставке-1.png",
+              "type": "image"
+            },
+            {
+              "name": "text_012",
+              "label": "02 / Персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Люди, с которых начинается знакомство.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "image_017",
+              "label": "Изображение: Премиальный%20прокат%20оборудования%20для%20мероприятий-3.png",
+              "type": "image"
+            },
+            {
+              "name": "text_018",
+              "label": "03 / Оборудование",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Заголовок: Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Мебель и техника для комфортной работы.",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Аренда оборудования",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "projects",
+          "label": "Проекты на главной",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Проекты ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Пространства,",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: которые запоминают.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "04 проекта в подборке",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Все проекты",
+              "type": "string"
+            },
+            {
+              "name": "items",
+              "label": "Карточки проектов — добавить / удалить / переставить",
+              "type": "object",
+              "list": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Название",
+                  "type": "string"
+                },
+                {
+                  "name": "subtitle",
+                  "label": "Описание",
+                  "type": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Фотография",
+                  "type": "image"
+                },
+                {
+                  "name": "alt",
+                  "label": "Описание фотографии",
+                  "type": "string"
+                },
+                {
+                  "name": "link",
+                  "label": "Ссылка",
+                  "type": "string"
+                },
+                {
+                  "name": "badge",
+                  "label": "Подпись на фотографии",
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "production",
+          "label": "Дизайн и производство",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Дизайн и производство",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: От чистого листа",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: до готового стенда.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Объединяем проектирование, визуальную концепцию и организацию производства ",
+              "type": "text"
+            },
+            {
+              "name": "text_005",
+              "label": "Проектирование",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Изготовление",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Доставка",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Монтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Демонтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Подробнее",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: final.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Описание изображения: Готовый стенд Sensemi Azerbaijan",
+              "type": "string"
+            },
+            {
+              "name": "image_014",
+              "label": "Изображение: eskiz.png",
+              "type": "image"
+            },
+            {
+              "name": "text_015",
+              "label": "Эскиз",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Реализация",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Потяните, чтобы увидеть путь от эскиза до стенда",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "steps",
+          "label": "Порядок работы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Порядок работы",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: От первого разговора",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: до открытия выставки.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Шесть понятных шагов — каждый поднимает проект на ступень ближе к открытию.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Заголовок: Знакомство",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Обсуждаем цели, площадку и формат участия.",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Заголовок: Концепция",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Находим идею, которая раскрывает ваш бренд.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Заголовок: Дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Прорабатываем планировку и визуальное решение.",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Заголовок: Согласование",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Фиксируем состав работ, бюджет и сроки.",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Изготовление",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Готовим конструкции и графическое оформление.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Заголовок: Монтаж",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Собираем пространство к началу мероприятия.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "rental",
+          "label": "Аренда",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Детали, которые",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: дополняют пространство.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Перейти в каталог",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Мебель и техника",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Соберите подборку для стенда — мы подготовим предложение.",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "позиций",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "в подборке",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Запросить подборку",
+              "type": "string"
+            },
+            {
+              "name": "image_010",
+              "label": "Изображение: stol.png",
+              "type": "image"
+            },
+            {
+              "name": "text_011",
+              "label": "Описание изображения: Круглый стол",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Столы",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Заголовок: Круглый стол",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Ø 80 × 74 см",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "По запросу",
+              "type": "string"
+            },
+            {
+              "name": "image_016",
+              "label": "Изображение: styl.png",
+              "type": "image"
+            },
+            {
+              "name": "text_017",
+              "label": "Описание изображения: Барный стул",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Стулья",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Заголовок: Барный стул",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "45 × 48 × 105 см",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "По запросу",
+              "type": "string"
+            },
+            {
+              "name": "image_022",
+              "label": "Изображение: divan.png",
+              "type": "image"
+            },
+            {
+              "name": "text_023",
+              "label": "Описание изображения: Двухместный диван",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Диваны",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Заголовок: Двухместный диван",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "160 × 80 × 75 см",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "По запросу",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "about",
+          "label": "О компании",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "О компании ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Создаём место",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: для больших",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Заголовок: идей.",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "ADVEX — рекламная компания из Баку. Разрабатываем дизайн выставочных стендо",
+              "type": "text"
+            },
+            {
+              "name": "text_006",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Баку · Азербайджан",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Дизайн. Производство. Впечатление.",
+              "type": "string"
+            },
+            {
+              "name": "image_009",
+              "label": "Изображение: p_about.png",
+              "type": "image"
+            },
+            {
+              "name": "text_010",
+              "label": "Описание изображения: Интерьер выставочного пространства с деревянными рейками и с",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "ADVEX",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "clients",
+          "label": "Клиенты",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Заголовок: Клиенты и партнёры",
+              "type": "string"
+            },
+            {
+              "name": "image_002",
+              "label": "Изображение: logo1.png",
+              "type": "image"
+            },
+            {
+              "name": "text_003",
+              "label": "Описание изображения: AIC",
+              "type": "string"
+            },
+            {
+              "name": "image_004",
+              "label": "Изображение: logo2.png",
+              "type": "image"
+            },
+            {
+              "name": "text_005",
+              "label": "Описание изображения: One Touch",
+              "type": "string"
+            },
+            {
+              "name": "image_006",
+              "label": "Изображение: logo3.png",
+              "type": "image"
+            },
+            {
+              "name": "text_007",
+              "label": "Описание изображения: Мой бизнес",
+              "type": "string"
+            },
+            {
+              "name": "image_008",
+              "label": "Изображение: logo4.png",
+              "type": "image"
+            },
+            {
+              "name": "text_009",
+              "label": "Описание изображения: Sensemi · MetCom",
+              "type": "string"
+            },
+            {
+              "name": "image_010",
+              "label": "Изображение: logo5.png",
+              "type": "image"
+            },
+            {
+              "name": "text_011",
+              "label": "Описание изображения: Ассоциация выставочных организаторов Азербайджана",
+              "type": "string"
+            },
+            {
+              "name": "image_012",
+              "label": "Изображение: logo6.png",
+              "type": "image"
+            },
+            {
+              "name": "text_013",
+              "label": "Описание изображения: Samson",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "reviews",
+          "label": "Отзывы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Доверие в деталях",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Отзывы наших клиентов",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Средняя оценка по отзывам на картах. Читаем каждый и отвечаем на все.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Google Maps",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Яндекс Карты",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "2ГИС",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Э",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Эльвин Г.",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Маркетинг-директор, энергетическая компания",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Google Maps, 2 недели назад",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Делали островной стенд на Baku Energy Week. Дизайн согласовали за неделю, а",
+              "type": "text"
+            },
+            {
+              "name": "text_012",
+              "label": "Стенд под ключ · Baku Energy Week",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Н",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Наталья К.",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Бренд-менеджер, производитель продуктов",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Яндекс Карты, месяц назад",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Заказывали стенд и промо-моделей на WorldFood. Девушки заранее выучили ассо",
+              "type": "text"
+            },
+            {
+              "name": "text_018",
+              "label": "Стенд + персонал · WorldFood Azerbaijan",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Р",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Рашад М.",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Директор, строительная компания",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Google Maps, 3 недели назад",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Брали мобильный комплект: поп-ап, ресепшен и пару ролл-апов. Сделали быстро",
+              "type": "text"
+            },
+            {
+              "name": "text_024",
+              "label": "Мобильные стенды · BakuBuild",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "А",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Айгюн С.",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "Event-менеджер, коммуникационное агентство",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "2ГИС, месяц назад",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Арендовали столы, барные стулья и диван на два дня. Привезли вовремя, мебел",
+              "type": "text"
+            },
+            {
+              "name": "text_030",
+              "label": "Аренда мебели",
+              "type": "string"
+            },
+            {
+              "name": "text_031",
+              "label": "Д",
+              "type": "string"
+            },
+            {
+              "name": "text_032",
+              "label": "Дмитрий П.",
+              "type": "string"
+            },
+            {
+              "name": "text_033",
+              "label": "Руководитель направления, IT-компания",
+              "type": "string"
+            },
+            {
+              "name": "text_034",
+              "label": "Google Maps, 2 месяца назад",
+              "type": "string"
+            },
+            {
+              "name": "text_035",
+              "label": "Нужен был стенд с нуля под новый бренд. Предложили три концепции, выбранную",
+              "type": "text"
+            },
+            {
+              "name": "text_036",
+              "label": "Индивидуальный дизайн",
+              "type": "string"
+            },
+            {
+              "name": "text_037",
+              "label": "Л",
+              "type": "string"
+            },
+            {
+              "name": "text_038",
+              "label": "Лейла А.",
+              "type": "string"
+            },
+            {
+              "name": "text_039",
+              "label": "Маркетолог, туристическая компания",
+              "type": "string"
+            },
+            {
+              "name": "text_040",
+              "label": "Яндекс Карты, 3 месяца назад",
+              "type": "string"
+            },
+            {
+              "name": "text_041",
+              "label": "Оформляли павильон для туристической выставки: сложная графика, подсветка, ",
+              "type": "text"
+            },
+            {
+              "name": "text_042",
+              "label": "Выставочная застройка",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "faq",
+          "label": "Вопросы и ответы",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Вопросы и ответы",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Хорошие вопросы.",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Заголовок: Понятные ответы.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Задать вопрос",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Сколько стоит изготовление стенда?",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Стоимость зависит от площади, типа конструкции, материалов и оборудования. ",
+              "type": "text"
+            },
+            {
+              "name": "text_007",
+              "label": "Какие сроки изготовления?",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Сроки зависят от сложности проекта и даты выставки. Назовите дату — состави",
+              "type": "text"
+            },
+            {
+              "name": "text_009",
+              "label": "Можно ли заказать индивидуальный дизайн?",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Да. Разрабатываем концепцию и дизайн-проект под задачи вашего бренда и конк",
+              "type": "text"
+            },
+            {
+              "name": "text_011",
+              "label": "Включены ли монтаж и демонтаж?",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Да, мы выполняем монтаж стенда к началу мероприятия и демонтаж после его за",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Можно ли добавить оборудование?",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Да, мебель и техника доступны в аренде — их можно включить в проект стенда.",
+              "type": "text"
+            },
+            {
+              "name": "text_015",
+              "label": "Что нужно для начала работы?",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Название выставки, даты, площадь и расположение стенда, а также ваши пожела",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "name": "contact",
+          "label": "Контакты и форма",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Заголовок: Обсудить проект",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Расскажите о выставке и ваших задачах. Соберём основу для индивидуального п",
+              "type": "text"
+            },
+            {
+              "name": "text_003",
+              "label": "Телефон",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Ссылка: tel:+994503161661",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Почта",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Ссылка: mailto:info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Адрес",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Баку, Хатаинский район,",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "ул. Наджафгулу Рафиева, 29",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Ваше имя *",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Подсказка поля: Как к вам обращаться",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Компания",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Подсказка поля: Название компании",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Телефон *",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Подсказка поля: +994 __ ___ __ __",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Почта",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Подсказка поля: name@company.az",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "Тема обращения",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "Изготовление стенда",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Другое",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "Расскажите о задаче",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Подсказка поля: Выставка, даты, площадь стенда, пожелания",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Согласен с условиями обработки данных, описанными в",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "политике конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "Отправить запрос",
+              "type": "string"
+            },
+            {
+              "name": "text_029",
+              "label": "Спасибо! Запрос отправлен — мы свяжемся с вами.",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "quote",
+          "label": "Форма расчёта",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "Воплотим вашу идею",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Заголовок: Рассчитать стоимость",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Ваше имя *",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Компания",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Телефон или почта *",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Название выставки",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Площадь, м²",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Дата мероприятия",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Тип конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Расскажите о задаче",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Техническое задание или план",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Документ или изображение · до 10 МБ · будет приложен к заявке",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Согласен с условиями обработки данных, описанными в",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "политике конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "Отправить запрос",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "footer",
+          "label": "Подвал",
+          "type": "object",
+          "fields": [
+            {
+              "name": "text_001",
+              "label": "advex",
+              "type": "string"
+            },
+            {
+              "name": "text_002",
+              "label": "Выставочные стенды под ключ — от первой идеи до встречи с вашими клиентами.",
+              "type": "string"
+            },
+            {
+              "name": "text_003",
+              "label": "Дизайн. Производство. Впечатление.",
+              "type": "string"
+            },
+            {
+              "name": "text_004",
+              "label": "Направления",
+              "type": "string"
+            },
+            {
+              "name": "text_005",
+              "label": "Каталог стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_006",
+              "label": "Изготовление стендов",
+              "type": "string"
+            },
+            {
+              "name": "text_007",
+              "label": "Модели и персонал",
+              "type": "string"
+            },
+            {
+              "name": "text_008",
+              "label": "Аренда оборудования",
+              "type": "string"
+            },
+            {
+              "name": "text_009",
+              "label": "Наши проекты",
+              "type": "string"
+            },
+            {
+              "name": "text_010",
+              "label": "Конструкции",
+              "type": "string"
+            },
+            {
+              "name": "text_011",
+              "label": "Ролл-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_012",
+              "label": "Поп-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_013",
+              "label": "Баннерные стенды",
+              "type": "string"
+            },
+            {
+              "name": "text_014",
+              "label": "Фолд-ап",
+              "type": "string"
+            },
+            {
+              "name": "text_015",
+              "label": "ADVEX",
+              "type": "string"
+            },
+            {
+              "name": "text_016",
+              "label": "Азербайджан, Баку, Хатаинский район, ул. Наджафгулу Рафиева, 29",
+              "type": "string"
+            },
+            {
+              "name": "text_017",
+              "label": "Ссылка: tel:+994503161661",
+              "type": "string"
+            },
+            {
+              "name": "text_018",
+              "label": "Ссылка: mailto:info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_019",
+              "label": "info@advex.az",
+              "type": "string"
+            },
+            {
+              "name": "text_020",
+              "label": "О компании",
+              "type": "string"
+            },
+            {
+              "name": "text_021",
+              "label": "Контакты",
+              "type": "string"
+            },
+            {
+              "name": "text_022",
+              "label": "Доставка и оплата",
+              "type": "string"
+            },
+            {
+              "name": "text_023",
+              "label": "Политика конфиденциальности",
+              "type": "string"
+            },
+            {
+              "name": "text_024",
+              "label": "© 2026 ADVEX · Концепция сайта",
+              "type": "string"
+            },
+            {
+              "name": "text_025",
+              "label": "Azərbaycanca",
+              "type": "string"
+            },
+            {
+              "name": "text_026",
+              "label": "Русский",
+              "type": "string"
+            },
+            {
+              "name": "text_027",
+              "label": "English",
+              "type": "string"
+            },
+            {
+              "name": "text_028",
+              "label": "Выставочные решения в Азербайджане",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

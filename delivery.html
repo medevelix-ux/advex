@@ -1,0 +1,2460 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çatdırılma və ödəniş — ADVEX</title>
+<meta name="description" content="Bakıda ADVEX sərgi stendlərinin və avadanlığının çatdırılması, quraşdırılması və sökülməsi. İş qaydası, müddətlər, ödəniş və sənədlər.">
+<meta name="theme-color" content="#F2F3EE">
+<!-- Замените https://advex.az на ваш домен -->
+<link rel="canonical" href="https://advex.az/delivery.html">
+<link rel="alternate" hreflang="az" href="https://advex.az/delivery.html">
+<link rel="alternate" hreflang="ru" href="https://advex.az/ru/delivery.html">
+<link rel="alternate" hreflang="en" href="https://advex.az/en/delivery.html">
+<link rel="alternate" hreflang="x-default" href="https://advex.az/delivery.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300..700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<style>
+/* =========================================================
+   ADVEX — главная страница
+   Структура: токены → база → компоненты → секции → адаптив
+   ========================================================= */
+
+/* ---------- 1. Токены ---------- */
+:root {
+  --bg: #F2F3EE;        /* фон страницы */
+  --paper: #FFFFFF;     /* карточки */
+  --sage: #E5E9DB;      /* шалфейные полосы и панели */
+  --render: #DEDEDF;    /* фон 3D-рендеров каталога */
+  --ink: #141812;       /* текст, тёмные кнопки */
+  --ink-hover: #2B3325;
+  --mute: #575E52;      /* второстепенный текст */
+  --line: #D6DACD;      /* линии-разделители */
+  --acc: #D4F14B;       /* лаймовый акцент */
+
+  --font: 'Onest', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --r-sm: 16px;
+  --r-md: 24px;
+  --r-lg: 28px;
+  --r-xl: 32px;
+  --r-xxl: 36px;
+
+  --container: 1440px;
+  --gutter: 40px;
+  --section: 120px;
+
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}
+
+/* ---------- 2. База ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+svg { display: block; flex-shrink: 0; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, p { margin: 0; }
+button, input, textarea { font: inherit; color: inherit; }
+
+/* Длинные слова на других языках не должны ломать сетку */
+h1, h2, h3, p, a, span, b, li, label { overflow-wrap: break-word; }
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 100;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--acc);
+  font-weight: 500;
+  transition: top .2s;
+}
+.skip-link:focus { top: 16px; }
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+.wrap {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.sec { padding-top: var(--section); }
+
+/* ---------- 3. Типографика ---------- */
+.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--mute);
+  margin-bottom: 22px;
+}
+.eyebrow::before {
+  content: "";
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--acc);
+  transform: skewX(-20deg);
+}
+
+.h1 {
+  font-size: clamp(42px, 7.2vw, 112px);
+  line-height: .96;
+  letter-spacing: -.045em;
+  font-weight: 500;
+}
+.h2 {
+  font-size: clamp(34px, 4.6vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -.04em;
+  font-weight: 500;
+}
+.h3 {
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  font-weight: 500;
+}
+
+.mark {
+  display: inline-block;
+  background: var(--acc);
+  border-radius: .16em;
+  padding: 0 .12em .06em;
+  margin-left: -.04em;
+  margin-top: 14px;
+  line-height: 1;
+}
+
+.muted { color: var(--mute); }
+.lead { font-size: 20px; line-height: 1.45; color: var(--mute); max-width: 460px; }
+.text-lg { font-size: 18px; }
+
+/* ---------- 4. Кнопки ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 56px;
+  max-width: 100%;
+  padding: 8px 8px 8px 26px;
+  border: 0;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+  transition: background .25s, color .25s, box-shadow .25s, transform .35s var(--ease);
+}
+.btn .ic {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: transform .45s var(--ease), background .25s, color .25s;
+}
+.btn:hover { transform: scale(1.04); }
+.btn:hover .ic { transform: rotate(-45deg); }
+
+.btn-dark { background: var(--ink); color: #fff; }
+.btn-dark .ic { background: var(--acc); color: var(--ink); }
+.btn-dark:hover { background: var(--ink-hover); }
+
+.btn-ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+.btn-ghost .ic { background: var(--ink); color: #fff; }
+.btn-ghost:hover { background: var(--ink); color: #fff; }
+.btn-ghost:hover .ic { background: var(--acc); color: var(--ink); }
+
+.btn-light { background: #fff; color: var(--ink); }
+.btn-light .ic { background: var(--ink); color: var(--acc); }
+
+.btn-sm { min-height: 48px; padding: 6px 6px 6px 22px; font-size: 15px; }
+.btn-sm .ic { width: 36px; height: 36px; }
+
+.btn-block { width: 100%; }
+
+/* ---------- 5. Чипы ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .88);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+}
+.chip .dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--acc);
+  box-shadow: 0 0 0 3px rgba(20, 24, 18, .12);
+}
+.chip-lime { background: var(--acc); }
+
+.pos-tl { position: absolute; top: 20px; left: 20px; z-index: 2; max-width: calc(100% - 40px); }
+.pos-tr { position: absolute; top: 20px; right: 20px; z-index: 2; }
+
+/* Заголовок секции: слева заголовок, справа пояснение/кнопка */
+.sec-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+.sec-head-r {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  max-width: 380px;
+}
+.sec-head-r.end { align-items: flex-end; }
+
+/* =========================================================
+   6. Шапка
+   ========================================================= */
+.hdr {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 3px;
+  font-weight: 700;
+  font-size: 31px;
+  letter-spacing: -.055em;
+  line-height: .9;
+}
+.logo svg { width: .6em; height: .82em; }
+.logo .slash { fill: var(--acc); stroke: none; }
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  padding: 6px;
+  border-radius: 999px;
+  background: #fff;
+}
+.nav a, .nav-dd-btn {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-size: 14.5px;
+  transition: background .2s;
+}
+.nav a:hover, .nav-dd-btn:hover { background: var(--sage); }
+.nav-dd-btn { border: 0; background: transparent; color: inherit; cursor: pointer; font-family: inherit; }
+
+/* Выпадающий список «Каталог стендов» */
+.nav-dd { position: relative; }
+.nav-chev { transition: transform .3s var(--ease); }
+.nav-dd.is-open .nav-chev { transform: rotate(180deg); }
+.cat-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: -6px;
+  z-index: 70;
+  width: min(960px, calc(100vw - 80px));
+  padding: 14px 18px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 28px 56px -24px rgba(20, 24, 18, .3), 0 0 0 1px rgba(20, 24, 18, .05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity .2s, visibility .2s, transform .3s var(--ease);
+}
+/* «мостик», чтобы меню не закрывалось при переводе курсора */
+.cat-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -16px; height: 16px; }
+.nav-dd.is-open .cat-menu { opacity: 1; visibility: visible; transform: none; }
+@media (hover: hover) {
+  .nav-dd:hover .cat-menu { opacity: 1; visibility: visible; transform: none; }
+  .nav-dd:hover .nav-chev { transform: rotate(180deg); }
+}
+.cat-menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav .cat-menu a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 40px 14px 10px;
+  border-radius: 0;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: background .2s, padding .3s var(--ease);
+}
+.nav .cat-menu a:hover { background: transparent; padding-left: 16px; }
+.cat-go {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  margin-top: -13px;
+  width: 26px;
+  height: 26px;
+  padding: 6px;
+  border-radius: 50%;
+  background: var(--acc);
+  color: var(--ink);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity .25s, transform .3s var(--ease);
+}
+.cat-menu a:hover .cat-go, .cat-menu a:focus-visible .cat-go { opacity: 1; transform: none; }
+/* Ссылка на страницу каталога внизу панели */
+.nav .cat-menu .cat-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 2px 10px;
+  padding: 6px 6px 6px 16px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform .35s var(--ease);
+}
+.nav .cat-menu .cat-all:hover { background: var(--ink); padding-left: 16px; transform: scale(1.04); }
+.cat-all .ic { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--acc); color: var(--ink); transition: transform .45s var(--ease); }
+.cat-all:hover .ic { transform: rotate(-45deg); }
+.mnav .mnav-cat-list .mnav-cat-all { grid-column: 1 / -1; font-weight: 500; }
+
+/* «Каталог стендов» в мобильном меню */
+.mnav-cat summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: var(--r-sm);
+  font-size: 17px;
+  font-weight: 500;
+  list-style: none;
+  cursor: pointer;
+}
+.mnav-cat summary::-webkit-details-marker { display: none; }
+.mnav-cat summary:hover { background: var(--sage); }
+.mnav-cat summary svg { transition: transform .3s var(--ease); }
+.mnav-cat[open] summary svg { transform: rotate(180deg); }
+.mnav-cat-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px 8px;
+  padding: 4px 8px 10px;
+}
+.mnav .mnav-cat-list a { padding: 10px 8px; font-size: 15px; font-weight: 400; border-radius: 10px; }
+
+.hdr-r { display: flex; align-items: center; gap: 8px; flex: none; }
+.hdr-cta { white-space: nowrap; }
+
+.icon-btn {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  transition: background .2s;
+}
+.icon-btn:hover { background: var(--sage); }
+
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 48px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  display: grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: var(--acc);
+  font-size: 11px;
+  font-weight: 600;
+  box-shadow: 0 0 0 2px var(--bg);
+}
+
+.burger { display: none; }
+
+/* Выпадающий список языков */
+.lang-dd { position: relative; }
+.lang-chev { transition: transform .3s var(--ease); }
+.lang[aria-expanded="true"] .lang-chev { transform: rotate(180deg); }
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 70;
+  min-width: 200px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 24px 48px -20px rgba(20, 24, 18, .3), 0 0 0 1px rgba(20, 24, 18, .05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity .2s, visibility .2s, transform .3s var(--ease);
+}
+.lang-dd.is-open .lang-menu { opacity: 1; visibility: visible; transform: none; }
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: 14px;
+  font-size: 15px;
+  transition: background .2s;
+}
+.lang-menu a:hover { background: var(--bg); }
+.lang-menu .code {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+}
+.lang-menu a[aria-current="page"] .code { background: var(--acc); }
+.lang-menu .name { flex: 1; }
+.lang-check { opacity: 0; }
+.lang-menu a[aria-current="page"] .lang-check { opacity: 1; }
+
+/* Языки в мобильном меню */
+.mnav-lang { display: flex; gap: 6px; padding: 8px 8px 0; }
+.mnav-lang a {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 44px;
+  padding: 0;
+  border-radius: 12px;
+  background: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+.mnav-lang a[aria-current="page"] { background: var(--acc); }
+
+/* Мобильное меню */
+.mnav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  flex-direction: column;
+  gap: 2px;
+  padding: 22px var(--gutter) 32px;
+  background: var(--bg);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.mnav.is-open { display: flex; }
+html.menu-open { overflow: hidden; }
+@media (min-width: 1281px) { .mnav.is-open { display: none; } }
+.mnav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.mnav .mnav-top .logo { padding: 0; border-radius: 0; font-size: 31px; font-weight: 700; }
+.mnav .mnav-top .logo:hover { background: none; }
+.mnav-close { background: #fff; }
+.mnav .mnav-lang a { background: #fff; }
+.mnav .mnav-lang a[aria-current="page"] { background: var(--acc); }
+.mnav a {
+  padding: 14px 16px;
+  border-radius: var(--r-sm);
+  font-size: 17px;
+  font-weight: 500;
+}
+.mnav a:hover { background: var(--sage); }
+.mnav .btn { margin-top: 8px; }
+
+/* =========================================================
+   7. Hero
+   ========================================================= */
+/* Баннер: фото на фоне, заголовок и кнопки поверх */
+.hero-media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: clamp(540px, calc(52vw - 100px), 680px);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  background: #2A2F25;
+  color: #fff;
+}
+.hero-media .hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.01);
+  transition: transform 1.4s var(--ease);
+}
+.hero-media:hover .hero-bg { transform: scale(1.05); }
+/* Затемнение фона баннера на планшетах и телефонах */
+@media (max-width: 968px) {
+  .hero-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(14, 17, 12, .5);
+    pointer-events: none;
+  }
+}
+
+.hero-top {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 48px;
+  align-items: end;
+  padding: 56px 40px 130px;
+}
+.hero-top .eyebrow { color: rgba(255, 255, 255, .8); }
+.hero-top .eyebrow::before { box-shadow: none; }
+.hero-top .h1 { color: #fff; font-size: clamp(40px, 12vw, 64px); }
+.hero-top .mark { color: var(--ink); }
+.hero-top .lead { color: rgba(255, 255, 255, .85); }
+.hero-top .btn-dark { background: #000; }
+
+.hero-side {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-bottom: 8px;
+}
+.chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.chain li { display: inline-flex; align-items: center; gap: 12px; }
+.chain li + li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* Контурная кнопка для тёмного фона */
+.btn-solid { background: var(--ink); color: #fff; }
+.btn-solid .ic { background: var(--acc); color: var(--ink); }
+.btn-white { background: #fff; color: var(--ink); }
+.btn-white .ic { background: var(--acc); color: var(--ink); }
+.btn-ghost-light { background: transparent; color: #fff; box-shadow: inset 0 0 0 1px #fff; }
+.btn-ghost-light { padding-right: 26px; }
+
+.hero-tabs {
+  position: absolute;
+  z-index: 2;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.htab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 100%;
+  padding: 14px 14px 14px 22px;
+  border-radius: 22px;
+  color: var(--ink);
+  background: #fff;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  transition: background .25s, transform .35s var(--ease);
+}
+.htab:hover, .htab.is-first { background: #fff; }
+.htab .t { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.htab .t b { font-size: 19px; font-weight: 500; letter-spacing: -.015em; line-height: 1.2; }
+.htab .t .mono { color: var(--mute); }
+.htab .ic {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--acc);
+  color: var(--ink);
+  transition: background .25s, transform .45s var(--ease);
+}
+.htab:hover .ic, .htab.is-first .ic { background: var(--acc); }
+.htab:hover { transform: scale(1.03); }
+.htab:hover .ic { transform: rotate(-45deg); }
+
+/* =========================================================
+   8. Каталог конструкций
+   ========================================================= */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cat-grid > li { display: flex; }
+
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px;
+  border-radius: var(--r-md);
+  background: #fff;
+  transition: transform .4s var(--ease), box-shadow .4s;
+}
+.tile:hover { transform: translateY(-5px); box-shadow: 0 22px 44px -24px rgba(20, 24, 18, .35); }
+
+.tile-img {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  background: var(--render);
+  overflow: hidden;
+}
+.tile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s var(--ease);
+}
+.tile:hover .tile-img img { transform: scale(1.07); }
+
+/* Наведение: фото плавно затемняется, по центру появляется «Перейти» */
+.tile-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 24, 18, .45);
+  opacity: 0;
+  transition: opacity .4s var(--ease);
+}
+.tile-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 26px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(.9);
+  transition: opacity .4s var(--ease), transform .4s var(--ease);
+}
+.tile:hover .tile-img::after,
+.tile:focus-visible .tile-img::after { opacity: 1; }
+.tile:hover .tile-more,
+.tile:focus-visible .tile-more { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+.tile-cap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 12px 8px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  line-height: 1.25;
+}
+
+/* Чип поверх фото карточки */
+.tile .chip { position: absolute; top: 22px; left: 22px; z-index: 1; }
+
+/* Лаймовая плитка-призыв */
+.cta-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  min-height: 260px;
+  padding: 28px;
+  border-radius: var(--r-md);
+  background: var(--acc);
+  transition: transform .4s var(--ease);
+}
+.cta-tile:hover { transform: translateY(-5px); }
+.cta-tile p { font-size: 25px; line-height: 1.12; letter-spacing: -.025em; font-weight: 500; }
+.cta-tile .ic {
+  align-self: flex-end;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--acc);
+  transition: transform .45s var(--ease);
+}
+.cta-tile:hover .ic { transform: rotate(-45deg); }
+
+/* =========================================================
+   9. Шалфейная полоса (направления, письма)
+   ========================================================= */
+.band-sage {
+  margin-top: var(--section);
+  padding-bottom: var(--section);
+  background: var(--sage);
+}
+.band-sage > .sec { padding-top: 110px; }
+
+/* ---------- Аккордеон направлений ---------- */
+.acc {
+  display: flex;
+  gap: 14px;
+  height: 580px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.acc-p {
+  position: relative;
+  flex: 1 1 0%;
+  min-width: 96px;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  transition: flex .8s cubic-bezier(.65, 0, .2, 1);
+}
+.acc-p.is-on { flex: 6 1 0%; }
+
+.t-photo { background: #2A2F25; color: #fff; }
+.t-lime  { background: var(--acc); }
+.t-render { background: var(--render); }
+
+.acc-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(14, 17, 12, .05) 30%, rgba(14, 17, 12, .8) 100%);
+  transition: background .4s;
+}
+
+/* Сложенная карточка — сплошной цвет, раскрытая — фоновое фото */
+.acc-p .acc-bg,
+.acc-p .shade { opacity: 0; transition: opacity .6s var(--ease); }
+.acc-p.is-on .acc-bg,
+.acc-p.is-on .shade { opacity: 1; }
+.acc-p.is-on { color: #fff; }
+
+.acc-body {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 34px;
+  transition: opacity .3s;
+}
+.acc-p:not(.is-on) .acc-body { opacity: 0; visibility: hidden; }
+
+.acc-open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 520px;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .45s .3s, transform .6s .3s var(--ease);
+}
+.acc-p.is-on .acc-open { opacity: 1; transform: none; }
+.acc-open h3 {
+  font-size: clamp(30px, 3.6vw, 56px);
+  line-height: 1;
+  letter-spacing: -.04em;
+  font-weight: 500;
+}
+.acc-open p { font-size: 19px; line-height: 1.4; max-width: 380px; }
+
+.acc-toggle {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.acc-p.is-on .acc-toggle { display: none; }
+.vt {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -.015em;
+  white-space: nowrap;
+}
+.plus {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  transition: transform .35s;
+}
+.acc-toggle:hover .plus { transform: rotate(90deg); }
+.t-lime .plus { background: var(--ink); color: var(--acc); }
+.t-render .plus { background: var(--acc); }
+
+/* =========================================================
+   10. Проекты
+   ========================================================= */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.proj-grid > li { display: flex; }
+.proj-grid > .p-a { grid-column: span 7; }
+.proj-grid > .p-b { grid-column: span 5; }
+.proj-grid > .p-c { grid-column: span 5; }
+.proj-grid > .p-d { grid-column: span 7; }
+
+.proj {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 540px;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: #CFD3C6;
+}
+.p-c .proj, .p-d .proj { height: 480px; }
+.proj > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s var(--ease);
+}
+.proj:hover > img { transform: scale(1.05); }
+
+.proj-info {
+  position: absolute;
+  left: 16px;
+  right: 96px;
+  bottom: 16px;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 22px 20px;
+  border-radius: 22px;
+  background: #fff;
+}
+.proj-info .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.proj-info h3 { font-size: 23px; font-weight: 500; letter-spacing: -.025em; line-height: 1.15; }
+.proj-info .mono { color: var(--mute); font-size: 11px; }
+
+.proj-go {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fff;
+  transition: background .3s, transform .5s var(--ease);
+}
+.proj:hover .proj-go { background: var(--acc); transform: rotate(45deg); }
+
+.count { color: var(--mute); }
+
+/* =========================================================
+   11. Дизайн и производство (эскиз → стенд)
+   ========================================================= */
+.paper {
+  padding: 56px;
+  border-radius: var(--r-xl);
+  background: #fff;
+}
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 56px;
+  align-items: center;
+}
+.split-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+.split-txt .eyebrow { margin-bottom: -6px; }
+.split-txt > p { max-width: 440px; }
+
+.stages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stages li {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 6px 16px 6px 7px;
+  border-radius: 999px;
+  background: var(--bg);
+  font-size: 14.5px;
+  font-weight: 500;
+  transition: background .2s;
+}
+.stages li:hover { background: var(--acc); }
+.stages .n {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+}
+
+.ba-wrap { display: flex; flex-direction: column; gap: 14px; }
+.ba {
+  --pos: 52%;
+  position: relative;
+  aspect-ratio: 7 / 5;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: #F7F8F2;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ba > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ba-sketch {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+}
+.ba-sketch svg { width: 100%; height: 100%; }
+.ba-sketch img { width: 100%; height: 100%; object-fit: cover; }
+.ba-sketch .logo-box { fill: var(--acc); stroke: #2C3427; stroke-width: 1.4; }
+.ba-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  width: 2px;
+  margin-left: -1px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(20, 24, 18, .15);
+  pointer-events: none;
+}
+.ba-knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: -29px 0 0 -29px;
+  border-radius: 50%;
+  background: var(--acc);
+  color: var(--ink);
+  box-shadow: 0 10px 26px -8px rgba(20, 24, 18, .45);
+}
+.ba-range {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+}
+.ba .chip { pointer-events: none; }
+/* Видимый фокус для ползунка (сам input прозрачный) */
+.ba:has(.ba-range:focus-visible) .ba-knob { outline: 2px solid var(--ink); outline-offset: 3px; }
+.hint { display: flex; align-items: center; gap: 10px; color: var(--mute); }
+
+/* =========================================================
+   12. Порядок работы — «лесенка»
+   ========================================================= */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 250px;
+  padding: 22px;
+  border-radius: var(--r-md);
+  background: #fff;
+  transition: transform .4s var(--ease), box-shadow .4s;
+}
+.step:hover { transform: translateY(-6px); box-shadow: 0 22px 44px -26px rgba(20, 24, 18, .35); }
+
+/* Линия под карточками, соединяющая шаги, и зелёные точки по центру каждой */
+.steps { position: relative; padding-bottom: 46px; }
+.steps::before {
+  content: "";
+  position: absolute;
+  left: calc((100% - 70px) / 12);
+  right: calc((100% - 70px) / 12);
+  bottom: 15px;
+  height: 1px;
+  background: #C3C9B6;
+}
+.step { position: relative; }
+.step::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 24px);
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--acc);
+  box-shadow: 0 0 0 4px var(--bg);
+  transform: translateX(-50%);
+  transition: transform .4s var(--ease);
+}
+/* при подъёме карточки точка остаётся на линии */
+.step:hover::after { transform: translate(-50%, 6px); }
+.step .top { display: flex; justify-content: space-between; align-items: center; }
+.step .num {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #000;
+  color: var(--acc);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+}
+.step h3 { margin-top: auto; font-size: 21px; font-weight: 500; letter-spacing: -.02em; line-height: 1.2; }
+.step p { font-size: 15px; line-height: 1.45; color: var(--mute); }
+
+.s6 { background: var(--acc); }
+.s6 .num { background: var(--ink); color: var(--acc); box-shadow: none; }
+.s6 p { color: var(--ink); }
+
+/* =========================================================
+   13. Аренда оборудования
+   ========================================================= */
+.rent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.rent-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 28px;
+  border-radius: var(--r-lg);
+  background: var(--sage);
+}
+.rent-intro .top { display: flex; flex-direction: column; gap: 14px; }
+.rent-intro .big { font-size: 26px; line-height: 1.15; letter-spacing: -.025em; font-weight: 500; }
+.counter { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+.counter b { font-size: 80px; line-height: .85; letter-spacing: -.05em; font-weight: 500; }
+
+.prod {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: var(--r-lg);
+  background: #fff;
+  transition: transform .4s var(--ease), box-shadow .4s;
+}
+.prod:hover { transform: translateY(-5px); box-shadow: 0 22px 44px -24px rgba(20, 24, 18, .35); }
+.prod-img {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 22px;
+  background: var(--render);
+  overflow: hidden;
+}
+.prod-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.prod:hover .prod-img img { transform: scale(1.06); }
+.prod-img .chip { position: absolute; top: 14px; left: 14px; }
+.prod-b { display: flex; flex-direction: column; flex: 1; gap: 6px; padding: 18px 14px 8px; }
+.prod-b h3 { font-size: 22px; font-weight: 500; letter-spacing: -.02em; line-height: 1.2; }
+.prod-b .mono { color: var(--mute); }
+.prod-f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-weight: 500;
+}
+.prod-b .mono + .prod-f { margin-top: 14px; }
+
+.add {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--acc);
+  cursor: pointer;
+  transition: transform .35s, background .3s, color .3s;
+}
+.add:hover { transform: rotate(90deg); }
+.add .i-check { display: none; }
+.add[aria-pressed="true"] { background: var(--ink); color: var(--acc); }
+.add[aria-pressed="true"]:hover { transform: scale(.94); }
+.add[aria-pressed="true"] .i-plus { display: none; }
+.add[aria-pressed="true"] .i-check { display: block; }
+
+/* =========================================================
+   14. О компании
+   ========================================================= */
+.about { padding-top: 150px; }
+.statement {
+  font-size: clamp(40px, 8.4vw, 136px);
+  line-height: 1.02;
+  letter-spacing: -.055em;
+  font-weight: 500;
+}
+@media (min-width: 1200px) and (max-width: 1920px) {
+  .statement { font-size: 88px; }
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: stretch;
+}
+/* Правая колонка растягивается на высоту левой:
+   текст сверху, подпись снизу */
+.about-r {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+  padding-top: 38px;
+}
+.about-r p { font-size: 23px; line-height: 1.42; letter-spacing: -.015em; }
+.about-meta { display: flex; flex-direction: column; gap: 10px; color: var(--mute); }
+
+/* Фото-капсула на всю ширину */
+.about-pill {
+  position: relative;
+  margin-top: 56px;
+  height: clamp(180px, 30vw, 540px);
+  border-radius: 999px;
+  overflow: hidden;
+  background: #CFD3C6;
+}
+.about-pill img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s var(--ease);
+}
+.about-pill:hover img { transform: scale(1.04); }
+/* Лёгкое затемнение фото */
+.about-pill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(14, 17, 12, .35);
+  pointer-events: none;
+}
+/* Крупная надпись ADVEX по центру */
+.about-word {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: clamp(64px, 15vw, 240px);
+  font-weight: 700;
+  letter-spacing: -.05em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* =========================================================
+   15. Клиенты и партнёры
+   ========================================================= */
+.clients {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
+  align-items: center;
+  padding-top: 96px;
+}
+.logos {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 128px;
+  padding: 14px;
+  border: 1.5px dashed #B9BFAE;
+  border-radius: 20px;
+  text-align: center;
+  transition: background .25s, border-color .25s, transform .35s var(--ease);
+}
+.slot:hover { background: #fff; border-color: #fff; transform: scale(1.04); }
+/* Логотипы партнёров: белая карточка под белый фон логотипов */
+.slot { background: #fff; border-color: #fff; }
+.slot img { max-width: 100%; max-height: 88px; width: auto; height: auto; object-fit: contain; }
+.slot b { font-size: 17px; font-weight: 600; letter-spacing: -.01em; color: #5F665A; }
+.slot .mono { color: var(--mute); font-size: 10.5px; }
+.note { margin-top: 16px; font-size: 13.5px; color: var(--mute); text-align: right; }
+
+/* =========================================================
+   16. Отзывы клиентов (слайдер)
+   ========================================================= */
+.rev-nav { display: flex; gap: 10px; }
+.rev-arrow {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--acc);
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform .35s var(--ease), opacity .25s;
+}
+.rev-arrow:hover { transform: scale(1.06); }
+.rev-arrow:disabled { opacity: .35; cursor: default; transform: none; }
+.rev-arrow.prev svg { transform: scaleX(-1); }
+
+.rev-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Итоговая карточка с рейтингом */
+.rev-sum {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 36px;
+  border-radius: var(--r-lg);
+  background: var(--ink);
+  color: #fff;
+}
+.rev-score { font-size: 88px; line-height: .9; letter-spacing: -.05em; font-weight: 500; }
+.stars { display: flex; gap: 4px; color: var(--acc); }
+.rev-sum > p { font-size: 17px; line-height: 1.5; color: rgba(255, 255, 255, .72); max-width: 360px; }
+.rev-src { display: flex; flex-direction: column; gap: 10px; margin: auto 0 0; padding: 0; list-style: none; }
+.rev-src li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border-radius: var(--r-sm);
+  background: rgba(255, 255, 255, .06);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1);
+  font-size: 16px;
+  font-weight: 500;
+}
+.rev-src li b { margin-left: auto; font-size: 20px; font-weight: 600; letter-spacing: -.02em; }
+.pin { flex: none; }
+
+/* Лента отзывов */
+.rev-main { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.rev-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 16px) / 2);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  flex: 1;
+}
+.rev-track::-webkit-scrollbar { display: none; }
+
+.rev-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 28px;
+  border-radius: var(--r-lg);
+  background: #fff;
+  scroll-snap-align: start;
+}
+.rev-head { display: flex; align-items: center; gap: 14px; }
+.avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 19px;
+  font-weight: 600;
+}
+.av-ink { background: var(--ink); color: var(--acc); }
+.av-lime { background: var(--acc); color: var(--ink); }
+.av-sage { background: var(--sage); color: var(--ink); }
+.rev-who { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.rev-who b { font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
+.rev-who span { font-size: 14px; color: var(--mute); }
+.rev-card .stars { color: #C9E33A; }
+.rev-text { font-size: 16.5px; line-height: 1.55; }
+.rev-foot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--mute);
+}
+
+/* Полоса прогресса */
+.rev-bottom { display: flex; align-items: center; gap: 16px; }
+.rev-arrow-m { display: none; }
+.rev-bar { flex: 1; position: relative; height: 4px; border-radius: 2px; background: #CDD2C2; overflow: hidden; }
+.rev-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 33%;
+  border-radius: 2px;
+  background: var(--ink);
+  transition: left .3s var(--ease), width .3s var(--ease);
+}
+
+/* =========================================================
+   17. FAQ (на <details>, работает без JS)
+   ========================================================= */
+.faq {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 56px;
+  align-items: start;
+}
+.faq-l { display: flex; flex-direction: column; gap: 40px; }
+
+
+.faq-r { display: flex; flex-direction: column; gap: 10px; padding-top: 6px; }
+
+.qa {
+  border-radius: 22px;
+  background: #fff;
+  transition: box-shadow .3s;
+}
+.qa summary {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border-radius: 22px;
+  list-style: none;
+  cursor: pointer;
+}
+.qa summary::-webkit-details-marker { display: none; }
+.qn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--bg);
+  font-size: 11px;
+  transition: background .3s;
+}
+.qa[open] .qn { background: var(--acc); }
+.qt { flex: 1; font-size: 19px; font-weight: 500; letter-spacing: -.015em; line-height: 1.3; }
+.qi {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--bg);
+  transition: transform .35s, background .3s, color .3s;
+}
+.qa summary:hover .qi { background: var(--acc); }
+.qa[open] .qi { background: var(--ink); color: #fff; transform: rotate(180deg); }
+.qa-a { padding: 0 80px 26px; font-size: 16.5px; line-height: 1.55; color: var(--mute); }
+
+/* =========================================================
+   18. Форма заявки
+   ========================================================= */
+.cta {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--r-xxl);
+  background: #fff;
+}
+.cta-l {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 44px;
+  border-radius: var(--r-lg);
+  background: var(--acc);
+  overflow: hidden;
+}
+.cta-l > p { font-size: 20px; line-height: 1.4; max-width: 420px; }
+/* Эскиз архитектора на фоне — еле заметный */
+.cta-sketch {
+  position: absolute;
+  right: -60px;
+  bottom: -40px;
+  z-index: 0;
+  width: 92%;
+  max-width: 600px;
+  opacity: .16;
+  pointer-events: none;
+}
+.cta-l > :not(.cta-sketch) { position: relative; z-index: 1; }
+.contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: auto 0 0;
+  font-style: normal;
+}
+.contacts .row { display: flex; flex-direction: column; gap: 2px; }
+.contacts .row a, .contacts .row .v { font-size: 19px; font-weight: 500; letter-spacing: -.01em; }
+.contacts .mono { opacity: .7; }
+
+.cta-f { display: flex; flex-direction: column; gap: 20px; padding: 40px 36px; }
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.fld { display: flex; flex-direction: column; gap: 8px; min-width: 0; border: 0; margin: 0; padding: 0; }
+.lbl { padding: 0; font-size: 14px; font-weight: 500; }
+
+.inp {
+  width: 100%;
+  height: 58px;
+  padding: 0 18px;
+  border: 1.5px solid transparent;
+  border-radius: var(--r-sm);
+  background: var(--bg);
+  font-size: 16px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color .2s, background .2s;
+}
+.inp::placeholder { color: #7A8073; }
+.inp:focus { border-color: var(--ink); background: #fff; }
+textarea.inp { height: 128px; padding: 16px 18px; resize: vertical; }
+
+/* Темы обращения — радио-кнопки в виде чипов */
+.topics { display: flex; flex-wrap: wrap; gap: 8px; }
+.topic { position: relative; }
+.topic input { position: absolute; opacity: 0; pointer-events: none; }
+.topic span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: var(--bg);
+  font-size: 14.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.topic span:hover { background: var(--sage); }
+.topic input:checked + span { background: var(--ink); color: #fff; }
+.topic input:focus-visible + span { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+.chk { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; line-height: 1.45; color: var(--mute); cursor: pointer; }
+.chk input { flex: none; width: 22px; height: 22px; margin: 0; accent-color: var(--ink); }
+.chk a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+
+.sent {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: var(--r-sm);
+  background: var(--sage);
+  font-weight: 500;
+}
+.sent[hidden] { display: none; }
+.sent .ok { flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--acc); }
+
+/* =========================================================
+   19. Подвал
+   ========================================================= */
+.foot { margin-top: var(--section); }
+.foot-card {
+  padding: 64px 56px 0;
+  border-radius: var(--r-xxl) var(--r-xxl) 0 0;
+  background: var(--ink);
+  color: #fff;
+  overflow: hidden;
+}
+.foot-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  padding-bottom: 56px;
+}
+.fcol { display: flex; flex-direction: column; align-items: flex-start; gap: 11px; }
+.fcol ul { display: flex; flex-direction: column; gap: 11px; list-style: none; margin: 0; padding: 0; }
+.fcol .mono { color: rgba(255, 255, 255, .5); margin-bottom: 8px; }
+.fcol a, .fcol address { font-size: 15.5px; font-style: normal; color: rgba(255, 255, 255, .85); text-underline-offset: 4px; }
+.fcol a:hover { color: #fff; text-decoration: underline; }
+.fcol .spacer { height: 8px; }
+.fbrand .logo { margin-bottom: 14px; color: #fff; font-size: 31px; text-decoration: none; }
+.fbrand p { font-size: 17px; line-height: 1.45; max-width: 330px; color: rgba(255, 255, 255, .85); }
+.fbrand .mono { margin-top: 8px; }
+
+.foot-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 22px 0 26px;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  font-size: 13px;
+  color: rgba(255, 255, 255, .55);
+}
+.foot-bar nav { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.foot-bar nav a:hover { color: #fff; text-decoration: underline; }
+.foot-bar nav a[aria-current="page"] { color: #fff; }
+
+/* =========================================================
+   20. Адаптив
+   ========================================================= */
+@media (max-width: 1480px) {
+  .nav a, .nav-dd-btn { padding: 10px 9px; font-size: 14px; }
+  .nav .cat-menu a { padding: 13px 36px 13px 8px; }
+}
+
+/* Меню прячется в бургер раньше остальной адаптации,
+   чтобы длинные пункты на других языках не ломали шапку */
+@media (max-width: 1280px) {
+  .nav, .hdr-cta { display: none; }
+  .burger { display: grid; }
+}
+
+@media (max-width: 1100px) {
+  :root { --section: 100px; }
+
+  .hero-top { grid-template-columns: 1fr; gap: 28px; padding: 40px 32px 120px; }
+
+  .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .proj-grid > .p-a, .proj-grid > .p-b,
+  .proj-grid > .p-c, .proj-grid > .p-d { grid-column: span 12; }
+  .proj, .p-c .proj, .p-d .proj { height: 440px; }
+
+  .split, .faq, .cta, .about-grid, .clients { grid-template-columns: 1fr; }
+  .about-r { padding-top: 0; }
+
+  .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .steps .step { margin-top: 0; }
+  .steps { padding-bottom: 0; }
+  .steps::before, .step::after { display: none; }
+
+  .rent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .logos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .rev-grid { grid-template-columns: 1fr; }
+  .rev-nav { display: none; }
+  .rev-arrow-m { display: grid; flex: none; }
+  .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .note { text-align: left; }
+}
+
+@media (max-width: 720px) {
+  :root { --gutter: 16px; --section: 80px; }
+
+  .band-sage > .sec { padding-top: 72px; }
+  .lang { display: none; }
+
+  .hero-top { padding: 32px 18px 236px; }
+  .hero-media { min-height: 0; border-radius: var(--r-md); }
+  .hero-tabs { grid-template-columns: 1fr; gap: 8px; left: 10px; right: 10px; bottom: 10px; }
+  .htab { padding: 10px 10px 10px 18px; }
+  .htab .t b { font-size: 16px; }
+
+  .cat-grid { gap: 10px; }
+  .tile { padding: 6px; border-radius: 20px; }
+  .tile-cap { font-size: 14px; padding: 10px 8px 6px; }
+  .cat-grid > li.is-cta { grid-column: span 2; }
+  .cta-tile { min-height: 200px; }
+
+  .acc { flex-direction: column; height: auto; }
+  .acc-p, .acc-p.is-on { flex: none; height: 92px; }
+  .acc-p.is-on { height: 460px; }
+  .acc-toggle { flex-direction: row; gap: 16px; padding: 0 20px; }
+  .vt { flex: 1; writing-mode: horizontal-tb; transform: none; font-size: 19px; text-align: left; white-space: normal; }
+  .acc-body { padding: 24px; }
+
+  .proj, .p-c .proj, .p-d .proj { height: 380px; border-radius: 22px; }
+  .proj-info { left: 12px; right: 12px; bottom: 12px; padding: 14px 16px; }
+  .proj-go { top: 12px; right: 12px; bottom: auto; width: 52px; height: 52px; }
+
+  .paper { padding: 20px; border-radius: var(--r-md); }
+
+  .steps, .rent-grid, .grid2 { grid-template-columns: 1fr; }
+  .step { min-height: 0; }
+  .step h3 { margin-top: 8px; }
+  .rev-track { grid-auto-columns: 86%; }
+  .rev-sum { padding: 26px; }
+  .rev-score { font-size: 64px; }
+  .rev-arrow { width: 48px; height: 48px; }
+  .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .about { padding-top: 100px; }
+
+  .cta { padding: 8px; border-radius: 26px; }
+  .cta-l { padding: 28px 22px; }
+  .cta-f { padding: 24px 14px; }
+
+  .qa summary { gap: 12px; padding: 16px; }
+  .qt { font-size: 16.5px; }
+  .qa-a { padding: 0 18px 20px; }
+
+  .foot-grid { grid-template-columns: 1fr; }
+  .foot-card { padding: 40px 20px 0; border-radius: 26px 26px 0 0; }
+}
+
+@media (max-width: 359px) {
+  .cat-grid { grid-template-columns: 1fr; }
+  .cat-grid > li.is-cta { grid-column: span 1; }
+  .btn { padding-left: 20px; }
+}
+
+/* =========================================================
+   Внутренние страницы (ядро): текущий раздел, крошки, заголовок страницы, CTA-панель
+   ========================================================= */
+.nav a.is-current, .nav-dd-btn.is-current { background: var(--sage); }
+.crumbs { margin: 0; padding: 12px 0 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; color: var(--mute); }
+.crumbs li { display: inline-flex; align-items: center; gap: 8px; }
+.crumbs li + li::before { content: "/"; color: #A3A99B; }
+.crumbs a { transition: color .2s; }
+.crumbs a:hover { color: var(--ink); }
+.crumbs [aria-current="page"] { color: var(--ink); }
+.page-head { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; align-items: end; padding-top: 56px; padding-bottom: 56px; }
+.page-title { font-size: clamp(42px, 6vw, 88px); line-height: .98; letter-spacing: -.045em; font-weight: 500; }
+.page-head-r { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; padding-bottom: 8px; }
+.page-head-r .lead { max-width: 440px; }
+.page-count { color: var(--mute); }
+.cta-band { position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: flex-start; gap: 22px; min-height: 360px; padding: 56px; border-radius: var(--r-xl); background: var(--acc); }
+.cta-band > :not(.cta-sketch) { position: relative; z-index: 1; }
+.cta-band p { font-size: 20px; line-height: 1.4; max-width: 520px; }
+.cta-band .btns { margin-top: 8px; }
+.cta-band .cta-sketch { width: 58%; max-width: 620px; right: -40px; bottom: -60px; }
+@media (max-width: 1100px) {
+  .page-head { grid-template-columns: 1fr; gap: 24px; padding-top: 40px; padding-bottom: 40px; }
+  .cta-band .cta-sketch { width: 80%; opacity: .1; }
+}
+@media (max-width: 720px) {
+  .cta-band { padding: 28px 22px; min-height: 0; border-radius: var(--r-md); }
+}
+
+/* Кнопка «Наверх» */
+.to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--acc);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 0 12px 28px -12px rgba(20, 24, 18, .45);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity .3s, visibility .3s, transform .35s var(--ease);
+}
+.to-top.is-visible { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { transform: scale(1.08); }
+@media (max-width: 720px) {
+  .to-top { right: 16px; bottom: 16px; width: 48px; height: 48px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* =========================================================
+   СТРАНИЦА: Доставка и оплата
+   ========================================================= */
+/* Карточки с иконкой (светлые) */
+.icards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; margin-top: 20px;}
+.icards.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.icard { display: flex; flex-direction: column; gap: 14px; min-height: 240px; padding: 28px; border-radius: var(--r-lg); background: #fff; transition: transform .4s var(--ease), box-shadow .4s; }
+.icard:hover { transform: translateY(-5px); box-shadow: 0 22px 44px -24px rgba(20, 24, 18, .35); }
+.icard .ic-c { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--acc); color: var(--ink); }
+.icard h3 { margin-top: auto; font-size: 22px; font-weight: 500; letter-spacing: -.02em; line-height: 1.2; }
+.icard p { color: var(--mute); font-size: 15.5px; line-height: 1.5; }
+.icards.two .icard h3 { margin-top: 28px; }
+/* Шаги доставки: все белые, иконка в зелёном круге */
+.step-ic .num { background: var(--acc); color: var(--ink); box-shadow: none; }
+.icard .btn { margin-top: auto; align-self: flex-start; }
+.pcard { padding: 8px 8px 24px; min-height: 0; }
+.pcard-img { aspect-ratio: 16 / 9; margin-bottom: 8px; border-radius: 22px; overflow: hidden; background: var(--render); }
+.pcard-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.pcard:hover .pcard-img img { transform: scale(1.06); }
+.pcard h3 { margin-top: 0; padding: 0 16px; }
+.pcard p { padding: 0 16px; }
+@media (max-width: 1100px) { .icards, .icards.two { grid-template-columns: 1fr; } .icard { min-height: 0; } }
+/* От чего зависит стоимость — тёмная акцентная карточка */
+.cost { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 48px; padding: 56px; border-radius: var(--r-xl); background: var(--ink); color: #fff; }
+.cost-l { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
+.cost-l p { color: rgba(255, 255, 255, .72); font-size: 17px; line-height: 1.5; max-width: 340px; }
+.cost-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.cost-grid li { display: flex; flex-direction: column; gap: 18px; min-height: 140px; padding: 22px; border-radius: 20px; background: transparent; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .18); transition: box-shadow .25s; }
+.cost-grid li:hover { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .45); }
+.cost-ic { flex: none; color: var(--acc); }
+.cost-grid h3 { margin-top: auto; font-size: 19px; font-weight: 500; letter-spacing: -.015em; line-height: 1.25; }
+
+
+@media (max-width: 1100px) { .cost { grid-template-columns: 1fr; gap: 32px; } .cost-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 720px) {
+  .cost { padding: 28px 22px; border-radius: var(--r-md); }
+  .cost-grid { grid-template-columns: 1fr; }
+  .cost-grid li { min-height: 0; flex-direction: row; align-items: center; }
+  .cost-grid h3 { margin-top: 0; }
+}
+.cost-grid p { color: rgba(255, 255, 255, .6); font-size: 14.5px; line-height: 1.45; }
+.cost-grid h3 + p { margin-top: -10px; }
+.cost-grid li.ph { position: relative; overflow: hidden; min-height: 340px; justify-content: flex-end; gap: 6px; background: #2A2F25; }
+.cost-grid li.ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+.cost-grid li.ph::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14, 17, 12, 0) 35%, rgba(14, 17, 12, .85) 100%); }
+.cost-grid li.ph:hover img { transform: scale(1.05); }
+.cost-grid li.ph h3, .cost-grid li.ph p { position: relative; z-index: 1; margin-top: 0; }
+.cost-grid li.ph p { color: rgba(255, 255, 255, .75); }
+@media (max-width: 720px) { .cost-grid li.ph { min-height: 260px; flex-direction: column; align-items: stretch; } }
+.co-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+.co-row .l { display: flex; flex-direction: column; gap: 10px; color: var(--mute); }
+.co-row .r { display: flex; flex-direction: column; gap: 18px; }
+.co-row .r p { font-size: 21px; line-height: 1.45; letter-spacing: -.01em; }
+@media (max-width: 1100px) { .co-row { grid-template-columns: 1fr; gap: 20px; } }
+@media (max-width: 720px) { .co-row .r p { font-size: 18px; } }
+
+/* Заголовок доставки: широкая колонка и выравнивание по высоте */
+@media (min-width: 1101px) {
+  .page-head { grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr); align-items: center; }
+  .page-head-r { padding-bottom: 0; }
+  .page-head-r .lead { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Иконки (используются через <use href="#...">) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z" fill="currentColor"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="currentColor"/><circle cx="12" cy="10" r="2.6" fill="#141812"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></g></symbol>
+  <symbol id="i-burger" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></g></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="c-area" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="1.5"/><path d="M3.5 11h7v9.5M10.5 3.5V8M14 11h6.5"/></g></symbol>
+  <symbol id="c-cube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l8.2 4.6v9.2L12 21.2l-8.2-4.6V7.4z"/><path d="M3.8 7.4L12 12l8.2-4.6M12 12v9.2"/></g></symbol>
+  <symbol id="c-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 4.8-9 4.8-9-4.8z"/><path d="M3 12.2l9 4.8 9-4.8"/><path d="M3 16.4l9 4.8 9-4.8"/></g></symbol>
+  <symbol id="c-bulb" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 17.5h5M10.5 21h3"/><path d="M12 2.5a6.5 6.5 0 0 0-3.9 11.7c.6.5 1.1 1.3 1.1 2.1v.2h5.6v-.2c0-.8.5-1.6 1.1-2.1A6.5 6.5 0 0 0 12 2.5z"/><path d="M12 6.5a2.5 2.5 0 0 0-2.5 2.5"/></g></symbol>
+  <symbol id="c-chair" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11V5.5A2.5 2.5 0 0 1 9.5 3h5A2.5 2.5 0 0 1 17 5.5V11"/><rect x="4.5" y="11" width="15" height="4" rx="1.5"/><path d="M7 15v6M17 15v6"/></g></symbol>
+  <symbol id="c-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12.5" r="8.5"/><path d="M12 8v4.5l3 2M9.5 2.5h5"/></g></symbol>
+  <symbol id="i-slash" viewBox="0 0 22 30"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Məzmuna keç</a>
+
+<!-- ================= ШАПКА ================= -->
+<header class="wrap hdr">
+  <a href="index.html" class="logo" aria-label="ADVEX — ana səhifə">advex<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+
+  <nav class="nav" aria-label="Əsas naviqasiya">
+    <div class="nav-dd" data-nav-dd>
+      <button type="button" class="nav-dd-btn" aria-expanded="false" aria-controls="cat-menu">Stend kataloqu<svg class="nav-chev" width="14" height="14" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <div class="cat-menu" id="cat-menu">
+        <ul>
+          <li><a href="stands/roll-up/index.html"><span>Roll-up</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/pop-up/index.html"><span>Pop-up</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/banner/index.html"><span>Banner stendləri</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/fold-up/index.html"><span>Fold-up</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/press-wall/index.html"><span>Press-wall</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/fabric/index.html"><span>Parça stendlər</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/custom/index.html"><span>Sərgi tikililəri</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/reception/index.html"><span>Resepşn masaları</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/print/index.html"><span>Poliqrafiya</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/promo/index.html"><span>Promo masalar</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/signs/index.html"><span>Reklam lövhələri</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="stands/brochure/index.html"><span>Buklet stendləri</span><svg class="cat-go" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+        <a href="catalog.html" class="cat-all">Bütün kataloq<span class="ic"><svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+    <a href="stands.html">Stendlərin hazırlanması</a>
+    <a href="staff.html">Modellər</a>
+    <a href="rental.html">İcarə</a>
+    <a href="projects.html">Layihələr</a>
+    <a href="delivery.html">Şirkət haqqında</a>
+    <a href="contacts.html">Əlaqə</a>
+  </nav>
+
+  <div class="hdr-r">
+    <div class="lang-dd" data-lang-dd>
+      <button type="button" class="lang" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Saytın dili: Azərbaycanca">AZ<svg class="lang-chev" width="14" height="14" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <ul class="lang-menu" id="lang-menu">
+        <li><a href="delivery.html" hreflang="az" lang="az" aria-current="page"><span class="code">AZ</span><span class="name">Azərbaycanca</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+        <li><a href="ru/delivery.html" hreflang="ru" lang="ru"><span class="code">RU</span><span class="name">Русский</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+        <li><a href="en/delivery.html" hreflang="en" lang="en"><span class="code">EN</span><span class="name">English</span><svg class="lang-check" width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg></a></li>
+      </ul>
+    </div>
+    <button type="button" class="icon-btn" data-cart-button data-label="Avadanlıq seçimi" aria-label="Avadanlıq seçimi: 0">
+      <svg width="20" height="20" aria-hidden="true"><use href="#i-bag"/></svg>
+      <span class="badge" data-cart-count>0</span>
+    </button>
+    <a href="index.html#contact" class="btn btn-dark btn-sm hdr-cta">Layihəni müzakirə edək<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    <button type="button" class="icon-btn burger" data-menu-toggle aria-controls="mobile-nav" aria-expanded="false" aria-label="Menyu">
+      <svg width="20" height="20" aria-hidden="true"><use href="#i-burger"/></svg>
+    </button>
+  </div>
+
+  <nav class="mnav" id="mobile-nav" aria-label="Mobil naviqasiya">
+    <div class="mnav-top">
+      <a href="index.html" class="logo" aria-label="ADVEX — ana səhifə">advex<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+      <button type="button" class="icon-btn mnav-close" data-menu-close aria-label="Menyunu bağla"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <details class="mnav-cat">
+      <summary>Stend kataloqu<svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="mnav-cat-list">
+        <a href="stands/roll-up/index.html">Roll-up</a>
+        <a href="stands/pop-up/index.html">Pop-up</a>
+        <a href="stands/banner/index.html">Banner stendləri</a>
+        <a href="stands/fold-up/index.html">Fold-up</a>
+        <a href="stands/press-wall/index.html">Press-wall</a>
+        <a href="stands/fabric/index.html">Parça stendlər</a>
+        <a href="stands/custom/index.html">Sərgi tikililəri</a>
+        <a href="stands/reception/index.html">Resepşn masaları</a>
+        <a href="stands/print/index.html">Poliqrafiya</a>
+        <a href="stands/promo/index.html">Promo masalar</a>
+        <a href="stands/signs/index.html">Reklam lövhələri</a>
+        <a href="stands/brochure/index.html">Buklet stendləri</a>
+        <a href="catalog.html" class="mnav-cat-all">Bütün kataloq →</a>
+      </div>
+    </details>
+    <a href="stands.html">Stendlərin hazırlanması</a>
+    <a href="staff.html">Modellər</a>
+    <a href="rental.html">İcarə</a>
+    <a href="projects.html">Layihələr</a>
+    <a href="delivery.html">Şirkət haqqında</a>
+    <a href="contacts.html">Əlaqə</a>
+    <div class="mnav-lang" aria-label="Saytın dili" role="group">
+      <a href="delivery.html" hreflang="az" lang="az" aria-current="page">AZ</a>
+      <a href="ru/delivery.html" hreflang="ru" lang="ru">RU</a>
+      <a href="en/delivery.html" hreflang="en" lang="en">EN</a>
+    </div>
+    <a href="index.html#contact" class="btn btn-dark">Layihəni müzakirə edək<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+  </nav>
+</header>
+
+<main id="main">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="d-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5h11v9h-11z"/><path d="M13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></g></symbol>
+  <symbol id="d-return" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h11a5 5 0 0 1 0 10H9"/><path d="M8 6l-4 4 4 4"/></g></symbol>
+  <symbol id="d-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/></g></symbol>
+ <symbol id="d-tool" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3z"/><path d="M14.5 6.5L17 4l3 3-2.5 2.5"/><path d="M5 21l2-2"/></g></symbol>
+  <symbol id="d-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 13h7M8.5 16.5h5"/></g></symbol>
+</svg>
+
+<!-- ================= ЗАГОЛОВОК СТРАНИЦЫ ================= -->
+<section class="wrap" aria-labelledby="page-title">
+  <nav aria-label="Naviqasiya zənciri">
+    <ol class="crumbs mono">
+      <li><a href="index.html">Ana səhifə</a></li>
+      <li><span aria-current="page">Çatdırılma və ödəniş</span></li>
+    </ol>
+  </nav>
+  <div class="page-head">
+    <div>
+      <h1 class="page-title" id="page-title">Çatdırılma və ödəniş.<br>Hər şey <span class="mark">plana uyğun.</span></h1>
+    </div>
+    <div class="page-head-r">
+      <p class="lead">Logistika, quraşdırma və sənədləşmə iştirakınıza hazırlığın bir hissəsidir. Yekun şərtlər təklifdə qeyd olunur.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= СПОСОБЫ ДОСТАВКИ ================= -->
+<section class="wrap" aria-labelledby="ways-title">
+  <h2 class="sr-only" id="ways-title">Çatdırılma üsulları</h2>
+  <ul class="icards">
+    <li class="icard pcard"><div class="pcard-img"><img src="img/delivery_page/card4.png" alt="" loading="lazy"></div><h3>Tədbir məkanına</h3><p>Ünvan, giriş icazələri və boşaltma tələbləri qiymət hesablanmazdan əvvəl dəqiqləşdirilir.</p></li>
+    <li class="icard pcard"><div class="pcard-img"><img src="img/delivery_page/card5.png" alt="" loading="lazy"></div><h3>İri konstruksiyalar</h3><p>Marşrut, ölçülər və daşıma üsulu sifarişin tərkibinə uyğun planlaşdırılır.</p></li>
+    <li class="icard pcard"><div class="pcard-img"><img src="img/delivery_page/card6.png" alt="" loading="lazy"></div><h3>Tədbirdən sonra</h3><p>Sökülmə və icarə əşyalarının qaytarılması əvvəlcədən razılaşdırılır.</p></li>
+  </ul>
+</section>
+
+<!-- ================= КАК ПРОХОДИТ ДОСТАВКА ================= -->
+<section class="wrap sec" aria-labelledby="steps-title">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow mono">İş qaydası</p>
+      <h2 class="h2" id="steps-title">Çatdırılma necə<br>həyata keçirilir.</h2>
+    </div>
+    <div class="sec-head-r">
+      <p class="muted text-lg">Altı mərhələ — sifarişin tərkibinin razılaşdırılmasından sökülməyə qədər.</p>
+    </div>
+  </div>
+  <ol class="steps">
+    <li class="step step-ic"><div class="top"><span class="num"><svg width="22" height="22" aria-hidden="true"><use href="#d-doc"/></svg></span></div><h3>Sifariş</h3><p>Tərkibin razılaşdırılması.</p></li>
+    <li class="step step-ic"><div class="top"><span class="num"><svg width="22" height="22" aria-hidden="true"><use href="#c-clock"/></svg></span></div><h3>Müddətlər</h3><p>Qrafikin təsdiqlənməsi.</p></li>
+    <li class="step step-ic"><div class="top"><span class="num"><svg width="22" height="22" aria-hidden="true"><use href="#c-cube"/></svg></span></div><h3>Hazırlıq</h3><p>Sifarişin komplektləşdirilməsi.</p></li>
+    <li class="step step-ic"><div class="top"><span class="num"><svg width="22" height="22" aria-hidden="true"><use href="#d-truck"/></svg></span></div><h3>Çatdırılma</h3><p>Tədbir məkanına giriş.</p></li>
+    <li class="step step-ic"><div class="top"><span class="num"><svg width="22" height="22" aria-hidden="true"><use href="#d-tool"/></svg></span></div><h3>Quraşdırma</h3><p>Yığılma və yoxlama.</p></li>
+    <li class="step step-ic"><div class="top"><span class="num"><svg width="22" height="22" aria-hidden="true"><use href="#d-return"/></svg></span></div><h3>Qaytarılma</h3><p>Razılaşdırılmış sökülmə.</p></li>
+  </ol>
+</section>
+
+<!-- ================= МОНТАЖ И ДЕМОНТАЖ ================= -->
+<section class="wrap sec" aria-labelledby="mount-title">
+  <p class="eyebrow mono">Tədbir məkanında</p>
+  <h2 class="h2" id="mount-title">Quraşdırma<br>və sökülmə.</h2>
+  <div class="co-row">
+    <div class="l"><span class="mono">Məkanın planı</span><span class="mono">Təşkilatçının qaydaları</span><span class="mono">Quraşdırma vaxtı</span><span class="mono">Texniki tələblər</span></div>
+    <div class="r">
+      <p>Məkanın planı, təşkilatçının qaydaları, quraşdırma üçün ayrılmış vaxt və texniki tələblər lazımdır. Bunlar işlərin ardıcıllığını hazırlamağa imkan verir.</p>
+      <p>Sökülmə vaxtı və avadanlığın daşınması tədbirin qrafiki ilə birlikdə razılaşdırılır. Müddətlər sifariş razılaşdırılarkən təsdiqlənir.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= СРОКИ И УСЛОВИЯ ================= -->
+<section class="wrap sec" aria-labelledby="cost-title">
+  <div class="cost">
+    <div class="cost-l">
+      <p class="eyebrow mono" style="margin-bottom:-6px;color:rgba(255,255,255,.6)">Şərtlər</p>
+      <h2 class="h2" id="cost-title">Müddətlər və şərtlər.</h2>
+      <p>Çatdırılmanın qiyməti və qrafiki sifarişinizə və tədbir məkanına uyğun hesablanır.</p>
+      <a href="index.html#contact" class="btn btn-white">Qiyməti hesablayaq<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+    <ul class="cost-grid">
+      <li class="ph"><img src="img/delivery_page/card1.png" alt="" loading="lazy"><h3>Xidmət ərazisi</h3><p>Tədbirin ünvanına görə təsdiqlənir</p></li>
+      <li class="ph"><img src="img/delivery_page/card2.png" alt="" loading="lazy"><h3>Çatdırılma qiyməti</h3><p>Həcmə, ölçülərə və marşruta görə</p></li>
+      <li class="ph"><img src="img/delivery_page/card3.png" alt="" loading="lazy"><h3>Avadanlığın qaytarılması</h3><p>Razılaşdırılmış qrafik və siyahı üzrə</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= ОПЛАТА И ДОКУМЕНТЫ ================= -->
+<section class="wrap sec" aria-labelledby="pay-title">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow mono">Ödəniş</p>
+      <h2 class="h2" id="pay-title">Ödəniş<br>və sənədlər.</h2>
+    </div>
+  </div>
+  <ul class="icards two">
+    <li class="icard"><span class="ic-c"><svg width="26" height="26" aria-hidden="true"><use href="#d-card"/></svg></span><h3>Ödəniş üsulları</h3><p>Ödəniş üsulu və valyuta konkret sifariş üzrə müqavilədə və hesabda qeyd olunur.</p><a href="contacts.html#req-title" class="btn btn-solid btn-sm">Rekvizitlər<span class="ic"><svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+    <li class="icard"><span class="ic-c"><svg width="26" height="26" aria-hidden="true"><use href="#d-doc"/></svg></span><h3>Sənədləşmə</h3><p>Müqavilə, hesab və işlərin tamamlanmasını təsdiqləyən sənədlərin tərkibi fərdi qaydada dəqiqləşdirilir.</p></li>
+  </ul>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="wrap sec" id="faq" aria-labelledby="faq-title">
+  <div class="faq">
+    <div class="faq-l">
+      <div>
+        <p class="eyebrow mono">Suallar və cavablar</p>
+        <h2 class="h2" id="faq-title">Yaxşı suallar.<br>Aydın cavablar.</h2>
+      </div>
+      <div>
+        <a href="index.html#contact" class="btn btn-dark">Sual verin<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+      </div>
+    </div>
+    <div class="faq-r">
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">01</span><span class="qt">Çatdırılma hansı ərazilərə həyata keçirilir?</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">Xidmət ərazisi tədbirin ünvanına görə təsdiqlənir. Sorğunuzda ünvanı qeyd edin.</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">02</span><span class="qt">Çatdırılmanın qiyməti necə hesablanır?</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">Qiymət həcmdən, ölçülərdən, ünvandan və tədbir məkanına giriş qaydalarından asılıdır.</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">03</span><span class="qt">Quraşdırma vaxtını kim razılaşdırır?</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">Quraşdırma üçün ayrılan vaxt sərgi təşkilatçısının qaydalarına uyğun olaraq sifarişçi ilə birlikdə müəyyən edilir.</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">04</span><span class="qt">Hansı ödəniş üsulları mövcuddur?</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">Ödəniş üsulu və valyuta konkret sifariş üzrə müqavilədə və hesabda qeyd olunur.</p>
+      </details>
+      <details class="qa" name="faq">
+        <summary><span class="qn mono">05</span><span class="qt">Hansı sənədlər hazırlanır?</span><span class="qi"><svg width="16" height="16" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <p class="qa-a">Müqavilə və işlərin tamamlanmasını təsdiqləyən sənədlərin tərkibi konkret sifariş üzrə şirkətlə razılaşdırılır.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПРИЗЫВ ================= -->
+<section class="wrap sec" aria-labelledby="cta-title">
+  <div class="cta-band">
+    <svg class="cta-sketch" viewBox="0 0 700 600" fill="none" stroke="#141812" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M363.9 245.9 L210.5 334.5 M403.7 268.9 L250.3 357.5 M443.5 291.9 L290.2 380.5 M483.4 314.9 L330.0 403.5 M523.2 337.9 L369.8 426.5 M296.1 245.9 L529.2 380.5 M256.3 268.9 L489.3 403.5 M216.5 291.9 L449.5 426.5" stroke-width=".7" stroke-dasharray="3 5"/>
+        <path d="M156.7 308.9 L423.6 463.0 M583.0 354.9 L395.7 463.0 M316.1 78.9 L583.0 233.0 M330.0 241.1 L330.0 70.9 M569.0 379.1 L569.0 208.9 M170.7 317.0 L132.8 338.8 M409.7 455.0 L371.8 476.8 M569.0 363.0 L606.9 384.9 M409.7 455.0 L447.5 476.8 M330.0 225.0 L292.2 203.2 M330.0 87.0 L292.2 65.2" stroke-width=".7"/>
+        <path d="M138.8 335.4 L377.8 473.4 M600.9 381.4 L441.5 473.4 M298.1 206.6 L298.1 68.6" stroke-width="1"/>
+        <path d="M132.8 341.4 L144.8 329.4 M371.8 479.4 L383.8 467.4 M594.9 387.4 L606.9 375.4 M435.5 479.4 L447.5 467.4 M292.1 212.6 L304.1 200.6 M292.1 74.6 L304.1 62.6" stroke-width="1.6"/>
+        <path d="M308.1 189.4 L244.4 226.1 M308.1 189.4 L320.0 196.2 M308.1 168.7 L244.4 205.4 M308.1 168.7 L320.0 175.6 M308.1 147.9 L244.4 184.7 M308.1 147.9 L320.0 154.8 M529.2 259.5 L528.9 255.4 L528.1 251.1 L526.8 246.6 L525.0 242.2 L522.8 237.9 L520.2 233.8 L517.2 230.1 L514.0 226.7 L510.7 223.8 L507.3 221.6 L503.8 219.9 L500.5 218.9 L497.3 218.6 L494.4 218.9 L491.8 220.0 L489.5 221.7 L487.8 224.1 L486.4 227.0 L485.6 230.4 L485.4 234.2 L485.6 238.3 L486.4 242.6 L487.8 247.1 L489.5 251.5 L491.8 255.8 L494.4 259.9 L497.3 263.6 L500.5 267.0 L503.8 269.9 L507.3 272.1 L510.7 273.8 L514.0 274.8 L517.2 275.1 L520.2 274.8 L522.8 273.7 L525.0 272.0 L526.8 269.6 L528.1 266.7 L528.9 263.3 L529.2 259.5 M520.0 254.2 L519.9 251.8 L519.4 249.3 L518.6 246.7 L517.6 244.2 L516.3 241.6 L514.8 239.3 L513.1 237.1 L511.2 235.1 L509.3 233.5 L507.3 232.1 L505.3 231.2 L503.3 230.6 L501.5 230.4 L499.8 230.6 L498.3 231.2 L497.0 232.2 L495.9 233.6 L495.2 235.3 L494.7 237.3 L494.5 239.5 L494.7 241.9 L495.2 244.4 L495.9 247.0 L497.0 249.5 L498.3 252.1 L499.8 254.4 L501.5 256.6 L503.3 258.6 L505.3 260.2 L507.3 261.6 L509.3 262.5 L511.2 263.1 L513.1 263.3 L514.8 263.1 L516.3 262.5 L517.6 261.5 L518.6 260.1 L519.4 258.4 L519.9 256.4 L520.0 254.2 M293.7 350.4 L293.7 305.3 M301.3 354.7 L301.3 309.6 M308.9 359.1 L308.9 314.0 M316.5 363.5 L316.5 318.4 M324.0 367.8 L324.0 322.8 M331.6 372.2 L331.6 327.1 M339.2 376.6 L339.2 331.5 M346.7 380.9 L346.7 335.9" stroke-width=".9"/>
+        <path d="M330.0 225.0 L569.0 363.0 M569.0 363.0 L409.7 455.0 M409.7 455.0 L170.7 317.0 M170.7 317.0 L330.0 225.0 M330.0 219.5 L569.0 357.5 M569.0 357.5 L409.7 449.5 M409.7 449.5 L170.7 311.5 M170.7 311.5 L330.0 219.5 M330.0 225.0 L330.0 219.5 M569.0 363.0 L569.0 357.5 M409.7 455.0 L409.7 449.5 M170.7 317.0 L170.7 311.5 M330.0 219.5 L569.0 357.5 M569.0 357.5 L563.0 360.9 M563.0 360.9 L324.0 222.9 M324.0 222.9 L330.0 219.5 M330.0 87.0 L569.0 225.0 M569.0 225.0 L563.0 228.4 M563.0 228.4 L324.0 90.4 M324.0 90.4 L330.0 87.0 M330.0 219.5 L330.0 87.0 M569.0 357.5 L569.0 225.0 M563.0 360.9 L563.0 228.4 M324.0 222.9 L324.0 90.4 M330.0 219.5 L336.0 222.9 M336.0 222.9 L216.5 291.9 M216.5 291.9 L210.5 288.5 M210.5 288.5 L330.0 219.5 M330.0 87.0 L336.0 90.4 M336.0 90.4 L216.5 159.4 M216.5 159.4 L210.5 156.0 M210.5 156.0 L330.0 87.0 M330.0 219.5 L330.0 87.0 M336.0 222.9 L336.0 90.4 M216.5 291.9 L216.5 159.4 M210.5 288.5 L210.5 156.0 M387.8 129.5 L499.3 193.9 M499.3 193.9 L491.3 198.5 M491.3 198.5 L379.8 134.2 M379.8 134.2 L387.8 129.5 M387.8 102.0 L499.3 166.3 M499.3 166.3 L491.3 171.0 M491.3 171.0 L379.8 106.6 M379.8 106.6 L387.8 102.0 M387.8 129.5 L387.8 102.0 M499.3 193.9 L499.3 166.3 M491.3 198.5 L491.3 171.0 M379.8 134.2 L379.8 106.6 M194.6 313.8 L196.5 314.9 M196.5 314.9 L192.6 317.2 M192.6 317.2 L190.6 316.1 M190.6 316.1 L194.6 313.8 M194.6 181.3 L196.5 182.4 M196.5 182.4 L192.6 184.8 M192.6 184.8 L190.6 183.6 M190.6 183.6 L194.6 181.3 M194.6 313.8 L194.6 181.3 M196.5 314.9 L196.5 182.4 M192.6 317.2 L192.6 184.8 M190.6 316.1 L190.6 183.6 M198.5 316.1 L200.5 317.2 M200.5 317.2 L196.5 319.5 M196.5 319.5 L194.6 318.4 M194.6 318.4 L198.5 316.1 M198.5 183.6 L200.5 184.8 M200.5 184.8 L196.5 187.0 M196.5 187.0 L194.6 185.9 M194.6 185.9 L198.5 183.6 M198.5 316.1 L198.5 183.6 M200.5 317.2 L200.5 184.8 M196.5 319.5 L196.5 187.0 M194.6 318.4 L194.6 185.9 M202.5 318.4 L204.5 319.5 M204.5 319.5 L200.5 321.8 M200.5 321.8 L198.5 320.7 M198.5 320.7 L202.5 318.4 M202.5 185.9 L204.5 187.0 M204.5 187.0 L200.5 189.3 M200.5 189.3 L198.5 188.2 M198.5 188.2 L202.5 185.9 M202.5 318.4 L202.5 185.9 M204.5 319.5 L204.5 187.0 M200.5 321.8 L200.5 189.3 M198.5 320.7 L198.5 188.2 M206.5 320.7 L208.5 321.8 M208.5 321.8 L204.5 324.1 M204.5 324.1 L202.5 323.0 M202.5 323.0 L206.5 320.7 M206.5 188.2 L208.5 189.3 M208.5 189.3 L204.5 191.6 M204.5 191.6 L202.5 190.5 M202.5 190.5 L206.5 188.2 M206.5 320.7 L206.5 188.2 M208.5 321.8 L208.5 189.3 M204.5 324.1 L204.5 191.6 M202.5 323.0 L202.5 190.5 M210.5 323.0 L212.5 324.1 M212.5 324.1 L208.5 326.4 M208.5 326.4 L206.5 325.3 M206.5 325.3 L210.5 323.0 M210.5 190.5 L212.5 191.6 M212.5 191.6 L208.5 193.9 M208.5 193.9 L206.5 192.8 M206.5 192.8 L210.5 190.5 M210.5 323.0 L210.5 190.5 M212.5 324.1 L212.5 191.6 M208.5 326.4 L208.5 193.9 M206.5 325.3 L206.5 192.8 M387.8 425.3 L389.8 426.5 M389.8 426.5 L385.8 428.8 M385.8 428.8 L383.8 427.6 M383.8 427.6 L387.8 425.3 M387.8 292.8 L389.8 294.0 M389.8 294.0 L385.8 296.3 M385.8 296.3 L383.8 295.1 M383.8 295.1 L387.8 292.8 M387.8 425.3 L387.8 292.8 M389.8 426.5 L389.8 294.0 M385.8 428.8 L385.8 296.3 M383.8 427.6 L383.8 295.1 M391.7 427.6 L393.7 428.8 M393.7 428.8 L389.8 431.1 M389.8 431.1 L387.8 429.9 M387.8 429.9 L391.7 427.6 M391.7 295.1 L393.7 296.3 M393.7 296.3 L389.8 298.6 M389.8 298.6 L387.8 297.4 M387.8 297.4 L391.7 295.1 M391.7 427.6 L391.7 295.1 M393.7 428.8 L393.7 296.3 M389.8 431.1 L389.8 298.6 M387.8 429.9 L387.8 297.4 M395.7 429.9 L397.7 431.1 M397.7 431.1 L393.7 433.4 M393.7 433.4 L391.7 432.2 M391.7 432.2 L395.7 429.9 M395.7 297.4 L397.7 298.6 M397.7 298.6 L393.7 300.9 M393.7 300.9 L391.7 299.8 M391.7 299.8 L395.7 297.4 M395.7 429.9 L395.7 297.4 M397.7 431.1 L397.7 298.6 M393.7 433.4 L393.7 300.9 M391.7 432.2 L391.7 299.8 M399.7 432.2 L401.7 433.4 M401.7 433.4 L397.7 435.7 M397.7 435.7 L395.7 434.5 M395.7 434.5 L399.7 432.2 M399.7 299.8 L401.7 300.9 M401.7 300.9 L397.7 303.2 M397.7 303.2 L395.7 302.0 M395.7 302.0 L399.7 299.8 M399.7 432.2 L399.7 299.8 M401.7 433.4 L401.7 300.9 M397.7 435.7 L397.7 303.2 M395.7 434.5 L395.7 302.0 M403.7 434.5 L405.7 435.7 M405.7 435.7 L401.7 438.0 M401.7 438.0 L399.7 436.8 M399.7 436.8 L403.7 434.5 M403.7 302.0 L405.7 303.2 M405.7 303.2 L401.7 305.5 M401.7 305.5 L399.7 304.4 M399.7 304.4 L403.7 302.0 M403.7 434.5 L403.7 302.0 M405.7 435.7 L405.7 303.2 M401.7 438.0 L401.7 305.5 M399.7 436.8 L399.7 304.4 M194.6 179.0 L411.7 304.3 M411.7 304.3 L403.7 308.9 M403.7 308.9 L186.6 183.6 M186.6 183.6 L194.6 179.0 M194.6 168.9 L411.7 294.2 M411.7 294.2 L403.7 298.8 M403.7 298.8 L186.6 173.5 M186.6 173.5 L194.6 168.9 M194.6 179.0 L194.6 168.9 M411.7 304.3 L411.7 294.2 M403.7 308.9 L403.7 298.8 M186.6 183.6 L186.6 173.5 M310.1 332.2 L377.8 371.3 M377.8 371.3 L353.9 385.1 M353.9 385.1 L286.2 346.0 M286.2 346.0 L310.1 332.2 M310.1 287.1 L377.8 326.2 M377.8 326.2 L353.9 340.0 M353.9 340.0 L286.2 300.9 M286.2 300.9 L310.1 287.1 M310.1 332.2 L310.1 287.1 M377.8 371.3 L377.8 326.2 M353.9 385.1 L353.9 340.0 M286.2 346.0 L286.2 300.9 M308.1 283.6 L383.8 327.3 M383.8 327.3 L355.9 343.4 M355.9 343.4 L280.2 299.7 M280.2 299.7 L308.1 283.6 M308.1 280.9 L383.8 324.6 M383.8 324.6 L355.9 340.7 M355.9 340.7 L280.2 297.0 M280.2 297.0 L308.1 280.9 M308.1 283.6 L308.1 280.9 M383.8 327.3 L383.8 324.6 M355.9 343.4 L355.9 340.7 M280.2 299.7 L280.2 297.0" stroke-width="1.4"/>
+        <path d="M242.4 340.0 L242.4 282.0 M233.4 290.0 L251.4 290.0 M242.4 282.0 m-6 -9 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0 M242.4 315.0 L235.4 340.0 M242.4 315.0 L249.4 340.0" stroke-width="1.1"/>
+        <path d="M405.6 521.7 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 M397.6 521.7 L445.6 521.7 M421.6 497.7 L421.6 545.7" stroke-width=".9"/>
+      </svg>
+    <p class="eyebrow mono" style="margin-bottom:-8px;color:var(--ink)">İdeyanızı həyata keçirək</p>
+    <h2 class="h2" id="cta-title">İdeyanızdan başlayaq.</h2>
+    <p>Sərgi və məqsədləriniz barədə danışın. Fərdi təklif üçün əsas hazırlayaq.</p>
+    <div class="btns">
+      <a href="index.html#contact" class="btn btn-dark">Layihəni müzakirə edək<span class="ic"><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ================= ПОДВАЛ ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-card">
+      <div class="foot-grid">
+        <div class="fcol fbrand">
+          <a href="index.html" class="logo" aria-label="ADVEX — ana səhifə">advex<svg viewBox="0 0 22 30" aria-hidden="true"><polygon class="slash" points="9,1 21,1 13,29 1,29"/></svg></a>
+          <p>Açar təhvil sərgi stendləri — ilk ideyadan müştərilərinizlə görüşə qədər.</p>
+          <span class="mono muted">Dizayn. İstehsal. Təəssürat.</span>
+        </div>
+        <nav class="fcol" aria-label="İstiqamətlər">
+          <span class="mono">İstiqamətlər</span>
+          <ul>
+            <li><a href="catalog.html">Stend kataloqu</a></li>
+            <li><a href="stands.html">Stendlərin hazırlanması</a></li>
+            <li><a href="staff.html">Modellər və heyət</a></li>
+            <li><a href="rental.html">Avadanlıq icarəsi</a></li>
+            <li><a href="projects.html">Layihələrimiz</a></li>
+          </ul>
+        </nav>
+        <nav class="fcol" aria-label="Konstruksiyalar">
+          <span class="mono">Konstruksiyalar</span>
+          <ul>
+            <li><a href="stands/roll-up/index.html">Roll-up</a></li>
+            <li><a href="stands/pop-up/index.html">Pop-up</a></li>
+            <li><a href="stands/banner/index.html">Banner stendləri</a></li>
+            <li><a href="stands/fold-up/index.html">Fold-up</a></li>
+          </ul>
+        </nav>
+        <div class="fcol">
+          <span class="mono">ADVEX</span>
+          <address>Azərbaycan, Bakı, Xətai rayonu, Nəcəfqulu Rəfiyev küç., 29</address>
+          <a href="tel:+994503161661">+994 50 316 16 61</a>
+          <a href="mailto:info@advex.az">info@advex.az</a>
+          <span class="spacer"></span>
+          <a href="about.html">Şirkət haqqında</a>
+          <a href="contacts.html">Əlaqə</a>
+          <a href="delivery.html" aria-current="page">Çatdırılma və ödəniş</a>
+          <a href="#">Məxfilik siyasəti</a>
+        </div>
+      </div>
+      <div class="foot-bar">
+        <span>© 2026 ADVEX · Sayt konsepsiyası</span>
+        <nav aria-label="Saytın dili"><a href="delivery.html" hreflang="az" lang="az" aria-current="page">Azərbaycanca</a> / <a href="ru/delivery.html" hreflang="ru" lang="ru">Русский</a> / <a href="en/delivery.html" hreflang="en" lang="en">English</a></nav>
+        <span>Azərbaycanda sərgi həlləri</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="to-top" data-to-top aria-label="Yuxarı"><svg width="20" height="20" aria-hidden="true"><use href="#i-arrow-up"/></svg></button>
+
+<script>
+/* ADVEX — интерактив главной страницы.
+   Весь контент уже есть в HTML; скрипт только добавляет поведение. */
+(function () {
+  'use strict';
+
+  /* ---------- Мобильное меню ---------- */
+  var burger = document.querySelector('[data-menu-toggle]');
+  var mnav = document.getElementById('mobile-nav');
+  if (burger && mnav) {
+    var closeBtn = mnav.querySelector('[data-menu-close]');
+    var setMenu = function (open) {
+      mnav.classList.toggle('is-open', open);
+      document.documentElement.classList.toggle('menu-open', open);
+      burger.setAttribute('aria-expanded', String(open));
+      if (open && closeBtn) closeBtn.focus();
+      if (!open) burger.focus({ preventScroll: true });
+    };
+    burger.addEventListener('click', function () { setMenu(true); });
+    if (closeBtn) closeBtn.addEventListener('click', function () { setMenu(false); });
+    mnav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setMenu(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mnav.classList.contains('is-open')) setMenu(false);
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1280 && mnav.classList.contains('is-open')) setMenu(false);
+    });
+  }
+
+  /* ---------- Аккордеон направлений ---------- */
+  var panels = document.querySelectorAll('[data-acc] .acc-p');
+  panels.forEach(function (panel) {
+    var toggle = panel.querySelector('.acc-toggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', function () {
+      panels.forEach(function (p) {
+        var on = p === panel;
+        p.classList.toggle('is-on', on);
+        var t = p.querySelector('.acc-toggle');
+        if (t) t.setAttribute('aria-expanded', String(on));
+      });
+      var link = panel.querySelector('.acc-open a');
+      if (link) setTimeout(function () { link.focus({ preventScroll: true }); }, 350);
+    });
+  });
+
+  /* ---------- Эскиз → готовый стенд ---------- */
+  document.querySelectorAll('[data-ba]').forEach(function (ba) {
+    var range = ba.querySelector('.ba-range');
+    if (!range) return;
+    var update = function () { ba.style.setProperty('--pos', range.value + '%'); };
+    range.addEventListener('input', update);
+    update();
+  });
+
+  /* ---------- Тексты для скрипта на разных языках ---------- */
+  var LANG = (document.documentElement.lang || 'ru').slice(0, 2);
+  var T = {
+    ru: { add: 'Добавить в подборку: ', remove: 'Убрать из подборки: ' },
+    az: { add: 'Seçimə əlavə et: ', remove: 'Seçimdən çıxar: ' },
+    en: { add: 'Add to selection: ', remove: 'Remove from selection: ' }
+  }[LANG] || { add: 'Добавить в подборку: ', remove: 'Убрать из подборки: ' };
+
+  /* ---------- Каталог стендов в шапке (клик / клавиатура; на десктопе открывается и при наведении) ---------- */
+  document.querySelectorAll('[data-nav-dd]').forEach(function (dd) {
+    var btn = dd.querySelector('.nav-dd-btn');
+    var close = function () { dd.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); };
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = dd.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function (e) { if (!dd.contains(e.target)) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && dd.classList.contains('is-open')) { close(); btn.focus(); } });
+  });
+
+  /* ---------- Выбор языка ---------- */
+  document.querySelectorAll('[data-lang-dd]').forEach(function (dd) {
+    var btn = dd.querySelector('.lang');
+    var close = function () { dd.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); };
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = dd.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function (e) { if (!dd.contains(e.target)) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && dd.classList.contains('is-open')) { close(); btn.focus(); } });
+  });
+
+  /* ---------- Подборка оборудования ---------- */
+  var cart = {};
+  var counters = document.querySelectorAll('[data-cart-count]');
+  var words = document.querySelectorAll('[data-cart-word]');
+  var cartBtn = document.querySelector('[data-cart-button]');
+
+  // Формы слова берутся из data-forms (для AZ и EN заданы в разметке).
+  function plural(n, forms) {
+    var m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return forms[0];
+    if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return forms[1];
+    return forms[2];
+  }
+
+  function renderCart() {
+    var n = Object.keys(cart).length;
+    counters.forEach(function (el) { el.textContent = n; });
+    words.forEach(function (el) {
+      var forms = (el.getAttribute('data-forms') || 'позиция|позиции|позиций').split('|');
+      el.textContent = plural(n, forms);
+    });
+    if (cartBtn) {
+      var label = cartBtn.getAttribute('data-label') || 'Подборка оборудования';
+      cartBtn.setAttribute('aria-label', label + ': ' + n);
+    }
+  }
+
+  document.querySelectorAll('[data-add]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-add');
+      var name = btn.getAttribute('data-name') || '';
+      var inCart = !cart[id];
+      if (inCart) cart[id] = 1; else delete cart[id];
+      btn.setAttribute('aria-pressed', String(inCart));
+      btn.setAttribute('aria-label', (inCart ? T.remove : T.add) + name);
+      renderCart();
+    });
+  });
+  renderCart();
+
+  /* ---------- Слайдер отзывов ---------- */
+  var track = document.querySelector('[data-rev-track]');
+  if (track) {
+    var prevs = document.querySelectorAll('[data-rev-prev]');
+    var nexts = document.querySelectorAll('[data-rev-next]');
+    var bar = document.querySelector('[data-rev-bar]');
+    var step = function () {
+      var card = track.querySelector('.rev-card');
+      var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      return card ? card.getBoundingClientRect().width + gap : track.clientWidth;
+    };
+    var sync = function () {
+      var max = track.scrollWidth - track.clientWidth;
+      prevs.forEach(function (b) { b.disabled = track.scrollLeft <= 2; });
+      nexts.forEach(function (b) { b.disabled = track.scrollLeft >= max - 2; });
+      if (bar) {
+        var w = track.clientWidth / track.scrollWidth;
+        bar.style.width = (w * 100) + '%';
+        bar.style.left = (max > 0 ? (track.scrollLeft / max) * (1 - w) * 100 : 0) + '%';
+      }
+    };
+    prevs.forEach(function (b) { b.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); }); });
+    nexts.forEach(function (b) { b.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); }); });
+    track.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  }
+
+  /* ---------- Кнопка «Наверх» ---------- */
+  var toTop = document.querySelector('[data-to-top]');
+  if (toTop) {
+    var onScroll = function () { toTop.classList.toggle('is-visible', window.scrollY > 600); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ---------- Форма заявки ---------- */
+  var form = document.querySelector('[data-lead-form]');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      // TODO: подключить отправку (Formspree, Telegram-бот, свой бэкенд и т.п.)
+      var submit = form.querySelector('[type="submit"]');
+      var ok = form.querySelector('.sent');
+      if (submit) submit.hidden = true;
+      if (ok) { ok.hidden = false; ok.focus(); }
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
